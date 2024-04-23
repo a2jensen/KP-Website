@@ -3,6 +3,6 @@ import styles from './title.module.css';
 
 export default function Title() {
     return (
-        <p className={styles.title}>Title</p>
+        <div className={styles.title}>Title</div>
     )
 }
