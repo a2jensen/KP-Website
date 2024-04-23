@@ -1,12 +1,11 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 // components
-import Navbar from "../components/navbar";
-import Title from "../components/title";
-import Carousel from "../components/carousel";
-import EventsLayout from "../components/eventslayout";
-import Footer from "../components/footer";
+import Navbar from "../components/navbar/navbar";
+import Title from "../components/title/title";
+import Carousel from "../components/carousel/carousel";
+import EventsLayout from "../components/eventslayout/eventslayout";
+import Footer from "../components/footer/footer";
 
 export default function Home() {
   return (
