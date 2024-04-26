@@ -1,4 +1,96 @@
-.title {
-    background-color: grey;
-    min-height: 600px;
+
+
+
+/* styling for title screen on desktops */
+@media (min-width: 768px){
+    .row {
+        background-color: whitesmoke;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .picture {
+        background-color: blue;
+        min-height: 60vh;
+
+        margin-top: 12.5%;
+        margin-bottom: 12.5%;
+        margin-left: 20%;
+    }
+    
+    .header {
+        margin-top: 15%;
+    }
+
+    .header h1 {
+        font-size: 4em;
+    }
+
+    .header p{
+        font-size: 1.2em;
+    }
 }
+
+/* styling for tablet screen */
+@media (min-width: 600px) and (max-width: 768px){
+    .row {
+        background-color: whitesmoke;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .picture {
+        background-color: blue;
+        min-height: 60vh;
+
+        margin-top: 12.5%;
+        margin-bottom: 12.5%;
+        margin-left: 20%;
+    }
+    
+    .header {
+        margin-top: 30%;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header p{
+        font-size: 1em;
+    }
+}
+
+/* styling for small devices(phones,etc) screen */
+@media (min-width: 0px) and (max-width: 599px) {
+    .row {
+        background-color: whitesmoke;
+        min-height: 90vh;
+    }
+
+    .picture {
+        background-color: blue;
+        min-height: 30vh;
+        margin-top: 70px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    
+    .header {
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p{
+        font-size: 0.8em;
+    }
+}
+
+
