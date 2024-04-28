@@ -1,0 +1,5 @@
+.footer-pages{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column-wrap;
+}
