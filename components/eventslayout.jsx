@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./eventslayout.module.css";
 
+
 export default function Events() {
     return (
         <div className={styles.splitScreen}>
@@ -12,7 +13,7 @@ export default function Events() {
 
             <div className={styles.rightPanel}>
                 <div className={styles.buttons}>
-                    <h1>More Events:</h1>
+                    <h1 id={styles.heading1}>More Events:</h1>
                     <button className={styles.Button}>Upcoming</button>
                     <button className={styles.Button}>General</button>
                     <button className={styles.Button}>Star</button>
@@ -29,6 +30,7 @@ export default function Events() {
                         <p>Box 3</p>
                     </div>
                 </div>
+                <a id={styles.link}href="www.google.com">See More Events</a>
             </div>
         </div>
 
