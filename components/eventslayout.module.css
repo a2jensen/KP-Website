@@ -1,9 +1,17 @@
+
+.splitScreen{
+    background-color: white;
+}
+
 .container{
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
+.header {
+    text-align: center;
+}
 .square {
     width: 150px;
     height: 230px;
@@ -23,15 +31,52 @@
 }
 
 .leftPanel {
-    width: '50%',
+    width: 100%,
 }
 
 .rightPanel {
     width: '50%',
 }
 
+.buttons {
+    align-items: center;
+    padding:L
+}
+
 .Button {
-    
     color: #C14229;
     background-color: white;
+    text-decoration: none;
+    border-color: #C14229;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 9px 32px;
+    font-size: 1.4rem;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.Button:hover {
+    color: white;
+    background-color: #C14229;
+    transform: scale(1.1);
+}
+
+.more {
+    text-align: end;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: rgb(68, 68, 68);
+}
+
+.more:hover {
+    transform: scale(1.1);
+    padding-right: 60px;
+    color: black;
 }

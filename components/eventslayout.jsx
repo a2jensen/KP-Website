@@ -6,18 +6,18 @@ export default function Events() {
         <div className={styles.splitScreen}>
             <div className={styles.leftPanel}> 
                 <div className={styles.centered}>
-                <h1> This Week's GBM</h1>
+                <h1 className={styles.header}> This Week's GBM:</h1>
                 <img></img>
                 </div>   
             </div>
 
             <div className={styles.rightPanel}>
                 <div className={styles.buttons}>
-                    <h1>More Events:</h1>
-                    <button className={styles.Button}>Upcoming</button>
-                    <button className={styles.Button}>General</button>
-                    <button className={styles.Button}>Star</button>
-                    <button className={styles.Button}>Core</button>
+                    <h1 className={styles.header}>More Events:</h1>
+                    <button className={styles.Button}>UPCOMING</button>
+                    <button className={styles.Button}>GENERAL</button>
+                    <button className={styles.Button}>STAR</button>
+                    <button className={styles.Button}>CORE</button>
                 </div>
                 <div className={styles.container}>
                     <div className={styles.square}>
@@ -30,6 +30,7 @@ export default function Events() {
                         <p>Box 3</p>
                     </div>
                 </div>
+                <p className={styles.more}>See More Events</p>
             </div>
         </div>
 
