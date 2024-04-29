@@ -7,6 +7,7 @@ export default function Events() {
             <div className={styles.leftPanel}> 
                 <div className={styles.centered}>
                 <h1> This Week's GBM</h1>
+                <img></img>
                 </div>   
             </div>
 
