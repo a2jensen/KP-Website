@@ -1,3 +1,5 @@
+
+
 .container{
     display: flex;
     justify-content: center;
@@ -5,12 +7,20 @@
 }
 
 .square {
-    width: 150px;
-    height: 230px;
-    background-color: aqua;
+    width: 257px;
+    height: 377px;
+    background-color: grey;
     margin: 0 10px;
     text-align: center;
     padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.square:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .splitScreen {
@@ -18,20 +28,48 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    display: 'flex';
+    display: flex;
     flex-direction: row;
 }
 
-.leftPanel {
-    width: '50%',
-}
 
+.leftPanel,
 .rightPanel {
-    width: '50%',
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.buttons{
+    text-align: center;
+}
 .Button {
-    
     color: #C14229;
     background-color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    margin-right: 10px;
+    border: 1px solid #C14229;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.Button:hover{
+    color: white;
+    background-color: #C14229;
+}
+
+#link{
+    text-align: right;
+    display: block;
+    margin-top: 20px;
+    margin-right: 90px;
+    color: grey;
+    text-decoration: none;
+}
+
+#heading1{
+    text-align: center;
+}
+
