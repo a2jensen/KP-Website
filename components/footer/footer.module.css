@@ -1,8 +1,54 @@
 .footer {
-    background-color: blue;
+    background-color: #C14229;
     min-height: 50px;
+    padding-left: 66px;
+    padding-right: 66px;
 }
 
-.links {
-   
+.footer h2{
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.footer p{
+    color:white;
+}
+
+
+/* Styling footer nav links */
+.footerNav ul{
+    padding-top: 19px;
+    margin-top: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerNav a{
+    color: white;
+    text-decoration: none;
+}
+
+.footerNav a:hover{
+    cursor: pointer;
+}
+
+/* styling footer bottom */
+.footerBottom{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 19px;
+}
+
+
+.footerSocials a{
+    color: white;
+    
+}
+
+.footerSocials img{
+    height: 36px;
+    width: 35px;
+    margin: 0 24px 0;
 }
