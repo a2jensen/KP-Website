@@ -1,14 +1,15 @@
 
-
 .container{
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
-
+.header {
+    text-align: center;
+}
 .square {
-    width: 257px;
-    height: 377px;
+    width: 300px;
+    height: 400px;
     background-color: grey;
     margin: 0 10px;
     text-align: center;
@@ -29,9 +30,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
+.leftPanel {
+    /* background-color: aqua; */
+    margin-left: 300px;
+}
 
 .leftPanel,
 .rightPanel {
@@ -39,6 +44,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.rightPanel {
+    margin-left: 250px;
+    /* background-color: white; */
 }
 
 .buttons{
@@ -49,27 +59,100 @@
     background-color: white;
     padding: 10px 20px;
     font-size: 24px;
-    margin-right: 10px;
+    margin: 30px;
     border: 1px solid #C14229;
     border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
 .Button:hover{
     color: white;
     background-color: #C14229;
+    transform: scale(1.2)
 }
 
 #link{
-    text-align: right;
+    text-align:end;
     display: block;
     margin-top: 20px;
-    margin-right: 90px;
     color: grey;
     text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-#heading1{
-    text-align: center;
+#link:hover {
+    color: black;
+    transform: scale(1.2);
 }
 
+@media (max-width: 1250px) {
+
+    .splitScreen {
+        flex-direction: column;
+    }
+
+    .leftPanel {
+        margin-left: 0;
+    }
+    .rightPanel {
+        margin-left: 0;
+    }
+    .Button {
+        margin: 10px;
+        margin-top: 30px;
+        font-size: 1rem;
+        margin-bottom: 0px;
+        font-weight: 400;
+    }
+
+    .square {
+        width: 200px;
+        height: 350px;
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+    #link {
+        text-align: center;
+        margin: 0;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .Button {
+        margin: 8px;
+        margin-top: 30px;
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+        font-weight: 400;
+        padding: 8px;
+    }
+
+    .square {
+        width: 118px;
+        height: 150px;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Button {
+        margin: 6px;
+        margin-top: 30px;
+        margin-bottom: ;
+    }
+    .square {
+        width: 100px;
+        height: 125px;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: 0px;
+    }
+
+    #link {
+        margin-top: 33px;
+    }
+}
