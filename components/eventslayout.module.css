@@ -74,16 +74,18 @@
 #link{
     text-align:end;
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-right: 60px;
     color: grey;
     text-decoration: none;
     font-size: 1.3rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease, margin-right 0.3s ease;
 }
 
 #link:hover {
     color: black;
     transform: scale(1.2);
+    margin-right: 120px;
 }
 
 @media (max-width: 1250px) {
@@ -118,9 +120,14 @@
         margin: 0;
         margin-top: 50px;
     }
+
+    #link:hover {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 450px) {
+    
     .Button {
         margin: 8px;
         margin-top: 30px;
