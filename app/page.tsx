@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Navbar from "../components/navbar/navbar";
 import Title from "../components/title/title";
 import Carousel from "../components/carousel/carousel";
+import Quote from "../components/quote/quote";
 import EventsLayout from "../components/eventslayout/eventslayout";
 import Footer from "../components/footer/footer";
 
@@ -13,6 +14,7 @@ export default function Home() {
      <Navbar />
      <Title />
      <Carousel />
+     <Quote />
      <EventsLayout />
      <Footer />
     </main>
