@@ -8,6 +8,7 @@
 
 .navBarShape{
     min-height: 100px;
+    opacity: .90;
     background-color: antiquewhite;
     padding-top: 36px;
     padding-left: 181px;
@@ -33,30 +34,29 @@
     border-radius: 200px;
      }
    
-   .listElementHome,
+     .listElementKP {
+      padding: 0 10px 0 10px;
+      /*Top, R, B, L */
+      text-align: left;
+      text-align: middle;
+      display: inline;
+      border: 20px;
+      border-radius: 200px;
+      float: left;
+     }
+   
+     .listElementHome,
      .listElementJoin,
      .listElementEvents,
      .listElementAbout {
-       padding: 0 10px 0 10px;
-       /*Top, R, B, L */
-       text-align: right;
-       display: inline;
-       border: 20px;
-        border-radius: 200px;
-
+      padding: 0px 10px 0 10px;
+      /*Top, R, B, L */
+      /* text-align: right; */
+      display: inline;
+      border: 20px;
+      border-radius: 200px;
+      float: right;
      }
-     .listElementKP {
-       padding: 0 10px 0 10px;
-       /*Top, R, B, L */
-       text-align: right;
-       display: inline;
-       background-color: white;
-       border: 20px;
-        border-radius: 200px;
-        float: right;
-     }
-   
-    
    
    
    

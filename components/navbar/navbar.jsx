@@ -5,17 +5,18 @@ export default function Navbar() {
     return ( 
 
         <div className = {styles.navBarShape}>
-        <div ></div>     
+        <div>
+            </div>     
              <ul className = {styles.list}>
-                 <li className = {styles.listElementKP}><a href="">kabigang pillipino</a></li>
-                 
-                 <li className = {styles.listElementHome}><a href="">hosssmse</a></li>
-                 <li className = {styles.listElementAbout}><a href="">about</a></li>
-                 <li className = {styles.listElementEvents}><a href="">events</a></li>
-                 <li className = {styles.listElementJoin}><a href="">join</a></li>
+                {/* <li className = {styles.listElementKP}><a href="">Kaibigang Pilipino</a></li> */}
+                <li className = {styles.listElementHome}><a href="">Home</a></li>
+                <li className = {styles.listElementAbout}><a href="">About</a></li>
+                <li className = {styles.listElementEvents}><a href="">Events</a></li>
+                <li className = {styles.listElementKP}><a href="">Kaibigang Pilipino</a></li>
+                <li className = {styles.listElementJoin}><a href="">Join</a></li>
              </ul>
-             {/* <div>HI<div>HELLOs</div></div> */}
-             </div>
+             {}
+        </div>
     )
 }
 

@@ -12,7 +12,7 @@ import Footer from "../../components/footer/footer";
 export default function Home() {
   return (
     <main className={styles.main}>
-     <navbar/>
+     <Navbar/>
      <Title />
      <Carousel />
      <EventsLayout />
