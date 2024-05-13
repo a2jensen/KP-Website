@@ -1,24 +1,56 @@
+
 .quotePage{
     display: flex;
     align-items: center;
     background-color: darkgray;
     width: 100vw;
     height: 100vh;
+    background-image: url("gbm.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
 }
 
 .quoteImage{
     display: flex; /* this is weird, it warps the image responsively */
-    /* object-fit: cover; */
     width: 100vw;
     height: 100vh;
     opacity: 0.7;
+    z-index: 1;
+    position: relative;
     
 }
 
+.quoteContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+}
+@font-face {
+    font-family: "Coolvetica";
+    src: local("Coolvetica"), url("../../public/fonts/coolvetica.otf") format("opentype");
+}
 .quoteText{
+    font-family: "Coolvetica";
+    position: absolute;
+    top: 40%;
+    left: 181px;
 
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #FFEBB6;
+    flex: 1;
 }
 
 .quoteStar{
-
+    position: absolute right ;
+    right: 0;
+    left: 1120;
+    height: 50%;
+    opacity: 0.8;
+    float: right;
 }
