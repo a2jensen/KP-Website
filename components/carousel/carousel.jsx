@@ -3,6 +3,34 @@ import styles from "./carousel.module.css"
 
 export default function Carousel() {
     return (
-        <div className={styles.carousel}>Carousel</div>
+        <div className={styles.carousel}>
+
+            <div className={styles.values}>
+                <div className={styles.valueText}>EMPOWERMENT</div>
+                <div className={styles.valueText}>❊</div>
+                <div className={styles.valueText}>SOCIAL</div>
+                <div className={styles.valueText}>❊</div>
+                <div className={styles.valueText}>POLITICAL</div>
+                <div className={styles.valueText}>❊</div>
+                <div className={styles.valueText}>ACADEMIC</div>
+                <div className={styles.valueText}>❊</div>
+                <div className={styles.valueText}>CULTURAL</div>
+                <div className={styles.valueText}>❊</div>
+            </div>
+
+            <div className={styles.values}>
+                <div className={styles.valueText}>EMPOWERMENT</div>
+                <div className={styles.valueText}>❊</div>
+                <div className={styles.valueText}>SOCIAL</div>
+                <div className={styles.valueText}>❊</div>
+                <div className={styles.valueText}>POLITICAL</div>
+                <div className={styles.valueText}>❊</div>
+                <div className={styles.valueText}>ACADEMIC</div>
+                <div className={styles.valueText}>❊</div>
+                <div className={styles.valueText}>CULTURAL</div>
+                <div className={styles.valueText}>❊</div>
+            </div>
+        
+        </div>
     )
 }
