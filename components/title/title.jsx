@@ -1,23 +1,28 @@
 import React from 'react';
 import styles from './title.module.css';
+import Image from "next/image";
+
+
+
 
 export default function Title() {
     return (
-        <main className={styles.row}>
-            
-            <div className='col-5 col-s-4'>
-                <div className={styles.picture}> PICTURE DIV </div>
+        <div className={styles.group}>            
+            <div className={styles.picture}>
+                <Image
+                    src="/home_pic.png"
+                    width={400}
+                    height={340}
+                    className={styles.responsiveImage}
+                />
             </div>
-            <div className='col-7 col-s-9'>
-                <div className={styles.header}>
-                    <h1> we believe <strong>everyone</strong> <br>
-                    </br> has a place in Kaibigang <br></br>
-                    Pilipino (KP) !
-                    </h1>
-                    <p>KP promotes acess to <strong>culture, connection,</strong>
+            <div className={styles.header}>
+                <h1> <strong>we believe everyone has a place<br>
+                        </br>in Kaibigang Pilipino (KP)</strong> !
+                </h1>
+                <p>KP promotes acess to <strong>culture, connection,</strong>
                     and <strong>academic retention.</strong></p>
-                </div>
             </div>
-        </main>
+        </div>
     )
 }

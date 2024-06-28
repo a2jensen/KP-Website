@@ -1,8 +1,46 @@
 .footer {
-    background-color: blue;
-    min-height: 50px;
+    background-color: rgb(205, 73, 43);
+    min-height: 250px;
 }
 
-.links {
-   
+.toplist {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+   padding-top: 30px;
+}
+
+.toplist a{
+    text-decoration: none;
+    color: white;
+}
+.titles {
+    margin: 0px 100px 0px 20px;
+}
+
+.kp{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.bottomlist{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bottomlist a {
+    text-decoration: none;
+    color: white;
+}
+
+.bottomTitles{
+    color: white;
 }
