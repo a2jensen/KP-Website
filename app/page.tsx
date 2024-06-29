@@ -12,7 +12,6 @@ import Nav from "../components/nav/nav"
 export default async function Home() {
   return (
     <main className={styles.main}>
-      <Nav />
       <Title />
       <Carousel />
       <Summary />
