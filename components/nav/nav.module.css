@@ -65,8 +65,9 @@
         display:none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
-        right: 20px;
+        top: 50px;
+        left: 20px;
+        padding: 0;
         background-color: white;
         border: 1px solid grey;
         border-radius: 10px;
