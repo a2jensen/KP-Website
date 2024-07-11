@@ -1,10 +1,8 @@
 import React from 'react'
 import styles from './history.module.css'
 
-function history() {
+export default function history() {
   return (
-    <div>history</div>
+    <div>history component</div>
   )
 }
-
-export default history

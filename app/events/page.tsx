@@ -1,5 +1,5 @@
 // import components
-import Welcome from "../../components/eventsPage/welcome/welcome";
+import Welcome from "../../components/eventsPage/welcome/welcome/welcome"
 import EventsList from "../../components/eventsPage/welcome/eventsList/eventsList"
 
 export default async function Events() {
