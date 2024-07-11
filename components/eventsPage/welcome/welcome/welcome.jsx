@@ -1,5 +1,5 @@
 import styles from "./welcome.module.css"
-import EventsCard from "../../eventscard/eventscard"
+import EventsCard from "../../../eventscard/eventscard"
 
 export default function Welcome() {
     return (
