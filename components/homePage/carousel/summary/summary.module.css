@@ -1,0 +1,15 @@
+.container {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+.paragraph {
+    margin: 300px 50px 0px 75px;
+    padding-right: 400px;
+    color: black;
+    font-size: xx-large;
+    font-weight: 500;
+}

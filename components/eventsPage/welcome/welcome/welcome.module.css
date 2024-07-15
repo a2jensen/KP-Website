@@ -1,0 +1,10 @@
+.container {
+    min-height: 85vh;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+}

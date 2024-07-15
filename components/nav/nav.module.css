@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    list-style-type: none;
+    border-radius: 30px;
+    margin: 40px 150px;
+    outline: 2px solid grey;
+    color: black;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.title {
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+.list {
+    display: flex;
+    margin-right: 50px;
+}
+
+.listElement {
+    list-style-type: none;
+    font-size: x-large;
+    margin-right: 50px;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid transparent; /* Initial border is transparent */
+    transition: border 0.3s ease; /* Smooth transition effect */
+    border-radius: 20px;
+}
+
+.listElement a {
+    list-style-type: none;
+    border-radius: 200px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listElement:hover {
+    border-color: black;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 100px;
+    }
+
+    .title {
+        font-size: large;
+        margin-right: 10px;
+    }
+
+    .list {
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        padding: 0;
+        background-color: white;
+        border: 1px solid grey;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Show the list when the menu is toggled */
+    .list.showMenu {
+        display: flex;
+    }
+
+    /* Display the hamburger menu icon */
+    .hamburger {
+        display: block;
+    }
+
+    /* Adjust list elements for mobile view */
+    .listElement {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Adjust anchor tags for mobile view */
+    .listElement a {
+        display: block;
+        padding: 10px 20px;
+    }
+}
