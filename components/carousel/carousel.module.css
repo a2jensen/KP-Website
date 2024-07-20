@@ -5,6 +5,7 @@
     min-height: 100px;
     white-space: nowrap;
     position: relative;
+    overflow: hidden;
 }
 
 @keyframes slide {
@@ -12,12 +13,12 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(-110%);
+        transform: translateX(-100%);
     }
 }
 
 .values {
-    padding: 30px 0;
+    padding: 30px 0px;
     white-space: nowrap;
     display: inline-flex;
     justify-content: space-around;
@@ -34,5 +35,5 @@
     font-family: "Poppins";
     font-size: 30px;
     color: black;
-    margin:  0 50px;
+    margin:  0 60px;
 }
