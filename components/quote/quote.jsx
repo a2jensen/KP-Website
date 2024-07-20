@@ -3,7 +3,7 @@ import styles from "./quote.module.css"
 import Image from "next/image" // Import the 'next/image' package
 import localFont from '@next/font/local';
 // import quoteImage from "../../public/images/gbm.jpg" // Import the image file
-import quoteStar from "../../public/SunStar.svg" // Import the image file
+import quoteStar from "../../public/phstar.svg" // Import the image file
 
 // const coolvetica = localFont({src: '../public/fonts/coolvetica.otf', display: 'swap', unicodeRange: 'U+000-5FF', name: 'Coolvetica'});
 
@@ -25,7 +25,6 @@ export default function Quote() {
                         objectFit="cover"
                     />
                 </div>
-                {/* </div> */}
                 
                
             </div>

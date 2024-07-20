@@ -1,38 +1,51 @@
 
 .quotePage{
-    display: flex;
+    display: grid;
     align-items: center;
-    background-color: darkgray;
+    background-color: black;
     width: 100vw;
     height: 100vh;
     background-image: url("gbm.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
 }
 
-.quoteImage{
+.quoteImage{ /* background image */
     display: flex; /* this is weird, it warps the image responsively */
     width: 100vw;
     height: 100vh;
-    opacity: 0.7;
+    opacity: 0.9;
     z-index: 1;
     position: relative;
     
 }
+.quoteImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1); /* Adjust the alpha value (0.5) to make it darker or lighter */
+    z-index: -1;
+}
 
-.quoteContainer {
-    display: flex;
+.quoteContainer { /* for quote and star */
+    display: grid;
     width: 100vw;
     height: 100vh;
     position: absolute;
     z-index: 2;
 }
+
+
 @font-face {
     font-family: "Coolvetica";
     src: local("Coolvetica"), url("../../public/fonts/coolvetica.otf") format("opentype");
 }
 .quoteText{
+    grid-column: 1 / 2;
+    grid-row: 1;
     font-family: "Coolvetica";
     position: absolute;
     top: 40%;
@@ -42,15 +55,27 @@
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    color: #FFEBB6;
+    /* color: #FFEBB6; */
+    color: white;
     flex: 1;
 }
 
-.quoteStar{
-    position: absolute right ;
-    right: 0;
-    left: 1120;
-    height: 50%;
-    opacity: 0.8;
-    float: right;
+/* .quoteStar{
+    grid-column: 2/2;
+    grid-row: 1;
+    position: relative;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+} */
+.quoteStar {
+    grid-column: 2/2;
+    grid-row: 1;
+    position: relative;
+    width: auto; /* Adjust width as necessary */
+    height: 100%; /* Ensure the container takes full height */
+    background-image: url(/public/phstar.svg); /* Update with the correct path */
+    background-size: contain; /* or 'cover' depending on the desired effect */
+    background-position: center;
+    background-repeat: no-repeat;
 }
