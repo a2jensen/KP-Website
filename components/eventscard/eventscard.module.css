@@ -1,29 +1,33 @@
 .maincontainer {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .container {
     outline: 2px solid grey;
-    border-radius: 15px;
-    min-height: 390px;
-    width: 300px;
-    padding: 20px;
+    border-radius: 19.2px;
+    min-height: 367.68px;
+    width: 279.36px;
+    padding: 24px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    
+    gap: 9.6;
 }
 
 .host {
     border-bottom: 1px solid black;
-    font-size: 25px;
+    font-size: 19.2px;
     font-weight: bold;
     color: grey;
-    padding-bottom: 10px;
+    padding-bottom: 10.56px;
+    padding-top: 
 }
 
 .title {
-    font-size: 40px;
+    width: 231.36px;
+    height: 48px;
+    font-size: 38.4px;
+    font-weight: 400;
+    line-height: 48px;
     font-weight: bold;
     padding-top: 20px;
     text-align: center;
@@ -31,15 +35,25 @@
 }
 
 .date {
-    font-size: 25px;
+    width: 231.36;
+    height: 47px;
+    font-size: 23.04px;
+    padding-bottom: 9.6px;
+    padding-top: 9.6px;
+    font-weight: 400px;
+
 }
 
 .location {
+    width: 231.36;
     border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    padding-top: -100px;
+    font-size: 14.4px;
+    padding-bottom: 7.68px;
 }
 
 .description {
     border-bottom: 1px solid black;
     padding-bottom: 10px;
+    font-size: 14.4px;
 }

@@ -1,18 +1,39 @@
 .events {
-    height: 80vh;
+    min-height: 80vh;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
+.uEvents {
+    color: #000;
     text-align: center;
-    padding-top: 70px;
-    font-weight: bolder;
+    font-family: Coolvetica;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.more {
+.seeMoreArrow{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
+width: 930px;
+justify-content: flex-end;
+align-items: center;
+gap: 12px;
+}
+
+.seeMoreArrow a{
+    text-decoration: none;
+    color: #000;
+}
+.seemore {
+    color: #000;
+font-family: Outfit;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.2px;
+}
+
+.arrow{
+
 }

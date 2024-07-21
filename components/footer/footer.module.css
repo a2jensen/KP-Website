@@ -6,34 +6,46 @@
 .toplist {
    list-style-type: none;
    display: flex;
-   justify-content: space-around;
-   text-align: center;
+   justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
    padding-top: 30px;
 }
 
 .toplist a{
     text-decoration: none;
-    color: white;
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
 }
 .titles {
     margin: 0px 100px 0px 20px;
 }
 
 .kp{
-    display: flex;
-    justify-content: center;
+    color: #FFF;
     text-align: center;
+    font-family: Outfit;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.275px;
     margin-top: 50px;
-    color: white;
-    font-weight: bold;
+    margin-bottom: 50px
 }
 
 .bottomlist{
-    list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    list-style-type: none;
 }
 
 .bottomlist a {
@@ -43,4 +55,21 @@
 
 .bottomTitles{
     color: white;
+}
+
+.igLogo{
+    margin-right: -125px
+}
+
+.tiktokLogo{
+    margin-left: -125px
+}
+
+.est1987{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
