@@ -15,7 +15,11 @@ export default function Quote() {
 
                 
                 <div className={styles.quoteText}>
-                    KP meets weekly for General Body Meetings (GBM) alongside events hosted by the three boards (STAR, GEN, CORE) throughout the school year. Come to KP the way you want, whenever you want!
+                    KP meets <strong>weekly</strong> for General Body Meetings (GBM) alongside events hosted by the three boards <strong>(STAR, GEN, CORE)</strong> throughout the school year. 
+                    <br />
+                    <br />
+                    Come to KP the way you want, whenever you want!
+
                 </div>
                 <div className={styles.quoteStar}>
                     <Image 
