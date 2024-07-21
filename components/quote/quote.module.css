@@ -35,7 +35,7 @@
     font-family: "Outfit";
     src: local("Outfit"), url("../../public/fonts/Outfit/static/Outfit-Regular.ttf") format("opentype");
 }
-.quoteText{
+/* .quoteText{
     grid-column: 1 / 3;
     grid-row: 1;
     font-family: "Outfit";
@@ -50,6 +50,35 @@
     line-height: normal;
     color: #FFEBB6;
     flex: 1;
+    overflow: hidden;
+
+    white-space: normal; /* Ensure text wraps */
+    /* min-width: 0; Allows the text to shrink in flex/grid layouts */
+    /* max-width: 100%; Ensures text container does not exceed its parent */
+/* } */ 
+.quoteText{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    font-family: "Outfit";
+    position: absolute;
+
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #FFEBB6;
+    flex: 1;
+    overflow: hidden;
+
+    white-space: normal; /* Ensure text wraps */
+    min-width: 0; /* Allows the text to shrink in flex/grid layouts */
+    max-width: 100%; /* Ensures text container does not exceed its parent */
+    
+    /* Scalable padding */
+    padding: 12vw; /* Example of responsive padding */
 }
 
 .quoteText strong {
@@ -59,9 +88,13 @@
 .quoteStar{
     grid-column: 3/3;
     grid-row: 1;
-    position: relative;
+    position: static;
     height: 100%;
     width: 100%;
     top: 0;
     right: 0;
+    background-repeat: no-repeat;
+    background-image: url("star2.png");
+    background-size: contain;
+    background-position: right;
 }

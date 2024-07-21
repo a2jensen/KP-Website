@@ -21,14 +21,7 @@ export default function Quote() {
                     Come to KP the way you want, whenever you want!
 
                 </div>
-                <div className={styles.quoteStar}>
-                    <Image 
-                        src={quoteStar} 
-                        alt="Philippine Sun Star" 
-                        layout="fill" // Add layout="responsive" to make the image responsive
-                        objectFit="cover"
-                    />
-                </div>
+                <div className={styles.quoteStar}></div>
                 
                
             </div>
