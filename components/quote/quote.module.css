@@ -19,16 +19,7 @@
     position: relative;
     
 }
-.quoteImage::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 1); /* Adjust the alpha value (0.5) to make it darker or lighter */
-    z-index: -1;
-}
+
 
 .quoteContainer { /* for quote and star */
     display: grid;
@@ -44,7 +35,7 @@
     src: local("Coolvetica"), url("../../public/fonts/coolvetica.otf") format("opentype");
 }
 .quoteText{
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     grid-row: 1;
     font-family: "Coolvetica";
     position: absolute;
@@ -60,22 +51,12 @@
     flex: 1;
 }
 
-/* .quoteStar{
-    grid-column: 2/2;
+.quoteStar{
+    grid-column: 3/3;
     grid-row: 1;
     position: relative;
-    width: auto;
     height: 100%;
-    object-fit: cover;
-} */
-.quoteStar {
-    grid-column: 2/2;
-    grid-row: 1;
-    position: relative;
-    width: auto; /* Adjust width as necessary */
-    height: 100%; /* Ensure the container takes full height */
-    background-image: url(/public/phstar.svg); /* Update with the correct path */
-    background-size: contain; /* or 'cover' depending on the desired effect */
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    top: 0;
+    right: 0;
 }
