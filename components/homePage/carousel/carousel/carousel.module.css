@@ -28,7 +28,7 @@
 
 @font-face {
     font-family: "Poppins";
-    src: local("Poppins"), url("../../public/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+    src: local("Poppins"), url("/public/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
 }
 
 .valueText{
