@@ -20,8 +20,6 @@
     
 }
 
-
-
 .quoteContainer { /* for quote and star */
     display: grid;
     width: 100vw;
@@ -29,7 +27,6 @@
     position: absolute;
     z-index: 2;
 }
-
 
 @font-face {
     font-family: "Outfit";
@@ -58,7 +55,7 @@
     max-width: 100%; /* Ensures text container does not exceed its parent */
     
     /* Scalable padding */
-    padding: 14vw; /* Example of responsive padding */
+    padding: 14vw; 
 }
 
 .quoteText strong {
@@ -70,14 +67,29 @@
     grid-row: 1;
     position: static;
     height: 100%;
-    top: 0;
-    right: 0;
     background-repeat: no-repeat;
-    background-image: url("star2.png");
+    background-image: url("starSide.png");
     background-size: contain;
     background-position: right;
 }
 
-@media screen {
-    
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .quoteText{
+        grid-column: 1 / 1;
+        grid-row: 2;
+        font-size: 21px;
+        padding: 5vw;
+        text-align: center;
+    }
+    .quoteStar{
+        grid-column: 1/1;
+        grid-row: 1;
+        position: static;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url("starTop.png");
+        background-size: contain;
+        background-position: top;
+    }
 }
