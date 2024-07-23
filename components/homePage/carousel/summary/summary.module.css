@@ -38,16 +38,15 @@
     grid-row: 1;
     /* font-family: "Outfit"; */
     position: absolute;
+    margin: auto; /* Center the text block */
 
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-
-    font-size: 40px;
+    align-self: center;
+    
+    font-size: calc(1vw + 3.5vh);
     font-weight: 400;
     font-style: normal;
     line-height: normal;
     color: #FFEBB6;
-    flex: 1;
     overflow: hidden;
 
     white-space: normal; /* Ensure text wraps */
@@ -55,7 +54,7 @@
     max-width: 100%; /* Ensures text container does not exceed its parent */
     
     /* Scalable padding */
-    padding: 14vw; 
+    padding: 14vw 9vw; 
 }
 
 .quoteText strong {
@@ -74,25 +73,19 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
-    .quotePage{
+@media screen and (max-width: 600px) { /* tablets */
+    .quotePage { /* for quote and star */
         display: grid;
-        align-items: center;
-        background-color: black;
         width: 100vw;
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)), url("gbm.jpg");
-        background-size: cover;
-        background-position: center;
     }
     .quoteText{
         grid-column: 1 / 1;
-        grid-row: 2 / 5;
-        font-size: 30px;
-        padding: 0 6vw ;
-        align-items: top; /* Center vertically */
+        grid-row: 1/5;
+        font-size: calc(0.5vw + 3.5vh);
+        padding: 35% 15% 0% ;
         text-align: center;
+        align-self: center;
     }
     .quoteStar{
         grid-column: 1/1;
@@ -105,3 +98,25 @@
         background-position: top;
     }
 }
+
+@media screen and (max-width: 393px) { /* mobile + phone */
+    .quoteText{
+        grid-column: 1 / 1;
+        grid-row: 1 / 5;
+        font-size: calc(1vw + 3vh);
+        padding: 30% 15% 0% ;
+        text-align: center;
+    }
+    .quoteStar{
+        grid-column: 1/1;
+        grid-row: 1/3;
+        position: static;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url("starTop.png");
+        background-size: contain;
+        background-position: top;
+    }
+    
+}
+
