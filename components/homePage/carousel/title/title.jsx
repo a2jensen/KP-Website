@@ -18,10 +18,10 @@ export default function Title() {
             </div>
             <div className={styles.header}>
                 <h1> <strong>we believe everyone has a place<br>
-                        </br>in Kaibigang Pilipino (KP)</strong> !
+                        </br>in Kaibigang Pilipino (KP) !</strong>
                 </h1>
-                <p>KP promotes acess to <strong>culture, connection,</strong>
-                    and <strong>academic retention.</strong></p>
+                <p>KP promotes access to <strong>culture, connection, </strong>
+                     and <strong>academic retention.</strong></p>
             </div>
         </div>
     )
