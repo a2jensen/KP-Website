@@ -1,10 +1,68 @@
 .container {
-    min-height: 85vh;
-    text-align: center;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative; /* Make sure the container is positioned relatively for absolute positioning of stars */
 }
 
 .title {
-    font-size: xx-large;
+    margin-top: 125px;
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 20px;
+    position: relative; /* Position relatively to place star next to it */
+}
+
+.eventstitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative; /* Position relatively to place stars around it */
+}
+
+/* .paragraph {
+    margin-left: 100px;
+    font-size: 1.5rem;
+     text-align: center;
+    margin-bottom: 50px;
+} */
+
+.star {
+    width: 60px; /* DO NOT CHANGE Width of a single star */
+    height: 60px; /* DO NOT CHANGE Height of a single star */
+    background-image: url('/star.png');
+    background-size: 60px 60px; /* Size of a single star */
+    background-repeat: no-repeat;
+    position: absolute; /* Enable absolute positioning for stars */
+}
+
+.buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(109, 106, 106); /* Add border to surround all buttons */
+    border-radius: 10px; /* Add border radius to make the border corners rounded */
+    padding: 5px; /* Add padding to create space between the buttons and the border */
+}
+
+.button {
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px; /* Add margin to create space between the buttons */
+    border: 2px solid black; /* Add border to each button */
+    border-radius: 10px; /* Add border radius to make the button corners rounded */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add transition effect to make the button interactive */
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    border-color: white; /* Change border color on hover */
 }

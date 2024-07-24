@@ -2,14 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9); /* Set background color with alpha value */
     list-style-type: none;
     border-radius: 30px;
     margin: 40px 150px;
     outline: 2px solid grey;
     color: black;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
+    position: fixed; /* Set position to fixed */
+    top: 0; /* Set top position to 0 */
+    left: 0; /* Set left position to 0 */
+    right: 0; /* Set right position to 0 */
+    z-index: 1; /* Set z-index to 1 to ensure it stays on top of other elements */
+    backdrop-filter: blur(5px); /* Add backdrop filter to make it slightly transparent */
 }
 
 .title {
@@ -28,8 +33,8 @@
     margin-right: 50px;
     padding: 10px;
     font-weight: bold;
-    border: 1px solid transparent; /* Initial border is transparent */
-    transition: border 0.3s ease; /* Smooth transition effect */
+    border: 1px solid transparent; /* /// Initial border is transparent */
+    transition: border 0.3s ease; /* /// Smooth transition effect  */
     border-radius: 20px;
 }
 
@@ -74,23 +79,23 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    /* Show the list when the menu is toggled */
+    /* /// Show the list when the menu is toggled */
     .list.showMenu {
         display: flex;
     }
 
-    /* Display the hamburger menu icon */
+    /* /// Display the hamburger menu icon  */
     .hamburger {
         display: block;
     }
 
-    /* Adjust list elements for mobile view */
+    /* /// Adjust list elements for mobile view  */
     .listElement {
         margin: 10px 0;
         text-align: center;
     }
 
-    /* Adjust anchor tags for mobile view */
+    /* /// Adjust anchor tags for mobile view  */
     .listElement a {
         display: block;
         padding: 10px 20px;

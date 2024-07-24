@@ -19,9 +19,9 @@ export default function Nav() {
                 &#9776;
             </div>
             <ul className={`${styles.list} ${isMenuOpen ? styles.showMenu : ''}`}>
-                <li className = {styles.listElement}><a href="">home</a></li>
-                <li className = {styles.listElement}><a href="">about</a></li>
-                <li className = {styles.listElement}><a href="">events</a></li>
+                <li className = {styles.listElement}><a href="/">home</a></li>
+                <li className = {styles.listElement}><a href="/about">about</a></li>
+                <li className = {styles.listElement}><a href="/events">events</a></li>
                 <li className = {styles.listElement}><a href="">join</a></li>
             </ul>
         </main>

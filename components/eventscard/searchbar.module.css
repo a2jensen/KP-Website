@@ -1,0 +1,41 @@
+/* .searchbar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+.searchbar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 520px;
+    position: absolute;
+    margin-right: 1115px;
+}
+
+  
+   */
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    margin-right: 10px;
+    padding: 5px;
+    margin-top: 1020px;
+    position: absolute;
+    margin-left: -685px;
+    
+}
+
+.searchbar .dropdown {
+    padding: 5px;
+    margin-top: 1020px;
+    position: absolute;
+    margin-left: -500px;
+}
+  

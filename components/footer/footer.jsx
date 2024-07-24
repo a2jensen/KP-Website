@@ -5,9 +5,9 @@ export default function Footer() {
     return (
         <div className={styles.footer}>
             <ul className={styles.toplist}>    
-                <li className={styles.titles}><a href="">Return Home</a></li>
+                <li className={styles.titles}><a href="/">Return Home</a></li>
                 <li className={styles.titles}><a href="">Newsletter</a></li>
-                <li className={styles.titles}><a href="">Events</a></li>
+                <li className={styles.titles}><a href="/events">Events</a></li>
                 <li className={styles.titles}><a href="">Community</a></li>
                 <li className={styles.titles}><a href="">Contact</a></li>
             </ul>

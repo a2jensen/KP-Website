@@ -6,8 +6,7 @@ import Carousel from "../components/homePage/carousel/carousel/carousel";
 import Summary from "../components/homePage/carousel/summary/summary";
 import EventsLayout from "../components/homePage/carousel/eventslayout/eventslayout";
 import Footer from "../components/footer/footer";
-import Nav from "../components/nav/nav"
-
+import Nav from "../components/nav/nav";
 
 export default async function Home() {
   return (
