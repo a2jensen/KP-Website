@@ -14,15 +14,15 @@ export default function Nav() {
 
     return (
         <main className={styles.container}>
-            <h1 className={styles.title}>kaibgang pilipino</h1>
+            <h1 className={styles.title}>kaibigang pilipino</h1>
             <div className={styles.hamburger} onClick={toggleMenu}>
                 &#9776;
             </div>
             <ul className={`${styles.list} ${isMenuOpen ? styles.showMenu : ''}`}>
                 <li className = {styles.listElement}><a href="">home</a></li>
-                <li className = {styles.listElement}><a href="">about</a></li>
-                <li className = {styles.listElement}><a href="">events</a></li>
-                <li className = {styles.listElement}><a href="">join</a></li>
+                <li className = {styles.listElement}><a href="/about">about</a></li>
+                <li className = {styles.listElement}><a href="/events">events</a></li>
+                <li className = {styles.listElement}><a href="/join">join</a></li>
             </ul>
         </main>
     )

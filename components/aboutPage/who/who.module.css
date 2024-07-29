@@ -1,0 +1,157 @@
+/*
+To implement fonts, go to 'https://www.fontsquirrel.com/tools/webfont-generator'.
+Upload the font into here, and click either optimal or basic. Looks the same at this point. 
+Select WOFF2 and WOFF, WOFF is just a backup incase.
+Then download the font kit, and unzip said file.
+ Paste both WOFF and WOFF2 files into the same directory.
+ Click the stylesheet.css file, and copy the ENTIRE code.
+ Paste it into the CSS code, ABOVE everything else.
+ Once you have that down, you can now use the font in your CSS code. 
+ Feel free to shorten the font-family name to something more manageable.
+*/
+/*
+'#FBC300' is the color of the 'KAIBIGANG PILIPINO ' in figma
+https://www.figma.com/design/3gRGV4EEx0OQsIaiYco6Xf/Wireframes?node-id=1246-8065&m=dev
+*/
+
+
+@font-face {
+    font-family: 'coolveticacompressed_heavy';
+    src: url('coolvetica_compressed_hv.woff2') format('woff2'),
+         url('coolvetica_compressed_hv.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'coolveticacondensed_regular';
+    src: url('coolvetica_condensed_rg.woff2') format('woff2'),
+         url('coolvetica_condensed_rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'coolveticacrammed_regular';
+    src: url('coolvetica_crammed_rg.woff2') format('woff2'),
+         url('coolvetica_crammed_rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'coolveticaRG_italic';
+    src: url('coolvetica_rg_it.woff2') format('woff2'),
+         url('coolvetica_rg_it.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'coolveticaRG';
+    src: url('coolvetica_rg.woff2') format('woff2'),
+         url('coolvetica_rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.pinoySun {
+    /* background-image: url("./Texture.jpg");
+    opacity: 20%;
+    z-index: -1;
+    background-blend-mode: plus-darker;
+    background: lightgray 0% 0% / 147.75390625px 147.75390625px repeat;; */
+
+    opacity: 20%;
+
+}
+
+.KPis {
+    /* margin-top: 448px; */
+    font-family: 'coolveticaRG';
+    text-align: center;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+
+
+.typeWriter {
+    color: rgb(0, 0, 0);
+    font-family: 'coolveticaRG';
+    font-size: 96px; /* Adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline;
+    animation: blinker 1.9s step-end infinite;
+    border-right: 5px solid black; 
+}
+
+    
+
+@keyframes blinker {
+    from, to { border-color: transparent; }
+    76% { border-color: black; }
+    100% { border-color: transparent; }
+  }
+
+.pinoyStarOne {
+    transform: rotate(14.418deg);
+    color: #000;
+    font-family: Nunito;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-left: 1375px;
+    margin-top: 67px;
+    margin-right: 55px;
+}
+
+.pinoyStarTwo {
+    transform: rotate(14.418deg);
+    color: #000;
+    font-family: Nunito;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-align: center;
+    margin-right: 1800px;
+}
+
+.pinoyStarThree {
+    color: #000;
+    font-family: Nunito;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    transform: rotate(-27.422deg);
+    margin-left: 800px;
+    margin-top: 108px;
+    margin-bottom: 345px;
+}

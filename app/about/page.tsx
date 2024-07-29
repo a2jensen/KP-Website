@@ -6,8 +6,8 @@ import Membership from '../../components/aboutPage/membership/membership'
 export default function about() {
   return (
     <main>
-      <Who />
-      <History />
+      <Who/>
+      <History/>
       <Membership/>
     </main>
   )
