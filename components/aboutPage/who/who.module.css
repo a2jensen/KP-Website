@@ -72,17 +72,6 @@ https://www.figma.com/design/3gRGV4EEx0OQsIaiYco6Xf/Wireframes?node-id=1246-8065
 
 }
 
-.pinoySun {
-    /* background-image: url("./Texture.jpg");
-    opacity: 20%;
-    z-index: -1;
-    background-blend-mode: plus-darker;
-    background: lightgray 0% 0% / 147.75390625px 147.75390625px repeat;; */
-
-    opacity: 20%;
-
-}
-
 .KPis {
     /* margin-top: 448px; */
     font-family: 'coolveticaRG';
@@ -103,11 +92,14 @@ https://www.figma.com/design/3gRGV4EEx0OQsIaiYco6Xf/Wireframes?node-id=1246-8065
     white-space: nowrap;
     overflow: hidden;
     display: inline;
-    animation: blinker 1.9s step-end infinite;
+    animation: blinker 1.3s step-end infinite;
+    /*
+    I want an animation to blink every 1.9 seconds, so I'll name it blinker, and reference it below.
+    I want it to be a step-end animation (jumps straight so it's not a weird transparent transition).
+    I want it to repeat infinitely instead of a finite number, like 12 or 14.
+  */
     border-right: 5px solid black; 
 }
-
-    
 
 @keyframes blinker {
     from, to { border-color: transparent; }
@@ -130,7 +122,7 @@ https://www.figma.com/design/3gRGV4EEx0OQsIaiYco6Xf/Wireframes?node-id=1246-8065
 }
 
 .pinoyStarTwo {
-    transform: rotate(14.418deg);
+    transform: rotate(-7.418deg);
     color: #000;
     font-family: Nunito;
     font-size: 64px;
