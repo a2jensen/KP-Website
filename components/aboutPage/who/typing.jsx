@@ -68,7 +68,7 @@ const TypingEffect = ({ words }) => {
 };
 
 const App = () => {
-  const words = ['home.', '', 'friendship.', ' ', '', 'kaibigang pilipino.'];
+  const words = ['home.', '', 'friendship.', ' ', 'kaibigang pilipino.'];
   // kaibigang pilipino MUST be the last word. it's the only one with a different color.
   // add blanks (i.e, the '') for delays,
   // keep in mind you cannot change teh above word delay without changing ALL
