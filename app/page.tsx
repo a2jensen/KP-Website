@@ -7,6 +7,8 @@ import Summary from "../components/homePage/carousel/summary/summary";
 import EventsLayout from "../components/homePage/carousel/eventslayout/eventslayout";
 import Footer from "../components/footer/footer";
 import Nav from "../components/nav/nav"
+/* temp import for about page testing */
+import About from "../app/about/page"
 
 
 export default async function Home() {
@@ -16,6 +18,7 @@ export default async function Home() {
       <Carousel />
       <Summary />
       <EventsLayout />
+      <About />
     </main>
   );
 }

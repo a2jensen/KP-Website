@@ -1,0 +1,67 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    align-items: center;
+    text-align: center;
+    background-color: #D8D8C9;
+    position: relative; /* for absolute positioning inside */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardImage {
+    width: 308px;
+    height: 222px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    object-fit: cover; /* cover, contain, fill, scale-down, or none */
+  }
+
+  .tape {
+    margin-bottom: 60px;
+    position: absolute; /* allows positioning outside the container */
+    top: -20px;         /* moves the image 20px above the top border */
+    left: 27%;        /* moves the image 20px to the left of the left border */
+  }
+  
+  .cardContent {
+    padding: 16px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically within the container */
+    align-items: center; /* Center items horizontally within the container */
+    text-align: center;
+  }
+
+  
+  .cardTitle {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+  }
+  
+  .cardText {
+    font-size: 1em;
+    color: #333;
+  }
+
+  .listAdjust {
+    margin-top: 5px;
+  }
+
+  .flip {
+    padding-top: 8%;
+    width: 20%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    opacity: 0.5;
+  }
