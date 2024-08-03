@@ -73,7 +73,7 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px) { /* tablets */
+@media screen and (min-width: 600px) and (max-width: 768px){ /* tablets */
     .quotePage { /* for quote and star */
         display: grid;
         width: 100vw;
@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: 393px) { /* mobile + phone */
+@media screen and (max-width: 600px) { /* mobile + phone */
     .quoteText{
         grid-column: 1 / 1;
         grid-row: 1 / 5;

@@ -10,7 +10,7 @@ export default function Title() {
         <div className={styles.group}>            
             <div className={styles.picture}>
                 <Image
-                    src="/home_pic.png"
+                    src="/homePhoto.svg"
                     width={400}
                     height={340}
                     className={styles.responsiveImage}

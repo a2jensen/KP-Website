@@ -6,6 +6,8 @@
     white-space: nowrap;
     position: relative;
     overflow: hidden;
+    border-top: 2px solid #000; /* Adds a top border */
+    border-bottom: 2px solid #000; /* Adds a bottom border */
 }
 
 @keyframes slide {
@@ -43,14 +45,40 @@
         overflow: hidden;
     }
     .values {
-        padding: 15px 0px;
+        padding: 40px 0px;
         white-space: nowrap;
         display: inline-flex;
         justify-content: space-around;
+        justify-items: center;
         animation: 30s slide infinite linear;
     }
     .valueText{
         font-size: 21px;
+        margin: 0 30px;
     }
+}
+
+@media screen and (max-width: 430px) {
+    .carousel {
+        background-image: url("homerect.jpg");
+        background-size: cover;
+        min-height: 52px;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+    }
+    .values {
+        padding: 15px 0px;
+        white-space: nowrap;
+        display: inline-flex;
+        justify-content: space-around;
+        justify-items: center;
+        animation: 30s slide infinite linear;
+    }
+    .valueText{
+        font-size: 21px;
+        margin: 0 15px;
+    }
+    
 }
 

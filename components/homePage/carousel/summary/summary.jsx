@@ -10,7 +10,9 @@ export default function Summary() {
 
                 
                 <div className={styles.quoteText}>
-                    KP meets <strong>weekly</strong> for General Body Meetings (GBM) alongside events hosted by the three boards <strong>(STAR, GEN, CORE)</strong> throughout the school year. 
+                    KP meets <strong>weekly</strong> for General Body Meetings (GBM) alongside 
+                    events hosted by the three boards <strong>(STAR, GEN, CORE) </strong> 
+                    throughout the school year. 
                     <br />
                     <br />
                     Come to KP the way you want, whenever you want!
