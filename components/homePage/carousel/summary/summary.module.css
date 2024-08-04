@@ -10,7 +10,7 @@
     background-position: center;
 }
 
-.quoteImage{ /* background image */
+.quoteImage{ /* Background image */
     display: flex; /* this is weird, it warps the image responsively */
     width: 100vw;
     height: 100vh;
@@ -19,7 +19,7 @@
     
 }
 
-.quoteContainer { /* for quote and star */
+.quoteContainer { /* Quote and star */
     display: grid;
     width: 100vw;
     height: 100vh;
