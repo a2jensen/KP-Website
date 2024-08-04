@@ -8,6 +8,8 @@
     overflow: hidden;
     border-top: 2px solid #000; /* Adds a top border */
     border-bottom: 2px solid #000; /* Adds a bottom border */
+    box-sizing: border-box;
+    width: 100vw;
 }
 
 @keyframes slide {
@@ -31,21 +33,22 @@
 
 .valueText{
     font-size: 30px;
+    font-weight: 400;
     color: black;
     margin:  0 60px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 431px) and (max-width: 600px) {
     .carousel {
         background-image: url("homerect.jpg");
         background-size: cover;
-        min-height: 52px;
+        min-height: 32px;
         white-space: nowrap;
         position: relative;
         overflow: hidden;
     }
     .values {
-        padding: 40px 0px;
+        padding: 20px 0px;
         white-space: nowrap;
         display: inline-flex;
         justify-content: space-around;
@@ -54,7 +57,7 @@
     }
     .valueText{
         font-size: 21px;
-        margin: 0 30px;
+        margin: 0 20px;
     }
 }
 
@@ -62,13 +65,13 @@
     .carousel {
         background-image: url("homerect.jpg");
         background-size: cover;
-        min-height: 52px;
+        min-height: 40px;
         white-space: nowrap;
         position: relative;
         overflow: hidden;
     }
     .values {
-        padding: 15px 0px;
+        padding: 10% 0px;
         white-space: nowrap;
         display: inline-flex;
         justify-content: space-around;
