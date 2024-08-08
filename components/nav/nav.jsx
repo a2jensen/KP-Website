@@ -14,7 +14,7 @@ export default function Nav() {
 
     return (
         <main className={styles.container}>
-            <h1 className={styles.title}>kaibgang pilipino</h1>
+            <h1 className={styles.title}>kaibigang pilipino</h1>
             <div className={styles.hamburger} onClick={toggleMenu}>
                 &#9776;
             </div>

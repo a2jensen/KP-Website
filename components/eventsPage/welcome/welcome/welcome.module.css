@@ -8,3 +8,14 @@
     font-size: xx-large;
     font-weight: bold;
 }
+
+.eventCards{
+    display: flex;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}

@@ -1,5 +1,9 @@
 .events {
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .title {
@@ -15,4 +19,15 @@
     justify-content: center;
     text-align: center;
     margin-top: 30px;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.eventCards{
+    display: flex;
 }
