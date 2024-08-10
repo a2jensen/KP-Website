@@ -7,7 +7,6 @@
     border-radius: 30px;
     margin: 40px 150px;
     outline: 2px solid grey;
-    color: black;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     position: relative;
 }
@@ -53,7 +52,8 @@
 
 @media (max-width: 768px) {
     .container {
-        margin: 20px 100px;
+        margin: 0;
+        border-radius: 10px;
     }
 
     .title {
@@ -86,8 +86,8 @@
 
     /* Adjust list elements for mobile view */
     .listElement {
-        margin: 10px 0;
-        text-align: center;
+        text-align: right;
+        width: 200px;
     }
 
     /* Adjust anchor tags for mobile view */
