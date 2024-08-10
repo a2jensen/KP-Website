@@ -1,13 +1,13 @@
 .container {
-    outline: 2px solid grey;
+    outline: 2px solid rgb(201, 201, 201);
     border-radius: 15px;
     min-height: 390px;
     width: 300px;
     padding: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px rgba(112, 112, 112, 0.2);
     margin-left: 20px;
     margin-right: 20px;
-
+    position: relative;
 }
 
 .host {
@@ -24,6 +24,17 @@
     padding-top: 20px;
     text-align: center;
     min-height: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.ellipse {
+    position: absolute;
+    top: 80px; /* Adjust the position as needed */
+    left: 0px;
+    z-index: 1; /* Ensure the SVG is behind the title */
+    opacity: 0.8; /* Optional: reduce opacity if needed */
+    pointer-events: none; /* Prevents the SVG from blocking interactions with other elements */
 }
 
 .date {
