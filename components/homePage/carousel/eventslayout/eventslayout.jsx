@@ -25,8 +25,8 @@ export default function Events() {
                 console.log('API response:', result);
 
                 // Ensure that the data is an array before setting it
-                if (Array.isArray(result.data)) {
-                    setData(result.data);
+                if (Array.isArray(result.data.data)) {
+                    setData(result.data.data);
                 } else {
                     throw new Error("Expected an array but got something else");
                 }
@@ -41,7 +41,7 @@ export default function Events() {
     }, []);
 
     // Slice the array to get the first 3 events, handle cases where data might be undefined or not an array
-    const upcomingEvents = Array.isArray(data) ? data.slice(0, 3) : [];
+    const upcomingEvents = Array.isArray(data) ? data.slice(0, 3) : []; // CAN BE CHANGED
 
     return (
         <div className={styles.events}>
