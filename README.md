@@ -35,4 +35,5 @@ To learn more about Next.js, take a look at the following resources(stuck on any
 ## Google Spreadsheet Guide/Documentation
 
 The google spreadsheet serves as the content management system. It stores all upcoming events. Please read this guide on how to fill it in.
-Please ensure events are in order in terms of date from top to bottom. Any events that are in the past may be deleted.
+
+- Please ensure events are in order in terms of date from top to bottom. Any events that are in the past may be deleted.
