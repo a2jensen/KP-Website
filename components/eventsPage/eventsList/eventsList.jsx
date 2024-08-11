@@ -28,7 +28,17 @@ export default function EventsList() {
             .filter(event => {
                 return event.board && event.title && event.date && event.time && event.location && event.description
             }).slice(0,99) : [];
+    
+    // NOTES ON THE EVENT PAGE:
+    // little quarter div: can be done with a hashmap
 
+    // current date: get the current date with function
+
+    // toggle week: i think for now lets have it just show ALL events, and users can scroll through it page by page
+    // we may need a backend for a toggle week button. we need to make a script that parses data from https://blink.ucsd.edu/instructors/resources/academic/calendars/2024.html
+    // collect dates of instruction begins and quarter ending. from there take the interval between those two dates and divide all dates between them into weeks 1/2/3/etc.
+    // we can then work with that data to properly create a toggle button. new API has to be made to make calls to the backend. we can use cockroach DB with prisma as ORM
+    // fall quarter has a week 0 quarter but we can omit that.
     return (
         <main class={styles.container}>
             Events list

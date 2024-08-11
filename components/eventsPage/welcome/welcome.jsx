@@ -44,7 +44,7 @@ export default function Welcome() {
             return event.board === filter;
         }
         return true;
-    }).slice(0,3);
+    }).slice(0,3); // grabs the first three filtered events max
 
 
     return (
