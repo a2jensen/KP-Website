@@ -1,9 +1,9 @@
 'use client'
 import React, {useState, useEffect} from 'react';
 import styles from "./eventsList.module.css";
-import EventsCard from '../../../eventscard/eventscard.jsx';
+import EventsCard from '../../eventscard/eventscard.jsx';
 
-export default function eventsList() {
+export default function EventsList() {
     // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it
     const [data, setData] = useState([]);
 

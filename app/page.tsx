@@ -1,10 +1,10 @@
 import styles from "./page.module.css";
 
 // components
-import Title from "../components/homePage/carousel/title/title";
-import Carousel from "../components/homePage/carousel/carousel/carousel";
-import Summary from "../components/homePage/carousel/summary/summary";
-import EventsLayout from "../components/homePage/carousel/eventslayout/eventslayout";
+import Title from "../components/homePage/title/title";
+import Carousel from "../components/homePage/carousel/carousel";
+import Summary from "../components/homePage/summary/summary";
+import EventsLayout from "../components/homePage/eventslayout/eventslayout";
 import Footer from "../components/footer/footer";
 import Nav from "../components/nav/nav"
 

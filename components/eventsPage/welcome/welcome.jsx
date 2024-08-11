@@ -1,7 +1,7 @@
 'use client'
 import React, {useState, useEffect} from 'react';
 import styles from "./welcome.module.css"
-import EventsCard from "../../../eventscard/eventscard"
+import EventsCard from "../../eventscard/eventscard"
 
 export default function Welcome() {
     // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it

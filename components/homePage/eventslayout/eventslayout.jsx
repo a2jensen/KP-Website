@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import styles from "./eventslayout.module.css";
-import EventsCard from '../../../eventscard/eventscard.jsx';
+import EventsCard from '../../eventscard/eventscard.jsx';
 
 export default function Events() {
     const [data, setData] = useState([]);
