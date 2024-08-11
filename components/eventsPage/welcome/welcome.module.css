@@ -11,6 +11,7 @@
 
 .eventCards{
     display: flex;
+    text-align: left;
 }
 
 .maincontainer {
