@@ -49,18 +49,28 @@ export default function Welcome() {
 
     return (
         <div className={styles.container}>
-            <h3 className={styles.title}>welcome to our events page!</h3>
+            <h3 className={styles.title}>
+                welcome to our events page!
+                <div className={styles.star} style={{ top: "-20px", left: "calc(100% + 20px)", transform: "rotate(10deg)"}}></div>
+            </h3>
             <p>Throughout the year KP hosts events to build community and connection! <br/>
             From Friendship Games to Pilipino Awareness Week to KAAmping. KP cultivates growth <br/>
             in every space we walk through. Stay up to date with everthing KP has on our calendar
             </p>
-            <ul>
-                <li onClick={() => setFilter('UPCOMING')}>UPCOMING</li>
-                <li onClick={() => setFilter('GEN')}>GEN</li>
-                <li onClick={() => setFilter('STAR')}>STAR</li>
-                <li onClick={() => setFilter('CORE')}>CORE</li>
+            
+            <ul className={styles.buttons}>
+                <li className={styles.button} onClick={() => setFilter('UPCOMING')}>Upcoming</li>
+                <li className={styles.button} onClick={() => setFilter('GEN')}>Gen</li>
+                <li className={styles.button} onClick={() => setFilter('STAR')}>Star</li>
+                <li className={styles.button} onClick={() => setFilter('CORE')}>Core</li>
             </ul>
-            <div className={styles.maincontainer}>
+
+            <h1 className={styles.eventstitle}>
+                <div className={styles.star} style={{top: "-35px;", left: "-350px", transform: "rotate(-10deg)"}}></div>
+                <div className={styles.star} style={{ top: "-35pxpx", right: "-350px", transform: "rotate(10deg)" }}></div>
+            </h1>
+            
+            <div className={styles.maincontainer}>   
                 {filteredEvents.length === 0 ? (
                     <p>Error or its loading info and refresh this</p>
                 ) : (

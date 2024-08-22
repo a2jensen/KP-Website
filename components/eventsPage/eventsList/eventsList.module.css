@@ -1,16 +1,27 @@
+/* eventsList.module.css */
+
 .container {
     min-height: 100vh;
     background-color: white;
+    padding: 20px;
 }
 
 .maincontainer {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     margin-top: 30px;
+    width: 100%;
+    background-color: #eaeaea; /* Light grey background for the event cards section */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-
-.eventCards{
-    display: flex;
+.eventCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid setup */
+    gap: 20px; /* Space between the event cards */
+    width: 100%;
+    max-width: 1200px;
+    align-items: start;
+    justify-items: center; /* Center-align the event cards within the grid cells */
 }
