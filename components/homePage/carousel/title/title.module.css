@@ -1,3 +1,5 @@
+
+
 .group {
     min-height: 90vh;
     max-height: 90vh;
@@ -6,6 +8,7 @@
 .header {
     text-align: center;
 }
+
 
 .picture {
     justify-content: center;
@@ -55,5 +58,3 @@
         font-size: 0.8em;
     }
 }
-
-

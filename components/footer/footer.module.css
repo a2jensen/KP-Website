@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 .footer {
-    background-color: rgb(205, 73, 43);
+    background-color: #C14229;
     min-height: 250px;
 }
 
@@ -7,69 +9,167 @@
    list-style-type: none;
    display: flex;
    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-   padding-top: 30px;
+   text-align: center;
+   padding-top: 25px;
+   gap: 200px;
+   position: relative;
 }
 
 .toplist a{
     text-decoration: none;
     color: #FFF;
     text-align: center;
-    font-family: Outfit;
+    font-family: outfit;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.2px;
-}
-.titles {
-    margin: 0px 100px 0px 20px;
+    line-height: 25.2px;
+    letter-spacing: 0.01em;
 }
 
 .kp{
     color: #FFF;
     text-align: center;
-    font-family: Outfit;
+    align-items: center;
+    font-family: outfit;
     font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     letter-spacing: 2.275px;
-    margin-top: 50px;
-    margin-bottom: 50px
+    padding-top: 25px;
+    padding-bottom: 25px;
+    right: 30px;
 }
+
 
 .bottomlist{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 300px;
+    position: relative;
+    right: 18px;
+    gap: 450px;
     list-style-type: none;
+    justify-content: center;
+    padding-bottom: 25px;
+    align-items: center;
 }
 
 .bottomlist a {
     text-decoration: none;
     color: white;
-}
-
-.bottomTitles{
-    color: white;
-}
-
-.igLogo{
-    margin-right: -125px
-}
-
-.tiktokLogo{
-    margin-left: -125px
-}
-
-.est1987{
-    color: #FFF;
-    font-family: Outfit;
+    font-family: outfit;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+}
+
+
+.logos {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.logos a {
+    display: flex;
+    align-items: center;
+}
+
+.est{
+    align-self: center;
+    font-family: outfit;
+}
+
+
+@media screen and (max-width: 430px){
+    .footer{
+        min-height: 191px;
+    }
+
+    .toplist{
+        gap: 60px;
+        left: -12px;
+    }
+
+    .toplist a{
+        font-size: 15px;
+        font-family: Outfit;
+        font-weight: 400;
+        line-height: 18.9px;
+        letter-spacing: 0.01em;
+        text-align: center;
+    }
+
+    .kp{
+        font-size: 25px;
+    }
+
+    .bottomlist a{
+        font-size: 15px;
+        font-family: Outfit;
+        font-weight: 300;
+        line-height: 18.9px;
+        text-align: left;
+    }
+
+    .bottomlist{
+        gap: 90px;
+    }
+   
+    .logos img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .sun img{
+        width: 30px;
+        height: 30px;  
+    }
+}
+
+@media screen and (max-width: 600px){
+    .footer{
+        max-height: 191px;
+    }
+
+    .toplist{
+        gap: 70px;
+        left: -15px;
+    }
+
+    .toplist a{
+        font-size: 15px;
+    }
+ 
+    .kp{
+        left: 0px;
+        font-size: 25px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+
+    .bottomlist{
+        gap: 100px;
+        left: -17.5px;
+    }
+
+    .bottomlist a{
+        font-size: 15px
+    }
+
+    .logos img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .sun img{
+        width: 30px;
+        height: 30px;  
+    }
+}
+
+@media screen and (max-width: 1512px){
+    .bottomlist{
+        gap: 450px;
+    }
+
+    .toplist{
+        gap: 200px;
+    }
 }
