@@ -79,7 +79,7 @@
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 431px) and (max-width: 600px){
     .info{
         font-size: 15px;
     }
@@ -96,4 +96,4 @@
     }
 }
 
-@media screen and (max-width: 1512px){}
+@media screen  and (min-width: 601px) and (max-width: 1512px){}
