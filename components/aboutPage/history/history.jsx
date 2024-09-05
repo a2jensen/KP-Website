@@ -55,7 +55,7 @@ const History = () => {
       <div className={styles.content}>
       {renderPage()}
       <nav className={styles.timeline}>
-        <div className={styles.line}></div>
+        
         <div className={styles.stars}>
           <span onClick={() => setPage(1987)} className={page === 1987 ? styles.active : ''}>&#9733;</span>
           <span onClick={() => setPage(1992)} className={page === 1992 ? styles.active : ''}>&#9733;</span>

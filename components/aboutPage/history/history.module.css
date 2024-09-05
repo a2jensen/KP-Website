@@ -33,13 +33,13 @@
 .stars {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 50%;
   z-index: 2;
 }
 
 .stars span {
   cursor: pointer;
-  font-size: 24px;
+  font-size: 44px;
   color: black;
 }
 

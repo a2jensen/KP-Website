@@ -1,12 +1,12 @@
 import React from 'react';
+import styles from './Page2023.module.css';
 
 const Page2023 = () => {
   return (
-    <div className="page">
-      <h1>2023</h1>
-      <h2>Sprouting in the space</h2>
-      <p>CORE rebrands High School Conference to High School CORECON</p>
-      <img src="/path-to-image-1987.png" alt="1987 event" />
+    <div className={styles.page}>
+      <h2 className={styles.heading}>Sprouting in the space</h2>
+      <p className={styles.paragraph}>CORE rebrands High School Conference to High School CORECON</p>
+      <img className={styles.image} src="/path-to-image-1987.png" alt="1987 event" />
     </div>
   );
 };
