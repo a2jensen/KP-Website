@@ -1,16 +1,73 @@
 .page {
     background-image: url("../images/1987.svg");
     background-size: cover;
+    background-color: #f6f6f6;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 80vh;
     padding: 20px;
+    display: grid;
+    /* z-index: -2; */
+}
+
+.year {
+    background-image: url("../images/Year-1987.svg");
+    grid-column: 2/11;
+    grid-row: 1/7;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .heading { 
     margin-top: 0;
+    /* z-index: 2; */
 }
 
 .paragraph {
     font-size: 18px;
-  }
+    /* z-index: 2; */
+}
+
+.arrow {
+    background-image: url("../images/photoArrow.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+.timeline {
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    z-index: 1;
+}
+
+.line {
+    position: absolute;
+    width: 78%;
+    height: 4px;
+    background-color: black;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    z-index: 3;
+}
+
+.stars span {
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+.stars span.active {
+    color: red;
+}

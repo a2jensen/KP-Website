@@ -10,7 +10,9 @@ import Page2017 from './pages/Page2017';
 import Page2020 from './pages/Page2020';
 import Page2023 from './pages/Page2023';
 
-const History = () => {
+
+
+export const History = () => {
   const [page, setPage] = useState(1987);
   const pages = [1987, 1992, 1995, 2010, 2018, 2020, 2023]
 
