@@ -1,0 +1,16 @@
+.page {
+    background-image: url("../images/2020.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.heading { 
+    margin-top: 0;
+}
+
+.paragraph {
+    font-size: 18px;
+  }

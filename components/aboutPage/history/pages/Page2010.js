@@ -1,12 +1,13 @@
 import React from 'react';
+import styles from './Page2010.module.css'
 
 const Page2010 = () => {
   return (
-    <div className="page">
-      <h1>2010</h1>
-      <h2>compton cookout</h2>
-      <p>The Compton Cookout targets the underprivileged, underrepresented and underserved communities in UCSD</p>
-      <img src="/path-to-image-1987.png" alt="1987 event" />
+
+    <div className={styles.page}>
+      <h2 className={styles.heading}>the compton cookout</h2>
+      <p className={styles.paragraph}>The Compton Cookout targets the underprivileged, underrepresented and underserved communities in UCSD</p>
+      <img className={styles.image} src="/path-to-image-1987.png" alt="1987 event" />
     </div>
   );
 };
