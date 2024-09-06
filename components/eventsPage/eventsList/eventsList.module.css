@@ -12,12 +12,16 @@
 
 
 .eventCards{
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid setup */
+    gap: 50px; /* Space between the event cards */
+    
+    max-width: 1200px;
+    align-items: start;
+    justify-items: center; /* Center-align the event cards within the grid cells */
 }
 
 .maincontainer > * {
     flex: 0 1 calc(33.33% - 10px);
-    margin-bottom: 10px;
+
 }
