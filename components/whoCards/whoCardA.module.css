@@ -70,10 +70,6 @@
 
 /* styling for title screen on desktops */
 @media (min-width: 1024px){
-  .picture {
-       width: 100%;
-  }
-
   .responsiveImage {
        width: 60%;
   }
@@ -83,11 +79,12 @@
 /* styling for tablet screen */
 @media (min-width: 599px) and (max-width: 1240px){
    .tape {
-       max-width: 75%; /* Optionally reduce the max-width to less than 100% if needed */
+       max-width: 50%; /* Optionally reduce the max-width to less than 100% if needed */
        height: auto;  /* Maintain aspect ratio */
        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-       left: 16%;        /* moves the image 20px to the left of the left border */
-       top: -14%;
+       top: -5%;
+       left: 50%; /* Move the tape to the center horizontally */
+       transform: translateX(-50%); /* Shift the tape back by half its width to fully center it */
    }
 
 }
@@ -95,7 +92,7 @@
 /* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
    .tape {
-       max-width: 70%; /* Optionally reduce the max-width to less than 100% if needed */
+       width: 50%; /* Optionally reduce the max-width to less than 100% if needed */
        height: auto;  /* Maintain aspect ratio */
        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
        left: 25%;

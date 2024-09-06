@@ -112,31 +112,32 @@
    }
 
     .header h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .header p {
         font-size: 1em;
     }
 
+    /* Ensure the cardLayout is full-width and responsive */
     .cardLayout {
+        flex-direction: row; /* Stack elements vertically */
+        align-items: stretch; /* Stretch items to take full width */
         margin-left: 10px; /* Adjust margins for smaller screens */
         margin-right: 10px;
     }
 
     /* Select the cards individually if needed or use a common class if they share one */
     .cardLayout > div {
-        width: 85%; /* Reduce the width of each card to 80% of its container */
-        height: auto;  /* Maintain aspect ratio */
-        margin: 20px auto; /* Adds vertical space and centers horizontally */
+        width: 80%; /* Reduce the width of each card to 80% of its container */
+        margin: 40px auto; /* Adds vertical space and centers horizontally */
         transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
     }
 
     .cardLayout > div img {
-        max-width: 85%; /* Optionally reduce the max-width to less than 100% if needed */
+        max-width: 80%; /* Optionally reduce the max-width to less than 100% if needed */
         height: auto;  /* Maintain aspect ratio */
         transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-        margin: 20px auto;
     }
 
     .star1 {
