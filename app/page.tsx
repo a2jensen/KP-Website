@@ -18,7 +18,6 @@ export default async function Home() {
       <Carousel />
       <Summary />
       <EventsLayout />
-      <About />
     </main>
   );
 }
