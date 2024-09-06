@@ -1,7 +1,8 @@
 /* ref code from title.module.css */
 .group {
     min-height: 90vh;
-    max-height: 90vh;
+    max-height: 500vh;
+    position: relative;
 }
 
 .header {
@@ -18,15 +19,71 @@
     justify-content: space-between; /* Distribute space between items */
     align-items: center; /* Center items vertically */
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
+/* stickers positioining */
+.star1 {
+    transform: rotate(20deg); /* Rotates the element 20 degrees clockwise */
+    position: absolute;
+    width: 80px; /* Or any other size */
+    height: 80px; /* Maintain aspect ratio */
+    top: 10px;
+    right: 50px; /* Top right corner */
+}
+
+.star2 {
+    transform: rotate(60deg);
+    position: absolute;
+    width: 80px; /* Or any other size */
+    height: 80px; /* Maintain aspect ratio */
+    top: 400px;
+    right: 1400px; /* Top right corner */
+}
+
+.star3 {
+    transform: rotate(32deg);
+    position: absolute;
+    width: 80px; /* Or any other size */
+    height: 80px; /* Maintain aspect ratio */
+    top: 200px;
+    right: 930px; /* Top right corner */
+}
+
+.star4 {
+    transform: rotate(65deg);
+    position: absolute;
+    width: 80px; /* Or any other size */
+    height: 80px; /* Maintain aspect ratio */
+    top: 550px;
+    right: 500px; /* Top right corner */
+}
+
+.world1 {
+    transform: rotate(5deg);
+    position: absolute;
+    width: 120px; /* Or any other size */
+    height: 120px; /* Maintain aspect ratio */
+    top: 50px;
+    right: 428px; /* Top right corner */
+}
+
+.jeep1 {
+    transform: rotate(-15deg);
+    position: absolute;
+    width: 120px; /* Or any other size */
+    height: 120px; /* Maintain aspect ratio */
+    top: 500px;
+    right: 900px; /* Top right corner */
+}
+
+
 /* styling for title screen on desktops */
-@media (min-width: 768px){
+@media (min-width: 1240px){
    .picture {
         width: 100%;
    }
@@ -45,7 +102,15 @@
 }
 
 /* styling for tablet screen */
-@media (min-width: 600px) and (max-width: 768px){
+@media (min-width: 599px) and (max-width: 1240px){
+    .picture {
+        width: 75%;
+   }
+
+   .responsiveImage {
+        width: 50%;
+   }
+
     .header h1 {
         font-size: 2.5em;
     }
@@ -53,17 +118,140 @@
     .header p {
         font-size: 1em;
     }
+
+    .cardLayout {
+        margin-left: 10px; /* Adjust margins for smaller screens */
+        margin-right: 10px;
+    }
+
+    /* Select the cards individually if needed or use a common class if they share one */
+    .cardLayout > div {
+        width: 85%; /* Reduce the width of each card to 80% of its container */
+        height: auto;  /* Maintain aspect ratio */
+        margin: 20px auto; /* Adds vertical space and centers horizontally */
+        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+    }
+
+    .cardLayout > div img {
+        max-width: 85%; /* Optionally reduce the max-width to less than 100% if needed */
+        height: auto;  /* Maintain aspect ratio */
+        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+        margin: 20px auto;
+    }
+
+    .star1 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .star2 {
+        top: 55%;
+        right: 95%;
+        width: 8%;  
+        height: 8%;
+    }
+
+    .star3 {
+        top: 20%;
+        right: 63%;
+        width: 8%;  
+        height: 8%;
+    }
+
+    .star4 {
+        top: 75%;
+        right: 45%;
+        width: 8%;  
+        height: 8%;
+    }
+
+    .world1 {
+        top: 5%;
+        right: 40%;
+        width: 15%;  
+        height: 15%;
+    }
+
+    .jeep1 {
+        top: 68%;
+        right: 75%;
+        width: 15%;  
+        height: 15%;
+    }
+
 }
 
 /* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
-    .header h1 {
-        font-size: 2em;
-        
+    .group {
+        min-height: auto; /* Allow container to grow with content */
     }
 
-    .header p{
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
         font-size: 0.8em;
+    }
+
+    .cardLayout {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Stretch items to take full width */
+        margin-left: 10px; /* Adjust margins for smaller screens */
+        margin-right: 10px;
+    }
+
+    /* Select the cards individually if needed or use a common class if they share one */
+    .cardLayout > div {
+        width: 80%; /* Reduce the width of each card to 80% of its container */
+        margin: 40px auto; /* Adds vertical space and centers horizontally */
+        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+    }
+
+    .cardLayout > div img {
+        max-width: 80%; /* Optionally reduce the max-width to less than 100% if needed */
+        height: auto;  /* Maintain aspect ratio */
+        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+    }
+    .star1 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .star2 {
+        top: 55%;
+        right: 95%;
+        width: 8%;  
+        height: 8%;
+    }
+
+    .star3 {
+        top: 20%;
+        right: 63%;
+        width: 8%;  
+        height: 8%;
+    }
+
+    .star4 {
+        top: 75%;
+        right: 45%;
+        width: 8%;  
+        height: 8%;
+    }
+
+    .world1 {
+        top: 5%;
+        right: 40%;
+        width: 15%;  
+        height: 15%;
+    }
+
+    .jeep1 {
+        top: 68%;
+        right: 75%;
+        width: 15%;  
+        height: 15%;
     }
 }
 
