@@ -10,30 +10,27 @@ export default function Events() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Fetch data from the API
-                const res = await fetch('/api/eventsAPI');
+                // Fetch data from the API with cache-busting parameter
+                const res = await fetch(`/api/eventsAPI?_=${new Date().getTime()}`, {
+                    method: 'GET',
+                    headers: {
+                        'Cache-Control': 'no-cache', // Prevent caching on the client side
+                        'Pragma': 'no-cache'
+                    },
+                    cache: 'no-cache' // Ensures the fetch request bypasses the cache
+                });
 
-                // Check if the response is ok (status code 200-299)
                 if (!res.ok) {
-                    throw new Error(`HTTP error! status: ${res.status}`);
+                    throw new Error('Failed to fetch data');
                 }
 
                 // Parse the JSON response
                 const result = await res.json();
-
-                // Log the result to check the structure
-                console.log('API response:', result);
-
-                // Ensure that the data is an array before setting it
-                if (Array.isArray(result.data.data)) {
-                    setData(result.data.data);
-                } else {
-                    throw new Error("Expected an array but got something else");
-                }
-            } catch (err) {
-                // Handle and log the error
-                console.error('Fetch error:', err);
-                setError(err.message);
+                
+                // Update the 'data' state with the fetched data
+                setData(result.data.data);
+            } catch (error) {
+                console.error("Error fetching data:", error);
             }
         };
 

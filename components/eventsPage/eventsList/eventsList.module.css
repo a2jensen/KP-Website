@@ -13,4 +13,11 @@
 
 .eventCards{
     display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+}
+
+.maincontainer > * {
+    flex: 0 1 calc(33.33% - 10px);
+    margin-bottom: 10px;
 }

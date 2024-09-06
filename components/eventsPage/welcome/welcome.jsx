@@ -10,24 +10,30 @@ export default function Welcome() {
 
     // useEffect hook runs the fetchData function when the component mounts
     useEffect(() => {
-        // Define an asynchronous function to fetch data from the API
         const fetchData = async () => {
-        // Fetch data from the API
-        const res = await fetch("/api/eventsAPI"); // Truncated URL for readability
+            try {
+                // Fetch data from the API with cache-busting parameter
+                const res = await fetch(`/api/eventsAPI?_=${new Date().getTime()}`, {
+                    method: 'GET',
+                    headers: {
+                        'Cache-Control': 'no-cache', // Prevent caching on the client side
+                        'Pragma': 'no-cache'
+                    },
+                    cache: 'no-cache' // Ensures the fetch request bypasses the cache
+                });
 
-        if(!res.ok){
-            throw new Error(`HTTP error! status: ${res.status}`)
-        }
-        // Parse the JSON response
-        const result = await res.json();
-        
-        console.log('API Response:', result)
+                if (!res.ok) {
+                    throw new Error('Failed to fetch data');
+                }
 
-        if (Array.isArray(result.data.data)) {
-            setData(result.data.data);
-        } else {
-            throw new Error("Expected an array but we got something else")
-        }
+                // Parse the JSON response
+                const result = await res.json();
+                
+                // Update the 'data' state with the fetched data
+                setData(result.data.data);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
         };
 
         // Call the fetchData function

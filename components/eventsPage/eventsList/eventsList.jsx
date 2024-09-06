@@ -7,21 +7,39 @@ export default function EventsList() {
     // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it
     const [data, setData] = useState([]);
 
-    // useEffect hook runs the fetchData function when the component mounts
+        // useEffect hook runs the fetchData function when the component mounts
     useEffect(() => {
         // Define an asynchronous function to fetch data from the API
         const fetchData = async () => {
-        // Fetch data from the API
-        const res = await fetch("/api/eventsAPI"); // Truncated URL for readability
-        // Parse the JSON response
-        const result = await res.json();
-        // Update the 'data' state with the fetched data
-        setData(result.data.data);
+            try {
+                // Fetch data from the API with cache-busting parameter
+                const res = await fetch(`/api/eventsAPI?_=${new Date().getTime()}`, {
+                    method: 'GET',
+                    headers: {
+                        'Cache-Control': 'no-cache', // Prevent caching on the client side
+                        'Pragma': 'no-cache'
+                    },
+                    cache: 'no-cache' // Ensures the fetch request bypasses the cache
+                });
+
+                if (!res.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+
+                // Parse the JSON response
+                const result = await res.json();
+                
+                // Update the 'data' state with the fetched data
+                setData(result.data.data);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
         };
 
         // Call the fetchData function
         fetchData();
     }, []); // Empty dependency array ensures this effect runs only once when the component mounts
+
 
     const listEvents = Array.isArray(data) 
         ? data
