@@ -4,20 +4,13 @@
     background-color: #f6f6f6;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 80vh;
+    min-height: 40vh;
     padding: 20px;
     display: grid;
     /* z-index: -2; */
 }
 
-.year {
-    background-image: url("../images/Year-1987.svg");
-    grid-column: 2/11;
-    grid-row: 1/7;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
+
 
 .heading { 
     margin-top: 0;
@@ -36,17 +29,25 @@
     height: 100%;
 }
 
-
-.timeline {
+.image {
+    position: absolute; /* Absolute positioning relative to the screen */
+    top: 70vh;          /* 20% of the viewport height */
+    left: 50vw;         /* 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Centers the image */
+    width: 30vw;        /* 10% of the viewport width */
+    height: auto;       /* Maintain aspect ratio */
+}
+  
+/* .timeline {
     position: relative;
     display:flex;
     align-items: center;
     justify-content: center;
     margin: 40px 0;
     z-index: 1;
-}
+} */
 
-.line {
+/* .line {
     position: absolute;
     width: 78%;
     height: 4px;
@@ -70,4 +71,4 @@
 
 .stars span.active {
     color: red;
-}
+} */
