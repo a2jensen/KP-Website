@@ -1,6 +1,6 @@
 .events {
     height: 80vh;
-    background-image: url(../../../../public/Texture.svg);
+    background-image: url(../../../public/Texture.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }

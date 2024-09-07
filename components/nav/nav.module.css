@@ -1,17 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+.nav {
+    background: url(../../public/Texture.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    background: rgba(236, 236, 236, 0.70);
     list-style-type: none;
     border-radius: 30px;
     margin: 40px 150px;
-    outline: 1px solid #F6F6F6;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     position: relative;
+    background: rgba(236, 236, 236, 0.70);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    outline: 1px solid #F6F6F6;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -40px; /* Adjust to match the margin */
+    left: -150px; /* Adjust to match the margin */
+    right: -150px; /* Adjust to match the margin */
+    bottom: -40px; /* Adjust to match the margin */
+    background: url('../../public/Texture.svg') no-repeat center center / cover;
+    z-index: -1; /* Ensure it is behind the container */
+    border-radius: 30px; /* Match the border-radius of the container */
 }
 
 .title {
