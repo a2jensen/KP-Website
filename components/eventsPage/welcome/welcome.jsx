@@ -60,18 +60,13 @@ export default function Welcome() {
             From Friendship Games to Pilipino Awareness Week to KAAmping. KP cultivates growth <br/>
             in every space we walk through. Stay up to date with everthing KP has on our calendar
             </p>
-            <ul>
-                <li onClick={() => setFilter('UPCOMING')}>UPCOMING</li>
-                <li onClick={() => setFilter('GEN')}>GEN</li>
-                <li onClick={() => setFilter('STAR')}>STAR</li>
-                <li onClick={() => setFilter('CORE')}>CORE</li>
-            </ul>
+            <p><strong>upcoming...</strong></p>
             <div className={styles.maincontainer}>
                 {filteredEvents.length === 0 ? (
                     <p>Error or its loading info and refresh this</p>
                 ) : (
                     <div className={styles.eventCards}>
-                        {filteredEvents.map((event, index) => (
+                        {upcomingEvents.map((event, index) => (
                             <EventsCard key={index} event={event}/>
                         ))}
                     </div>

@@ -10,6 +10,9 @@
     "vercel-build": "prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.0.2",
     "@prisma/client": "^5.18.0",
     "@vercel/postgres": "^0.9.0",
     "googleapis": "^136.0.0",
@@ -26,5 +29,4 @@
     "eslint-config-next": "14.2.2",
     "typescript": "5.4.5"
   }
-  
 }

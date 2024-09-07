@@ -1,3 +1,4 @@
+/* Base/Laptop styles */
 .container {
     min-height: 100vh;
     background-color: #f3f3f3;
@@ -23,5 +24,20 @@
 
 .maincontainer > * {
     flex: 0 1 calc(33.33% - 10px);
+
+}
+
+.dropdown {
+    margin: 5% 0% 0% 14%;
+    width: 10%;
+}
+
+/* tablets */
+@media screen and (min-width: 600px) and (max-width: 768px){ 
+
+}
+
+ /* mobile + phone */
+@media screen and (max-width: 600px) { 
 
 }

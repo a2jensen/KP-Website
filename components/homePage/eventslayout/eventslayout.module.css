@@ -1,3 +1,4 @@
+/* Base/Laptop styles */
 .events {
     height: 80vh;
     display: flex;
@@ -30,4 +31,14 @@
 
 .eventCards{
     display: flex;
+}
+
+/* tablets */
+@media screen and (min-width: 600px) and (max-width: 768px){ 
+
+}
+
+ /* mobile + phone */
+@media screen and (max-width: 600px) { 
+
 }
