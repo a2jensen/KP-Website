@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(fonts/coolvetica\ rg\ copy.otf);
+}
+
 .image{
     display: block;
     margin-left: auto;
@@ -11,11 +16,15 @@
 .member{
     text-align: center;
     color: #c14229;
-    font-size: 50px;
-    margin-bottom: -10px;
-    font-family: outfit;
+    margin-bottom: 0px;
     line-height: 42px;
     text-align: center;
+    font-size: 64px;
+}
+
+.member h3{
+    font-family: 'Coolvetica';
+    font-weight: 400;
 }
 
 .container{
@@ -31,7 +40,7 @@
 
 
 .info{
-    font-size: 20px;
+    font-size: 24px;
     color: #2b2b2b;
     font-family: Outfit;
     font-size: 20px;
@@ -74,7 +83,7 @@
     }
 
     .image{
-        max-width: 80%;
+        max-width: 100%;
     }
 
 }
@@ -92,7 +101,7 @@
         font-size: 35px;
     }
     .image{
-        max-width: 80%;
+        max-width: 90%;
     }
 }
 

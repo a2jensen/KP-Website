@@ -79,7 +79,7 @@
 
 @media screen and (max-width: 430px){
     .footer{
-        min-height: 191px;
+        min-height: 175px;
     }
 
     .toplist{
@@ -98,6 +98,8 @@
 
     .kp{
         font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .bottomlist a{
@@ -125,12 +127,13 @@
 
 @media screen and (min-width: 431px) and (max-width: 600px){
     .footer{
-        max-height: 191px;
+        min-height: 175px;
     }
 
     .toplist{
         gap: 70px;
         left: -15px;
+        padding-top: 15px;
     }
 
     .toplist a{
@@ -140,12 +143,12 @@
     .kp{
         left: 0px;
         font-size: 25px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         padding-top: 10px;
     }
 
     .bottomlist{
-        gap: 100px;
+        gap: 150px;
         left: -17.5px;
     }
 
