@@ -1,9 +1,8 @@
 .events {
     height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 30px;
+    background-image: url(../../../../public/Texture.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title {
