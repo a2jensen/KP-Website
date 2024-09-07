@@ -22,7 +22,7 @@ export default function Nav() {
                 <li className = {styles.listElement}><a href="/">home</a></li>
                 <li className = {styles.listElement}><a href="/about">about</a></li>
                 <li className = {styles.listElement}><a href="/events">events</a></li>
-                <li className = {styles.listElement}><a href="/about">join</a></li>
+                <li className = {`${styles.listElement} ${styles.specialButton}`}><a href="/about">join</a></li>
             </ul>
         </main>
     )

@@ -43,6 +43,16 @@
     border-color: black;
 }
 
+/* Specific styles for the special button */
+.specialButton {
+    background-color: #2C2C2C; /* Example color */
+    color: white;
+}
+
+.specialButton a {
+    color: F6F6F6; /* Ensure the link text color matches the button */
+}
+
 .hamburger {
     display: none;
     font-size: 30px;
