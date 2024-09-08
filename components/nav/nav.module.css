@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .nav {
-    background: url(../../public/Texture.svg);
+    background-image: url(../../public/Texture.svg);
+    /* background-color: white; */
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 40px 150px;
     
 }
+
 
 .container {
     display: flex;
@@ -13,24 +16,13 @@
     align-items: center;
     list-style-type: none;
     border-radius: 30px;
-    margin: 40px 150px;
     position: relative;
     background: rgba(236, 236, 236, 0.70);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
     outline: 1px solid #F6F6F6;
 }
 
-.container::before {
-    content: '';
-    position: absolute;
-    top: -40px; /* Adjust to match the margin */
-    left: -150px; /* Adjust to match the margin */
-    right: -150px; /* Adjust to match the margin */
-    bottom: -40px; /* Adjust to match the margin */
-    background: url('../../public/Texture.svg') no-repeat center center / cover;
-    z-index: -1; /* Ensure it is behind the container */
-    border-radius: 30px; /* Match the border-radius of the container */
-}
 
 .title {
     margin-left: 50px;
@@ -40,15 +32,15 @@
 
 .list {
     display: flex;
-    margin-right: 50px;
+    /* margin-right: ; */
 }
 
 .listElement {
     list-style-type: none;
     font-family: 'Outfit', sans-serif;
     font-size: x-large;
-    margin-right: 50px;
-    padding: 10px;
+    margin-right: 2vw;
+    padding: 1vw;
     border: 1px solid transparent; /* Initial border is transparent */
     transition: border 0.3s ease; /* Smooth transition effect */
     border-radius: 20px;
@@ -59,6 +51,7 @@
     border-radius: 200px;
     text-decoration: none;
     color: inherit;
+    
 }
 
 .listElement:hover {
@@ -80,6 +73,17 @@
     font-size: 30px;
     cursor: pointer;
     margin-right: 20px;
+}
+
+@media (max-width: 950px) {
+    .listElement {
+        font-size: large; /* Adjust font size */
+    }
+    .title {
+        font-size: large;
+        margin-right: 0.2vw;
+        margin-left: 25px;
+    }
 }
 
 @media (max-width: 768px) {
