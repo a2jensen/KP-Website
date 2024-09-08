@@ -9,7 +9,6 @@
     
 }
 
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -32,7 +31,6 @@
 
 .list {
     display: flex;
-    /* margin-right: ; */
 }
 
 .listElement {
@@ -51,15 +49,13 @@
     border-radius: 200px;
     text-decoration: none;
     color: inherit;
-    
 }
 
 .listElement:hover {
     border-color: #2C2C2C;
 }
 
-
-.specialButton { /* Join button */
+.joinButton { /* Join button */
     background-color: #2C2C2C; 
     color: #F6F6F6;
 }
@@ -127,7 +123,7 @@
         width: 200px;
     }
 
-    .specialButton {
+    .joinButton {
         display: block;
         text-align: center;
         width: 75px;
@@ -142,6 +138,62 @@
         padding: 10px 10px;
     }
     
-    
 }
 
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .nav {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: large;
+        margin-right: 30%;
+    }
+
+    .list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        padding: 0;
+        background-color: rgba(236, 236, 236, 0.90);
+        border: 1px solid #F6F6F6;
+        border-radius: 10px;
+    }
+
+    .list.showMenu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .listElement {
+        text-align: right;
+        width: 200px;
+    }
+
+    .joinButton {
+        display: block;
+        text-align: center;
+        width: 75px;
+        padding: 0px 5px;
+        margin: 10px;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+
+    .listElement a {
+        display: block;
+        padding: 10px 10px;
+    }
+    
+}

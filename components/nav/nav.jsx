@@ -23,7 +23,7 @@ export default function Nav() {
                     <li className = {styles.listElement}><a href="/about">about</a></li>
                     <li className = {styles.listElement}><a href="/events">events</a></li>
                 </ul>
-                <div className={`${styles.listElement} ${styles.specialButton}`}>
+                <div className={`${styles.listElement} ${styles.joinButton}`}>
                     <a href="/about">join</a>
                 </div>
                 <div className={styles.hamburger} onClick={toggleMenu}>
