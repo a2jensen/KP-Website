@@ -60,7 +60,7 @@ export default function Welcome() {
             From Friendship Games to Pilipino Awareness Week to KAAmping. KP cultivates growth <br/>
             in every space we walk through. Stay up to date with everthing KP has on our calendar
             </p>
-            <p><strong>upcoming...</strong></p>
+            <p className={styles.upcoming}> <strong>upcoming...</strong></p>
             <div className={styles.maincontainer}>
                 {filteredEvents.length === 0 ? (
                     <p>Error or its loading info and refresh this</p>

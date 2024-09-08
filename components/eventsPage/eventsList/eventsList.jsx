@@ -59,33 +59,37 @@ export default function EventsList() {
 
 
     return (
-        <div className={styles.container}>
-            <FormControl fullWidth className={styles.dropdown}>
-                <InputLabel id="filter-label">Filter</InputLabel>
-                <Select
-                    labelId="filter-label"
-                    id="filter-select"
-                    value={filter}
-                    label="Filter"
-                    onChange={handleChange}
-                >
-                    <MenuItem value="ALL">ALL</MenuItem>
-                    <MenuItem value="GEN">GEN</MenuItem>
-                    <MenuItem value="STAR">STAR</MenuItem>
-                    <MenuItem value="CORE">CORE</MenuItem>
-                </Select>
-            </FormControl>
-            <div className={styles.maincontainer}>
+        <div className={styles.pageContainer}>
+            <div className={styles.filterContainer}>
+                <FormControl fullWidth className={styles.filterDropdown}>
+                    <InputLabel id="filter-label">Filter</InputLabel>
+                    <Select
+                        labelId="filter-label"
+                        id="filter-select"
+                        value={filter}
+                        label="Filter"
+                        onChange={handleChange}
+                    >
+                        <MenuItem value="ALL">ALL</MenuItem>
+                        <MenuItem value="GEN">GEN</MenuItem>
+                        <MenuItem value="STAR">STAR</MenuItem>
+                        <MenuItem value="CORE">CORE</MenuItem>
+                    </Select>
+                </FormControl>
+            </div>
+            
+            <div className={styles.eventsContainer}>
                 {filteredEvents.length === 0 ? (
-                    <p>Error or its loading info and refresh this</p>
+                    <p>Loading data, please refresh if needed...</p>
                 ) : (
-                    <div className={styles.eventCards}>
+                    <div className={styles.eventGrid}>
                         {filteredEvents.map((event, index) => (
-                            <EventsCard key={index} event={event}/>
+                            <EventsCard key={index} event={event} />
                         ))}
                     </div>
-                    )}
+                )}
             </div>
         </div>
-    )
+    );
+    
 }
