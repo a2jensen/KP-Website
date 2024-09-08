@@ -92,13 +92,17 @@
         border-radius: 10px;
     }
 
+    .nav {
+        padding: 20px;
+    }
+
     .title {
-        font-size: large;
-        margin-right: 10px;
+        font-size: x-large;
+        margin-right: 40%;
     }
 
     .list {
-        display:none;
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 50px;
@@ -118,6 +122,7 @@
     /* Display the hamburger menu icon */
     .hamburger {
         display: block;
+        margin-left: 0px;
     }
 
     /* Adjust list elements for mobile view */
@@ -126,9 +131,22 @@
         width: 200px;
     }
 
+    .specialButton {
+        display: block;
+        text-align: center;
+        width: 75px;
+        padding: 0px 5px;
+        margin: 10px;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+
     /* Adjust anchor tags for mobile view */
     .listElement a {
         display: block;
-        padding: 10px 20px;
+        padding: 10px 10px;
+        /* text-align: right; */
     }
+    
+    
 }

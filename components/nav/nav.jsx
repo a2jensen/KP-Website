@@ -16,15 +16,20 @@ export default function Nav() {
         <div className={styles.nav}>
             <main className={styles.container}>
                 <h1 className={styles.title}>kaibigang pilipino</h1>
-                <div className={styles.hamburger} onClick={toggleMenu}>
-                    &#9776;
-                </div>
+                
+                
                 <ul className={`${styles.list} ${isMenuOpen ? styles.showMenu : ''}`}>
                     <li className = {styles.listElement}><a href="/">home</a></li>
                     <li className = {styles.listElement}><a href="/about">about</a></li>
                     <li className = {styles.listElement}><a href="/events">events</a></li>
-                    <li className = {`${styles.listElement} ${styles.specialButton}`}><a href="/about">join</a></li>
                 </ul>
+                <div className={`${styles.listElement} ${styles.specialButton}`}>
+                    <a href="/about">join</a>
+                </div>
+                <div className={styles.hamburger} onClick={toggleMenu}>
+                    &#9776;
+                </div>
+                
             </main>
         </div>
     )
