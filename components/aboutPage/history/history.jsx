@@ -54,21 +54,20 @@ export const History = () => {
   return (
     <div className={styles.historyContainer}>
       <h1>explore our history</h1>
-      <div className={styles.content}>
       {renderPage()}
-      <nav className={styles.timeline}>
-        
-        <div className={styles.stars}>
-          <span onClick={() => setPage(1987)} className={page === 1987 ? styles.active : ''}>&#9733;</span>
-          <span onClick={() => setPage(1992)} className={page === 1992 ? styles.active : ''}>&#9733;</span>
-          <span onClick={() => setPage(1995)} className={page === 1995 ? styles.active : ''}>&#9733;</span>
-          <span onClick={() => setPage(2010)} className={page === 2010 ? styles.active : ''}>&#9733;</span>
-          <span onClick={() => setPage(2017)} className={page === 2017 ? styles.active : ''}>&#9733;</span>
-          <span onClick={() => setPage(2020)} className={page === 2020 ? styles.active : ''}>&#9733;</span>
-          <span onClick={() => setPage(2023)} className={page === 2023 ? styles.active : ''}>&#9733;</span>
-        </div>
-      </nav>
-        
+      <div className={styles.content}>
+        <nav className={styles.timeline}>
+          
+          <div className={styles.stars}>
+            <span onClick={() => setPage(1987)} className={page === 1987 ? styles.active : ''}>&#9733;</span>
+            <span onClick={() => setPage(1992)} className={page === 1992 ? styles.active : ''}>&#9733;</span>
+            <span onClick={() => setPage(1995)} className={page === 1995 ? styles.active : ''}>&#9733;</span>
+            <span onClick={() => setPage(2010)} className={page === 2010 ? styles.active : ''}>&#9733;</span>
+            <span onClick={() => setPage(2017)} className={page === 2017 ? styles.active : ''}>&#9733;</span>
+            <span onClick={() => setPage(2020)} className={page === 2020 ? styles.active : ''}>&#9733;</span>
+            <span onClick={() => setPage(2023)} className={page === 2023 ? styles.active : ''}>&#9733;</span>
+          </div>
+        </nav>
       </div>
       
       <div className={styles.arrows}>

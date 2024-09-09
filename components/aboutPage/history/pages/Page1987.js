@@ -9,20 +9,10 @@ const Page1987 = ({page, setPage}) => {
       <div className={styles.content}>
         <h2 className={styles.heading}>Our humble beginnings...</h2>
         <div className={styles.year}></div>
-        
-        
-        <div className={styles.content}>
-          {/* <img className={styles.image} src="components/aboutPage/history/images/timelinePhotos/Image-1.svg" alt="1987 event" /> */}
-          
-          <img className={styles.arrow} src="../photoArrow.svg" alt="1987 event" />
-          <div className={styles.arrow}></div>
-          
-          <p className={styles.paragraph}>First PCC 600 A.D</p>
-        </div>
-        
-        <img className={styles.image} src="Image-1.svg" alt="Image 1" />
+        <p className={styles.paragraph}>Kaibigang Pilipino first registered as a student organization</p>
+
       </div>
-      
+      <img className={styles.image} src="public/1987.svg" alt="Two stick figures wearing caps with the Philippine flag holding a sign that says 'KP'." />
     </div>
   );
 };
