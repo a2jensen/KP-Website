@@ -8,13 +8,18 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import { google } from '@/node_modules/googleapis/build/src/index';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialog-paper': {  // Target the Dialog's paper element to control width and height
     width: '600px',        // Set the width
-    height: '400px',       // Set the height
-    maxWidth: '50%',       // set max-width for responsiveness
+    height: '300px',       // Set the height
+    maxWidth: '70%',       // set max-width for responsiveness
     maxHeight: '90%',      // Set max-height for responsiveness
+    borderRadius: '20px',      // Customize border radius
+    border: '2px solid rgb(201, 201, 201)', // Customize border color and size
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Add box shadow for a subtle effect
+    padding: '20px', // Optional: adds padding inside the dialog
   },
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
@@ -24,7 +29,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export default function CustomizedDialogs({ description }) {
+export default function CustomizedDialogs({ description}) {
   const eventDiscription = description
   const [open, setOpen] = React.useState(false);
 
@@ -46,7 +51,7 @@ export default function CustomizedDialogs({ description }) {
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Event Information
+          Event
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -62,9 +67,14 @@ export default function CustomizedDialogs({ description }) {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-            <p>{eventDiscription}</p>
+            {eventDiscription}
           </Typography>
         </DialogContent>
+        <DialogActions style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px', }}>
+          <Button  variant="contained" fullWidth style={{backgroundColor: '#ffb703'}}>
+            Sign In 
+          </Button>
+        </DialogActions>
       </BootstrapDialog>
     </React.Fragment>
   );

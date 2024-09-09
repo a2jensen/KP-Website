@@ -1,12 +1,14 @@
-'use client';
-import React, { useState, useEffect } from 'react';
-import styles from "./eventslayout.module.css";
-import EventsCard from '../../eventscard/eventscard.jsx';
+'use client'
+import React, {useState, useEffect} from 'react';
+import styles from "./eventslayout.module.css"
+import EventsCard from "../../eventscard/eventscard"
 
-export default function Events() {
+export default function Welcome() {
+    // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it
     const [data, setData] = useState([]);
-    const [error, setError] = useState(null);
+    const [filter, setFilter] = useState('UPCOMING') // state variable to track current filter, upcoming is default
 
+    // useEffect hook runs the fetchData function when the component mounts
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -34,30 +36,37 @@ export default function Events() {
             }
         };
 
+        // Call the fetchData function
         fetchData();
-    }, []);
+    }, []); // Empty dependency array ensures this effect runs only once when the component mounts
 
-    // Slice the array to get the first 3 events, handle cases where data might be undefined or not an array
-    const upcomingEvents = Array.isArray(data) ? data.slice(0, 3) : []; // CAN BE CHANGED
+    const upcomingEvents = Array.isArray(data) ? data.slice(0, 3) : [];
+
+    // Function that filters the events based on user preference/click
+    const filteredEvents = data.filter(event => {
+        if(filter === 'UPCOMING'){
+            return new Date(event.date) > new Date();
+        } else if(filter === 'GEN' || filter === 'STAR' || filter === 'CORE'){
+            return event.board === filter;
+        }
+        return true;
+    }).slice(0,3); // grabs the first three filtered events max
+
 
     return (
-        <div className={styles.events}>
-            <h1 className={styles.title}>UPCOMING EVENTS</h1>
-
-            <div className={styles.maincontainer}>
-                {error ? (
-                    <p>{`Error: ${error}`}</p>
-                ) : data.length === 0 ? (
-                    <p>Loading or no events found, please refresh.</p>
+        <div className={styles.mainContainer}>
+            <p className={styles.title}>UPCOMING EVENTS</p>
+            <div className={styles.eventsContainer}>
+                {filteredEvents.length === 0 ? (
+                    <p>Error or its loading info and refresh this</p>
                 ) : (
                     <div className={styles.eventCards}>
                         {upcomingEvents.map((event, index) => (
-                            <EventsCard key={index} event={event} />
+                            <EventsCard key={index} event={event}/>
                         ))}
                     </div>
-                )}
+                    )}
             </div>
-            <p className={styles.more}><a>see more events ARROW</a></p>
         </div>
-    );
+    )
 }

@@ -39,6 +39,7 @@ export default function EventsCard({event}) {
         <div className={styles.description}>
           <Popup
             description={event.description}
+            
           />
         </div>
     </div>

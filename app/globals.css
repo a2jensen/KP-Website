@@ -1,3 +1,6 @@
+body {
+  background-image: url(../public/Texture.svg)
+}
 .pages {
   margin: 0;
   padding: 0;

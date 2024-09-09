@@ -8,10 +8,6 @@ export async function GET() {
 
         const response = await fetch(spreadsheetsURL, {
             method: 'GET',
-            headers: {
-                'Cache-Control': 'no-cache',
-                'Pragma' : 'no-cache',
-            }
         });
 
         if(!response.ok) {
@@ -21,9 +17,7 @@ export async function GET() {
         const data = await response.json()
 
         // return data as JSON
-        const res = NextResponse.json({data})
-        res.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-        return res;
+        return NextResponse.json({data})
     } catch(error) {
         console.error('Error fetching data', error)
         return NextResponse.json({response: 'Failted to fetch data from the CMS'})

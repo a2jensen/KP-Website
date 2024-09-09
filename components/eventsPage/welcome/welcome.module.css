@@ -1,16 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 /* Base/Laptop styles */
-.container {
+.mainContainer {
     min-height: 70vh;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 90px;
     justify-content: flex-start;
     justify-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.infoContainer {
+    align-content: left;
 }
 
 .title {
     font-size: 60px;
     font-weight: bold;
-    justify-content: center;
+}
+
+.summary {
+    font-size: 20px;
+}
+
+
+.upcoming {
+    font-size: 50px;
+    margin-top: 50px;
 }
 
 .eventCards{
@@ -20,16 +36,13 @@
     text-align: left;
 }
 
-.maincontainer {
+.eventsContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 30px;
 }
 
-.upcoming {
-    font-size: xx-large;
-}
 
 /* tablets */
 @media screen and (min-width: 600px) and (max-width: 1000px){ 
@@ -45,4 +58,22 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr); /* 2 events per row */
     }
+
+
+    .title {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .summary {
+        text-align: start;
+        font-size: 16px;
+        padding: 12px;
+        margin: 5px;
+    }
+
+    .upcoming {
+        font-size: 40px;
+    }
+
 }

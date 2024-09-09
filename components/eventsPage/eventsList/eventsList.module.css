@@ -2,11 +2,11 @@
 .pageContainer {
     min-height: 100vh;
     background-color: #f3f3f3;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Ensures everything inside is centered */
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .filterContainer {
@@ -40,6 +40,37 @@
     max-width: 100%; /* Makes sure no card exceeds its grid space */
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1366px){ /* tablets */
+    .eventGrid {
+        grid-template-columns: repeat(3, 1fr); /* 2 events per row */
+        gap: 0px; /* Adjust spacing between the event cards */
+    }
+
+    .filterContainer {
+        width: 100%; /* Make the filter container full width */
+        max-width: 96px; /* Ensure it matches the event grid width */
+        display: flex;
+        justify-content: flex-start; /* Align the filter to the left */
+        margin-bottom: 20px; /* Add some spacing between filter and event grid */
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){ /* tablets */
+    .eventGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 events per row */
+        gap: 0px; /* Adjust spacing between the event cards */
+    }
+
+    .filterContainer {
+        width: 100%; /* Make the filter container full width */
+        max-width: 650px; /* Ensure it matches the event grid width */
+        display: flex;
+        justify-content: flex-start; /* Align the filter to the left */
+        margin-bottom: 50px; /* Add some spacing between filter and event grid */
+    }
+}
+
 
 
 /* tablets */
@@ -67,5 +98,12 @@
 
  /* mobile + phone */
 @media screen and (max-width: 600px) { 
+    .filterContainer {
+        width: 100%; /* Make the filter container full width */
+        max-width: 320px; /* Ensure it matches the event grid width */
+        display: flex;
+        justify-content: flex-start; /* Align the filter to the left */
+        margin-bottom: 20px; /* Add some spacing between filter and event grid */
+    }
 
 }
