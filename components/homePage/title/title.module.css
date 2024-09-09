@@ -2,6 +2,10 @@
 .group {
     min-height: 90vh;
     max-height: 90vh;
+    background-image: url(../../../public/Texture.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0%;
 }
 
 .header {
@@ -12,14 +16,15 @@
 .picture {
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 0%;
+    padding-top: 5%;
+    width: 20%;
 }
 
 /* styling for title screen on desktops */
 @media (min-width: 768px){
    .picture {
-        width: 100%;
+        width: 100vw;
    }
 
    .responsiveImage {
@@ -27,22 +32,33 @@
    }
 
     .header h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .header p {
         font-size: 1.2em;
     }
+
+   
 }
 
 /* styling for tablet screen */
 @media (min-width: 600px) and (max-width: 768px){
+    
     .header h1 {
-        font-size: 2.5em;
+        font-size: 6vw;
     }
 
     .header p {
         font-size: 1em;
+    }
+
+    .picture {
+        width: 100vw;
+    }
+
+    .header, .picture {
+        padding: 1; /* Set padding to 0 or desired value */
     }
 }
 
@@ -55,5 +71,15 @@
 
     .header p{
         font-size: 0.8em;
+    }
+
+    .picture {
+        width: 100vw;
+        /* height: 100vh; */
+    }
+
+    /* Fix extra padding */
+    .header, .picture {
+        padding: 0; /* Set padding to 0 or desired value */
     }
 }

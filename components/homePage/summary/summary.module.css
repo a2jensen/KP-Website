@@ -2,7 +2,6 @@
 .quotePage{
     display: grid;
     align-items: center;
-    background-color: black;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
@@ -11,7 +10,7 @@
     background-position: center;
 }
 
-.quoteImage{ /* background image */
+.quoteImage{ /* Background image */
     display: flex; /* this is weird, it warps the image responsively */
     width: 100vw;
     height: 100vh;
@@ -20,7 +19,7 @@
     
 }
 
-.quoteContainer { /* for quote and star */
+.quoteContainer { /* Quote and star */
     display: grid;
     width: 100vw;
     height: 100vh;
@@ -83,7 +82,7 @@
         grid-column: 1 / 1;
         grid-row: 1/5;
         font-size: calc(0.5vw + 3.5vh);
-        padding: 35% 15% 0% ;
+        padding: 35% 10% 0% ;
         text-align: center;
         align-self: center;
     }
@@ -91,7 +90,9 @@
         grid-column: 1/1;
         grid-row: 1/3;
         position: static;
-        width: 100%;
+        height: 40%;
+        
+        align-items: center;
         background-repeat: no-repeat;
         background-image: url("starTop.png");
         background-size: contain;
@@ -111,7 +112,7 @@
         grid-column: 1/1;
         grid-row: 1/3;
         position: static;
-        width: 100%;
+        height: 50%;
         background-repeat: no-repeat;
         background-image: url("starTop.png");
         background-size: contain;

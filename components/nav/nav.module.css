@@ -1,32 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.nav {
+    background-image: url(../../public/Texture.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 150px;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
     list-style-type: none;
     border-radius: 30px;
-    margin: 40px;
-    outline: 2px solid grey;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     position: relative;
+    background: rgba(236, 236, 236, 0.70);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    outline: 1px solid #F6F6F6;
 }
+
 
 .title {
     margin-left: 50px;
     font-weight: bolder;
+    font-family: 'Outfit', sans-serif;
+    margin-right: 20%;
+
 }
 
 .list {
     display: flex;
-    margin-right: 50px;
+    margin-right: 0px;
 }
 
 .listElement {
     list-style-type: none;
+    font-family: 'Outfit', sans-serif;
     font-size: x-large;
-    margin-right: 50px;
-    padding: 10px;
-    font-weight: bold;
+    margin-right: 2vw;
+    padding: 1vw;
     border: 1px solid transparent; /* Initial border is transparent */
     transition: border 0.3s ease; /* Smooth transition effect */
     border-radius: 20px;
@@ -40,7 +53,17 @@
 }
 
 .listElement:hover {
-    border-color: black;
+    border-color: #2C2C2C;
+}
+
+.joinButton { /* Join button */
+    background-color: #2C2C2C; 
+    color: #F6F6F6;
+    margin-left: 0px;
+}
+
+.specialButton a {
+    color: #F6F6F6; 
 }
 
 .hamburger {
@@ -50,49 +73,156 @@
     margin-right: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
+    .nav {
+        padding: 20 70px;
+    }
+
+    .title {
+        margin-right: 10%;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav {
+        padding: 20 40px;
+    }
+
+    .title {
+        font-size: large;
+        margin-right: 0%;
+        margin-left: 25px;
+    }
+
+    .listElement {
+        font-size: large;
+        margin: 0px 5px;
+        margin-right: 0px;
+    }
+
+    .joinButton {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+}
+
+/* Media Queries */
+
+/***************** Styling for tablets *****************/
+@media screen and (min-width: 600px) and (max-width: 768px) {
     .container {
         margin: 0;
         border-radius: 10px;
     }
 
+    .nav {
+        padding: 20px;
+    }
+
     .title {
-        font-size: large;
-        margin-right: 10px;
+        font-size: x-large;
+        margin-right: 35%;
     }
 
     .list {
-        display:none;
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
-        left: 20px;
+        top: 70px;
+        right: 10px;
         padding: 0;
-        background-color: white;
-        border: 1px solid grey;
+        background-color: rgba(236, 236, 236, 0.90);
+        border: 1px solid #F6F6F6;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    /* Show the list when the menu is toggled */
     .list.showMenu {
         display: flex;
     }
 
-    /* Display the hamburger menu icon */
     .hamburger {
         display: block;
+        margin-left: 0px;
     }
 
-    /* Adjust list elements for mobile view */
     .listElement {
         text-align: right;
         width: 200px;
     }
 
-    /* Adjust anchor tags for mobile view */
+    .joinButton {
+        display: block;
+        text-align: center;
+        width: 75px;
+        padding: 0px 5px;
+        margin: 10px;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+
     .listElement a {
         display: block;
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
+    
+}
+
+/***************** Styling for mobile *****************/
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .nav {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: large;
+        margin-right: 30%;
+    }
+
+    .list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        padding: 0;
+        background-color: rgba(236, 236, 236, 0.90);
+        border: 1px solid #F6F6F6;
+        border-radius: 10px;
+    }
+
+    .list.showMenu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .listElement {
+        text-align: right;
+        width: 200px;
+    }
+
+    .joinButton {
+        display: block;
+        text-align: center;
+        width: 75px;
+        padding: 0px 5px;
+        margin: 10px;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+
+    .listElement a {
+        display: block;
+        padding: 10px 10px;
+    }
+    
 }

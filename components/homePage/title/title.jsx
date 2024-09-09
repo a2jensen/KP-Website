@@ -3,8 +3,6 @@ import styles from './title.module.css';
 import Image from "next/image";
 
 
-
-
 export default function Title() {
     return (
         <div className={styles.group}>            
