@@ -10,7 +10,6 @@
 .title {
     font-size: 60px;
     font-weight: bold;
-    text-align: left;
     justify-content: center;
 }
 
@@ -33,7 +32,7 @@
 }
 
 /* tablets */
-@media screen and (min-width: 600px) and (max-width: 768px){ 
+@media screen and (min-width: 600px) and (max-width: 1000px){ 
     .eventCards {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 events per row */
@@ -44,6 +43,6 @@
 @media screen and (max-width: 600px) { 
     .eventCards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 events per row */
+        grid-template-columns: repeat(1, 1fr); /* 2 events per row */
     }
 }

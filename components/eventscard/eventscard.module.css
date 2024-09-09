@@ -64,6 +64,8 @@
     .container {
         background-color: blue; /* Test for tablet screens */
         width: 100%; /* Adjust the width */
+        width: 300px;
         padding: 10px;
+        margin-bottom: 20px;
     }
 }

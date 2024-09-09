@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from './eventscard.module.css'; // Import styles
 import Image from 'next/image';
+import Popup from '../popup/popup'
 
 // takes in data as a param to fill in the
 export default function EventsCard({event}) {
@@ -36,6 +37,7 @@ export default function EventsCard({event}) {
         <p className={styles.date}>date: {event.date} @ {event.time}</p>
         <p className={styles.location}>location: {event.location}</p>
         <p className={styles.description}>{event.description}</p>
+        <Popup/>
     </div>
   )
 }

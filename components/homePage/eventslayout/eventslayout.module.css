@@ -40,5 +40,11 @@
 
  /* mobile + phone */
 @media screen and (max-width: 600px) { 
-
+    .events {
+        margin-top: 400px;
+    }
+    .eventCards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 events per row */
+    }
 }

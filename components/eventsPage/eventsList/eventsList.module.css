@@ -45,7 +45,7 @@
 /* tablets */
 @media screen and (max-width: 768px){ 
     .eventGrid {
-        grid-template-columns: repeat(2, 1fr); /* 2 events per row */
+        grid-template-columns: repeat(1, 1fr); /* 2 events per row */
         gap: 0px; /* Adjust spacing between the event cards */
     }
 
