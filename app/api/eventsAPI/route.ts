@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 // async function that handles GET requests
 export async function GET() {
     try {
-        const spreadsheetsURL = 'https://script.google.com/macros/s/AKfycbwTI2KBA4nfpoQtRhUG_KrXLv9QmbRA1ai1qiyzlVhAXgZJ1NN3NvTaV1TbCBBOoB4g-g/exec'
+        const spreadsheetsURL = 'https://script.google.com/macros/s/AKfycbwHY7xRHzPhTGydAb2ibAhdUQmCrodedc7Rnme4wy3rY21W6d5haxPC-lxGkLugnrsCJw/exec'
 
         const response = await fetch(spreadsheetsURL, {
             method: 'GET',

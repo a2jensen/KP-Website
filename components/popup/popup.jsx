@@ -8,7 +8,7 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import { google } from '@/node_modules/googleapis/build/src/index';
+
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialog-paper': {  // Target the Dialog's paper element to control width and height
@@ -29,7 +29,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export default function CustomizedDialogs({ description}) {
+export default function CustomizedDialogs({ description, googleForm}) {
   const eventDiscription = description
   const [open, setOpen] = React.useState(false);
 
@@ -71,7 +71,7 @@ export default function CustomizedDialogs({ description}) {
           </Typography>
         </DialogContent>
         <DialogActions style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px', }}>
-          <Button  variant="contained" fullWidth style={{backgroundColor: '#ffb703'}}>
+          <Button  href={googleForm} variant="contained" fullWidth style={{backgroundColor: '#ffb703'}}>
             Sign In 
           </Button>
         </DialogActions>
