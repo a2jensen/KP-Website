@@ -10,6 +10,12 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+  '& .MuiDialog-paper': {  // Target the Dialog's paper element to control width and height
+    width: '600px',        // Set the width
+    height: '400px',       // Set the height
+    maxWidth: '50%',       // set max-width for responsiveness
+    maxHeight: '90%',      // Set max-height for responsiveness
+  },
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
   },
@@ -18,7 +24,8 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export default function CustomizedDialogs() {
+export default function CustomizedDialogs({ description }) {
+  const eventDiscription = description
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -30,16 +37,16 @@ export default function CustomizedDialogs() {
 
   return (
     <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open dialog
-      </Button>
+      <div onClick={handleClickOpen}>
+        Information + Sign In
+      </div>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Modal title
+          Event Information
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -55,25 +62,9 @@ export default function CustomizedDialogs() {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </Typography>
-          <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-          </Typography>
-          <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+            <p>{eventDiscription}</p>
           </Typography>
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save changes
-          </Button>
-        </DialogActions>
       </BootstrapDialog>
     </React.Fragment>
   );

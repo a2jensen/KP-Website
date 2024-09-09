@@ -36,8 +36,11 @@ export default function EventsCard({event}) {
           height={150} />
         <p className={styles.date}>date: {event.date} @ {event.time}</p>
         <p className={styles.location}>location: {event.location}</p>
-        <p className={styles.description}>{event.description}</p>
-        <Popup/>
+        <div className={styles.description}>
+          <Popup
+            description={event.description}
+          />
+        </div>
     </div>
   )
 }
