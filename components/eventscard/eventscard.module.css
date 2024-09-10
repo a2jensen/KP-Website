@@ -1,4 +1,8 @@
+/* Import the font at the top of your globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 .container {
+    font-family: 'Outfit', sans-serif;
     outline: 2px solid rgb(201, 201, 201);
     border-radius: 15px;
     min-height: 390px;
