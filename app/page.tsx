@@ -7,6 +7,8 @@ import Summary from "../components/homePage/summary/summary";
 import EventsLayout from "../components/homePage/eventslayout/eventslayout";
 import Footer from "../components/footer/footer";
 import Nav from "../components/nav/nav"
+/* temp import for about page testing */
+import About from "../app/about/page"
 
 
 export default async function Home() {
