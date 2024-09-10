@@ -96,6 +96,9 @@
        height: auto;  /* Maintain aspect ratio */
        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
        left: 25%;
-       
    }
+
+  .card {
+    height: 400px;
+  }
 }

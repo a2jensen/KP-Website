@@ -100,6 +100,10 @@
        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
        left: 25%;
        top: -5%;
-       
+   }
+   
+   .overlaycard {
+      font-size: 13px;
+      width: 200px
    }
 }
