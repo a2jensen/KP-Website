@@ -12,6 +12,7 @@ export default function Title() {
                     width={400}
                     height={340}
                     className={styles.responsiveImage}
+                    alt=''
                 />
             </div>
             <div className={styles.header}>

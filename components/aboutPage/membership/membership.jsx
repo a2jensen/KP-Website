@@ -16,6 +16,7 @@ export default function membership() {
         width={1000}
         height={1200}
         style={styles.responsiveImage}
+        alt=''
       />
     </div>
   )
