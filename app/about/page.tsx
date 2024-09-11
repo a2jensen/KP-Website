@@ -6,6 +6,7 @@ import Membership from '../../components/aboutPage/membership/membership'
 export default function about() {
   return (
     <main>
+      <h1>kp is kaibigang pilipino.</h1>
       <Who />
       <Membership/>
     </main>
