@@ -7,7 +7,6 @@ export default function about() {
   return (
     <main>
       <Who />
-      <History />
       <Membership/>
     </main>
   )

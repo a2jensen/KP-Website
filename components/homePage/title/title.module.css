@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .group {
+    font-family: 'Outfit', sans-serif;
     min-height: 90vh;
     max-height: 90vh;
     background-image: url(../../../public/Texture.svg);

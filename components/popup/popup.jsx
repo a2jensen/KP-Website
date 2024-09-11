@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialog-paper': {  // Target the Dialog's paper element to control width and height
-    width: '600px',        // Set the width
+    width: '500px',        // Set the width
     height: '300px',       // Set the height
     maxWidth: '70%',       // set max-width for responsiveness
     maxHeight: '90%',      // Set max-height for responsiveness
@@ -43,7 +43,7 @@ export default function CustomizedDialogs({ description, googleForm}) {
   return (
     <React.Fragment>
       <div onClick={handleClickOpen}>
-        Information + Sign In
+        More Event Information
       </div>
       <BootstrapDialog
         onClose={handleClose}
@@ -70,11 +70,13 @@ export default function CustomizedDialogs({ description, googleForm}) {
             {eventDiscription}
           </Typography>
         </DialogContent>
-        <DialogActions style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px', }}>
+        {/** CUT OUT FEATURE: SIGN IN EVENT
+         * <DialogActions style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px', }}>
           <Button  href={googleForm} variant="contained" fullWidth style={{backgroundColor: '#ffb703'}}>
             Sign In 
           </Button>
         </DialogActions>
+         */}
       </BootstrapDialog>
     </React.Fragment>
   );
