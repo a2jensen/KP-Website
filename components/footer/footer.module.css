@@ -1,48 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 .footer {
-    background-color: rgb(205, 73, 43);
+    background-color: #C14229;
     min-height: 250px;
 }
 
 .toplist {
    list-style-type: none;
    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: center;
    text-align: center;
-   padding-top: 30px;
+   padding-top: 25px;
+   gap: 200px;
+   position: relative;
 }
 
 .toplist a{
     text-decoration: none;
-    color: white;
-}
-.titles {
-    margin: 0px 100px 0px 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    line-height: 25.2px;
+    letter-spacing: 0.01em;
 }
 
 .kp{
-    display: flex;
-    justify-content: center;
+    color: #FFF;
     text-align: center;
-    margin-top: 50px;
-    color: white;
-    font-weight: bold;
+    align-items: center;
+    font-family: outfit;
+    font-size: 35px;
+    letter-spacing: 2.275px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    right: 30px;
 }
 
+
 .bottomlist{
-    list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 60px;
-    flex-wrap: wrap;
+    position: relative;
+    right: 18px;
+    gap: 450px;
+    list-style-type: none;
+    justify-content: center;
+    padding-bottom: 25px;
+    align-items: center;
 }
 
 .bottomlist a {
     text-decoration: none;
     color: white;
+    font-family: outfit;
+    font-size: 24px;
 }
 
-.bottomTitles{
-    color: white;
+
+.logos {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.logos a {
+    display: flex;
+    align-items: center;
+}
+
+.est{
+    align-self: center;
+    font-family: outfit;
+}
+
+
+@media screen and (max-width: 430px){
+    .footer{
+        min-height: 175px;
+    }
+
+    .toplist{
+        gap: 60px;
+        left: -12px;
+    }
+
+    .toplist a{
+        font-size: 15px;
+        font-family: Outfit;
+        font-weight: 400;
+        line-height: 18.9px;
+        letter-spacing: 0.01em;
+        text-align: center;
+    }
+
+    .kp{
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bottomlist a{
+        font-size: 15px;
+        font-family: Outfit;
+        font-weight: 300;
+        line-height: 18.9px;
+        text-align: left;
+    }
+
+    .bottomlist{
+        gap: 90px;
+    }
+   
+    .logos img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .sun img{
+        width: 30px;
+        height: 30px;  
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 600px){
+    .footer{
+        min-height: 175px;
+    }
+
+    .toplist{
+        gap: 70px;
+        left: -15px;
+        padding-top: 15px;
+    }
+
+    .toplist a{
+        font-size: 15px;
+    }
+ 
+    .kp{
+        left: 0px;
+        font-size: 25px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .bottomlist{
+        gap: 150px;
+        left: -17.5px;
+    }
+
+    .bottomlist a{
+        font-size: 15px
+    }
+
+    .logos img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .sun img{
+        width: 30px;
+        height: 30px;  
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1512px){
+    .bottomlist{
+        gap: 450px;
+    }
+
+    .toplist{
+        gap: 200px;
+    }
 }

@@ -17,14 +17,18 @@
 
 .host {
     border-bottom: 1px solid black;
-    font-size: 25px;
+    font-size: 19.2px;
     font-weight: bold;
     color: grey;
-    padding-bottom: 10px;
+    padding-bottom: 10.56px;
 }
 
 .title {
-    font-size: 40px;
+    width: 231.36px;
+    height: 48px;
+    font-size: 38.4px;
+    font-weight: 400;
+    line-height: 48px;
     font-weight: bold;
     padding-top: 20px;
     text-align: center;
@@ -43,12 +47,21 @@
 }
 
 .date {
-    font-size: 25px;
+    width: 231.36;
+    height: 47px;
+    font-size: 23.04px;
+    padding-bottom: 9.6px;
+    padding-top: 9.6px;
+    font-weight: 400px;
+
 }
 
 .location {
+    width: 231.36;
     border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    padding-top: -100px;
+    font-size: 14.4px;
+    padding-bottom: 7.68px;
 }
 
 .description {
