@@ -1,5 +1,5 @@
 import React from 'react'
-import Who from '../../components/aboutPage/who/who'
+import Who from '../../components/aboutPage/header/who'
 import History from '../../components/aboutPage/history/history'
 import Membership from '../../components/aboutPage/membership/membership' 
 

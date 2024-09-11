@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.KPis {
+    /* margin-top: 448px; */
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+
+
+.typeWriter {
+    color: rgb(0, 0, 0);
+    font-family: 'Outfit', sans-serif;
+    font-size: 96px; /* Adjust as needed */
+    flex-wrap: wrap;
+    overflow: hidden;
+    display: inline;
+    animation: blinker 1.3s step-end infinite;
+    /*
+    I want an animation to blink every 1.9 seconds, so I'll name it blinker, and reference it below.
+    I want it to be a step-end animation (jumps straight so it's not a weird transparent transition).
+    I want it to repeat infinitely instead of a finite number, like 12 or 14.
+  */
+    border-right: 5px solid black; 
+}
+
+@keyframes blinker {
+    from, to { border-color: transparent; }
+    76% { border-color: black; }
+    100% { border-color: transparent; }
+  }
+
+.pinoyStarOne {
+    transform: rotate(14.418deg);
+    color: #000;
+    font-family: Nunito;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-left: 1375px;
+    margin-top: 67px;
+    margin-right: 55px;
+}
+
+.pinoyStarTwo {
+    transform: rotate(-7.418deg);
+    color: #000;
+    font-family: Nunito;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-align: center;
+    margin-right: 1800px;
+}
+
+.pinoyStarThree {
+    color: #000;
+    font-family: Nunito;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    transform: rotate(-27.422deg);
+    margin-left: 800px;
+    margin-top: 108px;
+    margin-bottom: 345px;
+}
+
+/* styling for tablet screen */
+@media (min-width: 600px) and (max-width: 768px){
+    
+
+}
+
+/* styling for small devices(phones,etc) screen */
+@media (min-width: 0px) and (max-width: 599px) {
+
+}
