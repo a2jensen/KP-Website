@@ -91,6 +91,7 @@
 @media screen and (min-width: 430px) and (max-width: 600px){
     .info{
         font-size: 15px;
+        padding: 15px;
     }
 
     .container{

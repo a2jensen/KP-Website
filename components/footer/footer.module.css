@@ -125,13 +125,13 @@
     }
 }
 
-@media screen and (min-width: 431px) and (max-width: 600px){
+@media screen and (min-width: 430px) and (max-width: 600px){
     .footer{
-        min-height: 175px;
+        min-height: 170px;
     }
 
     .toplist{
-        gap: 70px;
+        gap: 50px;
         left: -15px;
         padding-top: 15px;
     }
@@ -148,7 +148,7 @@
     }
 
     .bottomlist{
-        gap: 150px;
+        gap: 90px;
         left: -17.5px;
     }
 
