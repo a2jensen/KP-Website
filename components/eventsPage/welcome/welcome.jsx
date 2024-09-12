@@ -65,7 +65,7 @@ export default function Welcome() {
             </div>
             <div className={styles.eventsContainer}>
                 {filteredEvents.length === 0 ? (
-                    <p>Error or its loading info and refresh this</p>
+                    <div className={styles.loader}></div>
                 ) : (
                     <div className={styles.eventCards}>
                         {upcomingEvents.map((event, index) => (

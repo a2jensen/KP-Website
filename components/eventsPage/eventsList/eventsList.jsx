@@ -80,7 +80,7 @@ export default function EventsList() {
             
             <div className={styles.eventsContainer}>
                 {filteredEvents.length === 0 ? (
-                    <p>Loading data, please refresh if needed...</p>
+                    <div className={styles.loader}></div>
                 ) : (
                     <div className={styles.eventGrid}>
                         {filteredEvents.map((event, index) => (

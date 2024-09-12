@@ -1,6 +1,6 @@
 'use client' // wont work bc of await or smthn
 import { useState, useEffect } from 'react';
-import styles from './who.module.css';
+import styles from './header.module.css';
 
 // Sorry to the poor dev working on this years down the line, today is July 29, 2024 
 //'#FBC300' is the color of the 'KAIBIGANG PILIPINO ' in figma
@@ -61,7 +61,8 @@ const TypingEffect = ({ words }) => {
         borderRight:" 100px",
       } 
     }>
-  {displayedText}
+      <strong>{displayedText}</strong>
+  
   </div>;
 
 

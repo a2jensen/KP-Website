@@ -51,7 +51,7 @@ export default function CustomizedDialogs({ description, googleForm}) {
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Event
+          KP Event
         </DialogTitle>
         <IconButton
           aria-label="close"
