@@ -17,7 +17,11 @@ export async function GET() {
         const data = await response.json()
 
         // return data as JSON
-        return NextResponse.json({data})
+        return NextResponse.json({data}, {
+            headers: {
+               'Access-Control-Allow-Origin': '*',
+            }
+        })
     } catch(error) {
         console.error('Error fetching data', error)
         return NextResponse.json({response: 'Failted to fetch data from the CMS'})
