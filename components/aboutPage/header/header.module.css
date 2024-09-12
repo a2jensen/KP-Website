@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .KPis {
     /* margin-top: 448px; */
-    font-family: 'Outfit', sans-serif;
     text-align: center;
     font-size: 75px;
     font-style: normal;
@@ -16,7 +14,6 @@
 
 .typeWriter {
     color: rgb(0, 0, 0);
-    font-family: 'Outfit', sans-serif;
     font-size: 75px; /* Adjust as needed */
     flex-wrap: wrap;
     overflow: hidden;

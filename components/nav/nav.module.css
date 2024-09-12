@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 
 .nav {
     background-image: url(../../public/Texture.svg);
@@ -26,7 +26,6 @@
 .title {
     margin-left: 50px;
     font-weight: bolder;
-    font-family: 'Outfit', sans-serif;
     margin-right: 20%;
 
 }
@@ -38,7 +37,6 @@
 
 .listElement {
     list-style-type: none;
-    font-family: 'Outfit', sans-serif;
     font-size: x-large;
     margin-right: 2vw;
     padding: 1vw;

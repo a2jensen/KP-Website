@@ -25,7 +25,7 @@ export default function EventsList() {
                         'Cache-Control': 'no-cache', // Prevent caching on the client side
                         'Pragma': 'no-cache'
                     },
-                    cache: 'no-cache' // Ensures the fetch request bypasses the cache
+                    cache: 'no-store' // Ensures the fetch request bypasses the cache
                 });
 
                 if (!res.ok) {

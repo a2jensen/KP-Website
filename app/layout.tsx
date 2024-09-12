@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import  "./globals.css";
 import Nav from "@/components/nav/nav";
 import Footer from "@/components/footer/footer"
 import Head from "next/head";
-const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ['latin'], weight: ['100', '400', '700', '900'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} pages`}>
+      <body className={outfit.className}>
         <Nav />
         {children}
         <Footer />
