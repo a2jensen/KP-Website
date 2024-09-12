@@ -25,7 +25,7 @@ const CardFlip3 = () => {
             onSwitch={handleSwitch}
             content=
             {<div>
-              CORE embodies KP's <b>outreach to students attending UCSD, high school
+              CORE embodies KPs <b>outreach to students attending UCSD, high school
                 students,</b> and <b>community college students.</b>
               <br></br><br></br>
               CORE notably hosts: <br></br>
