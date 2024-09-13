@@ -1,13 +1,15 @@
 
 .KPis {
     /* margin-top: 448px; */
-    text-align: center;
+    text-align: left;
     font-size: 75px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.96px;
     min-height: 50vh;
+    padding-left: 15px;
+
 }
 
 

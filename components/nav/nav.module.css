@@ -4,9 +4,8 @@
     background-image: url(../../public/Texture.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 40px 150px;
-    margin:5px;
     z-index: 100;
+    width: 100vw;
 }
 
 .container {
@@ -75,7 +74,7 @@
 
 @media (max-width: 1350px) {
     .nav {
-        padding: 20 70px;
+      
     }
 
     .title {
@@ -86,7 +85,7 @@
 
 @media (max-width: 1000px) {
     .nav {
-        padding: 20 40px;
+        
     }
 
     .title {
@@ -117,7 +116,7 @@
     }
 
     .nav {
-        padding: 20px;
+        
     }
 
     .title {
@@ -129,7 +128,8 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 55px;
+        width: 100vw;
         right: 10px;
         padding: 0;
         background-color: rgba(236, 236, 236, 0.90);
@@ -176,7 +176,7 @@
     }
 
     .nav {
-        padding: 20px;
+       
     }
 
     .title {
@@ -188,9 +188,10 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
-        right: 10px;
+        top: 55px;
+        width: 100vw;
         padding: 0;
+        align-items: left;
         background-color: rgba(236, 236, 236, 0.90);
         border: 1px solid #F6F6F6;
         border-radius: 10px;
@@ -206,7 +207,7 @@
     }
 
     .listElement {
-        text-align: right;
+        text-align: center;
         width: 200px;
     }
 
