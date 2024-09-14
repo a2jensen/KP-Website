@@ -14,7 +14,7 @@ export default function Nav() {
 
     return (
         <div className={styles.nav}>
-            <main className={styles.container}>
+            <main className={`${styles.container} ${isMenuOpen ? styles.noShadow : ''}`}>
                 <h1 className={styles.title}>kaibigang pilipino</h1>
                 
                 

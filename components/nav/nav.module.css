@@ -13,9 +13,9 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    border-radius: 30px;
+   ;
     position: relative;
-    background: rgba(236, 236, 236, 0.70);
+    background: rgba(236, 236, 236, 0.90);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     outline: 1px solid #F6F6F6;
@@ -112,7 +112,7 @@
 @media screen and (min-width: 600px) and (max-width: 768px) {
     .container {
         margin: 0;
-        border-radius: 10px;
+        
     }
 
     .nav {
@@ -134,11 +134,16 @@
         padding: 0;
         background-color: rgba(236, 236, 236, 0.90);
         border: 1px solid #F6F6F6;
-        border-radius: 10px;
+        border-radius: 0px;
+        transition: max-height 30s ease, opacity 30s ease; /* Add transitions */
     }
 
     .list.showMenu {
         display: flex;
+    }
+
+    .noShadow {
+        box-shadow: none;
     }
 
     .hamburger {
@@ -147,7 +152,7 @@
     }
 
     .listElement {
-        text-align: right;
+        text-align: center;
         width: 200px;
     }
 
@@ -171,12 +176,7 @@
 /***************** Styling for mobile *****************/
 @media screen and (max-width: 600px) {
     .container {
-        margin: 0;
-        border-radius: 10px;
-    }
-
-    .nav {
-       
+        border-radius: 0px;
     }
 
     .title {
@@ -184,21 +184,34 @@
         margin-right: 30%;
     }
 
+    /* Initial state of the menu */
     .list {
-        display: none;
+        /* Instead of display: none, use max-height and opacity for transitions */
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden; /* Hide the overflowing content */
         flex-direction: column;
         position: absolute;
         top: 55px;
         width: 100vw;
         padding: 0;
-        align-items: left;
-        background-color: rgba(236, 236, 236, 0.90);
+        align-items: center;
+        background: rgba(236, 236, 236, 0.90);
         border: 1px solid #F6F6F6;
-        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     }
 
-    .list.showMenu {
-        display: flex;
+    .showMenu {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    
+    .noShadow {
+        box-shadow: none;
     }
 
     .hamburger {

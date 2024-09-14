@@ -1,7 +1,7 @@
 
 .KPis {
     /* margin-top: 448px; */
-    text-align: left;
+    text-align: center;
     font-size: 75px;
     font-style: normal;
     font-weight: 400;
@@ -83,5 +83,7 @@
 
 /* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
-    
+    .KPis{
+        text-align: left;
+    }
 }
