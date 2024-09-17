@@ -7,6 +7,7 @@
     align-items: center; /* Ensures everything inside is centered */
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-bottom: -30px;
 }
 
 .filterContainer {

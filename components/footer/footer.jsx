@@ -22,13 +22,7 @@ export default function Footer() {
                             height={35}
                         />
                     </a>
-                    <a href="">
-                        <Image
-                            src="/tiktok 2.png"
-                            width={35}
-                            height={35}
-                        />
-                    </a>
+                   
                 </li>
                 <li className={styles.sun}><a><Image
                     src="/Layer_1.svg"

@@ -2,7 +2,7 @@
 
 .footer {
     background-color: #C14229;
-    min-height: 250px;
+    min-height: 250x;
 }
 
 .toplist {
@@ -42,14 +42,13 @@
 
 
 .bottomlist{
-    display: flex;
-    position: relative;
-    right: 18px;
-    gap: 450px;
     list-style-type: none;
-    justify-content: center;
-    padding-bottom: 25px;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-top: 25px;
+   gap: 200px;
+   position: relative;
 }
 
 .bottomlist a {
@@ -83,7 +82,7 @@
     }
 
     .toplist{
-        gap: 60px;
+        gap: 30px;
         left: -12px;
     }
 
@@ -174,5 +173,54 @@
 
     .toplist{
         gap: 200px;
+    }
+
+    .footer{
+        min-height: 175px;
+    }
+
+    .toplist{
+        gap: 100px;
+      
+    }
+
+    .toplist a{
+        font-size: 15px;
+        font-family: Outfit;
+        font-weight: 400;
+        line-height: 18.9px;
+        letter-spacing: 0.01em;
+        text-align: center;
+    }
+
+    .kp{
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .bottomlist {
+        gap: 100px
+    }
+    .bottomlist a{
+        font-size: 15px;
+        font-family: Outfit;
+        font-weight: 300;
+        line-height: 18.9px;
+        text-align: left;
+    }
+
+    .bottomlist{
+        gap: 90px;
+    }
+   
+    .logos img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .sun img{
+        width: 30px;
+        height: 30px;  
     }
 }

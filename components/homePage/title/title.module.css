@@ -76,8 +76,13 @@
     }
 
     .picture {
-        width: 100vw;
+        width: 90vw;
         /* height: 100vh; */
+    }
+
+    .responsiveImage {
+        width: 100%;
+        padding-left: 20px;
     }
 
     /* Fix extra padding */
