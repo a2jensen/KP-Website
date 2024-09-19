@@ -13,7 +13,6 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-   ;
     position: relative;
     background: rgba(236, 236, 236, 0.90);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
@@ -55,10 +54,17 @@
     border-color: #2C2C2C;
 }
 
-.joinButton { /* Join button */
+.joinButtonDesktop { /* Join button */
     background-color: #2C2C2C; 
     color: #F6F6F6;
     margin-left: 0px;
+}
+
+.joinButtonMobile { /* Join button */
+    background-color: #2C2C2C; 
+    color: #F6F6F6;
+    margin-left: 0px;
+    display: none;
 }
 
 .specialButton a {
@@ -81,6 +87,8 @@
         margin-right: 10%;
         margin-left: 25px;
     }
+
+    
 }
 
 @media (max-width: 1000px) {
@@ -97,12 +105,15 @@
     .listElement {
         font-size: large;
         margin: 0px 5px;
-        margin-right: 0px;
     }
 
-    .joinButton {
-        margin-left: 5px;
-        margin-right: 10px;
+    .joinButtonDesktop{
+        display: none;
+    }
+
+    .joinButtonMobile {
+        margin: 20px 20px 20px 30px;
+        display: block;
     }
 }
 
@@ -156,7 +167,7 @@
         width: 200px;
     }
 
-    .joinButton {
+    .joinButtonMobile {
         display: block;
         text-align: center;
         width: 75px;
@@ -224,7 +235,7 @@
         width: 200px;
     }
 
-    .joinButton {
+    .joinButtonMobile {
         display: block;
         text-align: center;
         width: 75px;
