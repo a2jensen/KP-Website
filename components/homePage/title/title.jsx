@@ -7,13 +7,7 @@ export default function Title() {
     return (
         <div className={styles.group}>            
             <div className={styles.picture}>
-                <Image
-                    src="/homePhoto.svg"
-                    width={400}
-                    height={340}
-                    className={styles.responsiveImage}
-                    alt=''
-                />
+                <img src="/homePhoto.svg" className={styles.responsiveImage} alt="Home Photo" />
             </div>
             <div className={styles.header}>
                 <h1> <strong>we believe everyone has a place<br>
