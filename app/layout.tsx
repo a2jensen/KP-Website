@@ -7,7 +7,7 @@ import Head from "next/head";
 const outfit = Outfit({ subsets: ['latin'], weight: ['100', '400', '700', '900'] });
 
 export const metadata: Metadata = {
-  title: "KP at UCSD",
+  title: "UCSD KP",
   description: "Official Website for Kaibigang Filipino Org at UCSD!",
 };
 
