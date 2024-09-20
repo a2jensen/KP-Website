@@ -35,46 +35,6 @@
     100% { border-color: transparent; }
   }
 
-.pinoyStarOne {
-    transform: rotate(14.418deg);
-    color: #000;
-    font-family: Nunito;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 0.64px;
-    margin-left: 1375px;
-    margin-top: 67px;
-    margin-right: 55px;
-}
-
-.pinoyStarTwo {
-    transform: rotate(-7.418deg);
-    color: #000;
-    font-family: Nunito;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 0.64px;
-    text-align: center;
-    margin-right: 1800px;
-}
-
-.pinoyStarThree {
-    color: #000;
-    font-family: Nunito;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 0.64px;
-    transform: rotate(-27.422deg);
-    margin-left: 800px;
-    margin-top: 108px;
-    margin-bottom: 345px;
-}
 
 /* styling for tablet screen */
 @media (min-width: 600px) and (max-width: 768px){
