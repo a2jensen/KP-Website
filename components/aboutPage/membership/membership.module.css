@@ -5,6 +5,9 @@
     src: url(fonts/coolvetica\ rg\ copy.otf);
 }
 
+.group {
+    margin-bottom: 200px;
+}
 .image{
     display: block;
     margin-left: auto;

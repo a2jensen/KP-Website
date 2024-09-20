@@ -7,6 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0%;
+    margin-bottom: 10%;
 }
 
 .header {
@@ -72,6 +73,9 @@
 
 /* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
+    .group {
+        margin-bottom: -120px;
+    }
     .header {
         margin-top: 33%;
         text-align: center;

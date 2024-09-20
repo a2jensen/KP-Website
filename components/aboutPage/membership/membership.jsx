@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function membership() {
   return (
-    <div>
+    <div className={styles.group}>
       <div className={styles.container}>
         <h3 className={styles.member}>Membership</h3>
         <p className={styles.info}>
