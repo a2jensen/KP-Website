@@ -7,8 +7,8 @@ import Head from "next/head";
 const outfit = Outfit({ subsets: ['latin'], weight: ['100', '400', '700', '900'] });
 
 export const metadata: Metadata = {
-  title: "KP @ UCSD",
-  description: "Kaibigang Filipino Org at UCSD",
+  title: "KP at UCSD",
+  description: "Official Website for Kaibigang Filipino Org at UCSD!",
 };
 
 export default function RootLayout({

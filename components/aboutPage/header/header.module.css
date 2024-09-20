@@ -2,21 +2,21 @@
 .KPis {
     /* margin-top: 448px; */
     text-align: center;
-    font-size: 75px;
+    font-size: 105px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.96px;
-    min-height: 50vh;
+    min-height: 90vh;
     padding-left: 15px;
-
+    margin-top: 150px;
 }
 
 
 
 .typeWriter {
     color: rgb(0, 0, 0);
-    font-size: 75px; /* Adjust as needed */
+    font-size: 105px; /* Adjust as needed */
     flex-wrap: wrap;
     overflow: hidden;
     display: inline;
@@ -85,5 +85,11 @@
 @media (min-width: 0px) and (max-width: 599px) {
     .KPis{
         text-align: left;
+        font-size: 75px;
+        margin-top: 20%;
+    }
+
+    .typeWriter {
+        font-size: 75px;
     }
 }
