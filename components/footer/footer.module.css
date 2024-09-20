@@ -19,7 +19,6 @@
     text-decoration: none;
     color: #FFF;
     text-align: center;
-    font-family: outfit;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -32,7 +31,6 @@
     color: #FFF;
     text-align: center;
     align-items: center;
-    font-family: outfit;
     font-size: 35px;
     letter-spacing: 2.275px;
     padding-top: 25px;
@@ -54,7 +52,6 @@
 .bottomlist a {
     text-decoration: none;
     color: white;
-    font-family: outfit;
     font-size: 24px;
 }
 
@@ -72,7 +69,6 @@
 
 .est{
     align-self: center;
-    font-family: outfit;
 }
 
 
@@ -88,7 +84,6 @@
 
     .toplist a{
         font-size: 15px;
-        font-family: Outfit;
         font-weight: 400;
         line-height: 18.9px;
         letter-spacing: 0.01em;
@@ -103,7 +98,6 @@
 
     .bottomlist a{
         font-size: 15px;
-        font-family: Outfit;
         font-weight: 300;
         line-height: 18.9px;
         text-align: left;
@@ -186,7 +180,6 @@
 
     .toplist a{
         font-size: 15px;
-        font-family: Outfit;
         font-weight: 400;
         line-height: 18.9px;
         letter-spacing: 0.01em;
@@ -204,7 +197,6 @@
     }
     .bottomlist a{
         font-size: 15px;
-        font-family: Outfit;
         font-weight: 300;
         line-height: 18.9px;
         text-align: left;
