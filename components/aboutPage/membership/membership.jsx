@@ -22,7 +22,7 @@ export default function membership() {
         <br />Video
         <br />Quiz 1 (not active)
         <br />Quiz 2
-        <br />*Please note, the Quiz #1 is not active. You currently DO NOT need to submit this to achieve membership. Please fulfill the other steps
+        <br />*Please note, the Quiz #1 is not active. You currently DO NOT need to submit this to achieve membership. Please fulfill the other steps.
         <br />
         <br />
         </p>
