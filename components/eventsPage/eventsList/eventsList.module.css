@@ -11,8 +11,8 @@
 }
 
 .filterContainer {
-    width: 100%; /* Make the filter container full width */
-    max-width: 1260px; /* Ensure it matches the event grid width */
+    width: 10%; /* Make the filter container full width */
+    margin-left: 100px; /* Ensure it matches the event grid width */
     display: flex;
     justify-content: flex-start; /* Align the filter to the left */
     margin-bottom: 20px; /* Add some spacing between filter and event grid */
