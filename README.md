@@ -51,13 +51,11 @@ this command ensures that your local repo pulls the latest repository. Now switc
 
 ```
 git checkout development
-```
-```
 git pull origin development
 ```
 2. Next, merge your branch with development
 
-Ensure that your on your branch, then run this command:
+Ensure that your back on your branch, then run this command:
 
 ```
 git merge origin development
