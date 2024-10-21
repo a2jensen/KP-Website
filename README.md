@@ -56,21 +56,27 @@ git checkout development
 git pull origin development
 ```
 2. Next, merge your branch with development
+
+Ensure that your on your branch, then run this command:
+
 ```
-git merge origin -Development
+git merge origin development
 ```
+
 3. Resolve any conflicts if neccsary
 
 In the event that conflicts emerge, git will notify you. You must resolve these manually.
 
 4. Push your changes
 
-Push your changes now. This will create a pull request!
+Push changes to your branch.
 ```
 git add .
 git commit -m "Task completion #"
-git push origin 
+git push origin your-branch-name
 ```
+
+Next, go here on Github and make a pull request to merge your changes in your branch to development.
 
 
  
