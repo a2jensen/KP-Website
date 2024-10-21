@@ -44,20 +44,27 @@ Finished a task and want to merge your changes with development branch?
 Follow this:
 
 1. First, ensure your branch and development branch have the latest changes in your local repository
+
+This command ensures that your local repo pulls the latest version from the remote repo.
 ```
 git pull origin your-branch-name
 ```
-this command ensures that your local repo pulls the latest repository. Now switch to dev branch and ensure that it is up to date
+Ensure your changes are stashed
+```
+git stash
+```
 
+Now switch to dev branch and ensure that it is up to date
 ```
 git checkout development
 git pull origin development
 ```
 2. Next, merge your branch with development
 
-Ensure that your back on your branch, then run this command:
+Ensure that your back on your branch, then run these commands to unstash your changes and merge with dev:
 
 ```
+git pop
 git merge origin development
 ```
 
@@ -74,7 +81,7 @@ git commit -m "Task completion #"
 git push origin your-branch-name
 ```
 
-Next, go here on Github and make a pull request to merge your changes in your branch to development.
+Next, go here on Github and make a pull request to merge your changes in your branch to development!
 
 
  
