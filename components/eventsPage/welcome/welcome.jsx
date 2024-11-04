@@ -1,6 +1,7 @@
 'use client'
 import React, {useState, useEffect} from 'react';
-import styles from "./welcome.module.css"
+// import styles from "./welcome.module.css"
+import styles from "./welcome.module.scss"
 import EventsCard from "../../eventscard/eventscard"
 
 export default function Welcome() {
