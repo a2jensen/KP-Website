@@ -1,0 +1,115 @@
+@import '../variables.scss';
+
+// Define color and spacing variables for reusability
+$background-color: #f3f3f3;
+$container-width: 1300px;
+$grid-gap: 60px;
+
+.pageContainer {
+  min-height: 100vh;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: $margins;
+  padding-bottom: $margins;
+}
+
+.filterContainer {
+  width: 100%;
+  max-width: $container-width;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: $grid-gap;
+  
+  .filterDropdown {
+    width: 200px;
+  }
+
+}
+
+.eventsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $grid-gap;
+  max-width: $container-width;
+  justify-items: center;
+  
+  > * {
+    min-width: 250px;
+    max-width: 100%;
+  }
+}
+
+// Media queries for responsiveness
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .eventGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .filterContainer {
+    max-width: 96px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .eventGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .filterContainer {
+    max-width: 650px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .eventGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+
+    > * {
+      margin-bottom: 50px;
+    }
+  }
+
+  .filterContainer {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filterContainer {
+    max-width: 320px;
+  }
+}
+
+// Loader animation
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+  clip-path: inset(0 100% 0 0);
+  animation: l5 2s steps(11) infinite;
+  padding: 100px;
+
+  &:before {
+    content: "Loading Events...";
+  }
+}
+
+@keyframes l5 {
+  to {
+    clip-path: inset(0 -1ch 0 0);
+  }
+}

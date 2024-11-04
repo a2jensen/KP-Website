@@ -1,6 +1,7 @@
 'use client'
 import React, {useState, useEffect} from 'react';
-import styles from "./eventsList.module.css";
+// import styles from "./eventsList.module.css";
+import styles from "./eventsList.module.scss";
 import {Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import EventsCard from '../../eventscard/eventscard.jsx';
 
