@@ -1,100 +1,115 @@
-@import '../variables.scss';
-
-// Define color and spacing variables for reusability
-$margins: 100px;
-$background-color: #f3f3f3;
-$container-width: 1300px;
-$grid-gap: 60px;
-
+/* Base/Laptop styles */
 .pageContainer {
   min-height: 100vh;
-  background-color: $background-color;
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: $margins;
-  padding-bottom: $margins;
+  align-items: center; /* Ensures everything inside is centered */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: -30px;
 }
 
 .filterContainer {
-  width: 100%;
-  max-width: $container-width;
+  width: 100%; /* Make the filter container full width */
+  max-width: 1260px; /* Ensure it matches the event grid width */
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: $grid-gap;
-  
-  .filterDropdown {
-    width: 200px;
-  }
+  justify-content: flex-start; /* Align the filter to the left */
+  margin-bottom: 20px; /* Add some spacing between filter and event grid */
+}
 
+.filterDropdown {
+  width: 200px; /* Fixed width for the dropdown */
 }
 
 .eventsContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .eventGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: $grid-gap;
-  max-width: $container-width;
-  justify-items: center;
-  
-  > * {
-    min-width: 250px;
-    max-width: 100%;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid setup */
+  gap: 60px; /* Space between the event cards */
+  max-width: 1300px;
+  justify-items: flex-start; /* Align items to the left */
 }
 
-// Media queries for responsiveness
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+.eventGrid > * {
+  min-width: 250px; /* Ensures the minimum width of each card */
+  max-width: 100%; /* Makes sure no card exceeds its grid space */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){ /* tablets */
   .eventGrid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+      grid-template-columns: repeat(3, 1fr); /* 2 events per row */
+      gap: 0px; /* Adjust spacing between the event cards */
   }
 
   .filterContainer {
-    max-width: 96px;
+      width: 100%; /* Make the filter container full width */
+      max-width: 96px; /* Ensure it matches the event grid width */
+      display: flex;
+      justify-content: flex-start; /* Align the filter to the left */
+      margin-bottom: 20px; /* Add some spacing between filter and event grid */
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+@media screen and (min-width: 768px) and (max-width: 1024px){ /* tablets */
   .eventGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+      grid-template-columns: repeat(2, 1fr); /* 2 events per row */
+      gap: 0px; /* Adjust spacing between the event cards */
   }
 
   .filterContainer {
-    max-width: 650px;
-    margin-bottom: 50px;
+      width: 100%; /* Make the filter container full width */
+      max-width: 650px; /* Ensure it matches the event grid width */
+      display: flex;
+      justify-content: flex-start; /* Align the filter to the left */
+      margin-bottom: 50px; /* Add some spacing between filter and event grid */
   }
 }
 
-@media screen and (max-width: 768px) {
-  .eventGrid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0;
 
-    > * {
+
+/* tablets */
+@media screen and (max-width: 768px){ 
+  .eventGrid {
+      grid-template-columns: repeat(1, 1fr); /* 2 events per row */
+      gap: 0px; /* Adjust spacing between the event cards */
+  }
+
+  .eventGrid > * {
+      min-width: 250px; /* Ensures the minimum width of each card */
+      max-width: 100%; /* Makes sure no card exceeds its grid space */
       margin-bottom: 50px;
-    }
   }
 
+
   .filterContainer {
-    max-width: 700px;
+      width: 100%; /* Make the filter container full width */
+      max-width: 700px; /* Ensure it matches the event grid width */
+      display: flex;
+      justify-content: flex-start; /* Align the filter to the left */
+      margin-bottom: 20px; /* Add some spacing between filter and event grid */
   }
 }
 
-@media screen and (max-width: 600px) {
+/* mobile + phone */
+@media screen and (max-width: 600px) { 
   .filterContainer {
-    max-width: 320px;
+      width: 100%; /* Make the filter container full width */
+      max-width: 320px; /* Ensure it matches the event grid width */
+      display: flex;
+      justify-content: flex-start; /* Align the filter to the left */
+      margin-bottom: 20px; /* Add some spacing between filter and event grid */
   }
+
 }
 
-// Loader animation
+/* HTML: <div class="loader"></div> */
 .loader {
   width: fit-content;
   font-weight: bold;
@@ -103,14 +118,8 @@ $grid-gap: 60px;
   clip-path: inset(0 100% 0 0);
   animation: l5 2s steps(11) infinite;
   padding: 100px;
-
-  &:before {
-    content: "Loading Events...";
-  }
 }
-
-@keyframes l5 {
-  to {
-    clip-path: inset(0 -1ch 0 0);
-  }
+.loader:before {
+  content:"Loading Events..."
 }
+@keyframes l5 {to{clip-path: inset(0 -1ch 0 0)}}
