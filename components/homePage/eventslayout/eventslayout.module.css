@@ -5,8 +5,8 @@
     min-height: 70vh;
     text-align: center;
     margin-top: 90px;
-    justify-content: flex-start;
-    justify-items: flex-start;
+    justify-content: center;
+    justify-items: center;
     margin-bottom: 100px;
 }
 
