@@ -40,8 +40,6 @@ export default function Welcome() {
         fetchData();
     }, []); // Empty dependency array ensures this effect runs only once when the component mounts
 
-    const upcomingEvents = Array.isArray(data) ? data.slice(0, 3) : [];
-
     // Function that filters the events based on user preference/click
     const filteredEvents = data.filter(event => {
         if(filter === 'UPCOMING'){
@@ -61,7 +59,7 @@ export default function Welcome() {
                     <div className={styles.loader}></div>
                 ) : (
                     <div className={styles.eventCards}>
-                        {upcomingEvents.map((event, index) => (
+                        {filteredEvents.map((event, index) => (
                             <EventsCard key={index} event={event}/>
                         ))}
                     </div>
