@@ -2,10 +2,21 @@
 @import '../variables.scss';
 
 $title-font-size: 60px;
-$container-spacing: $margins/2;
+$container-spacing: $margins / 2;
 $header-content-gap: 20px;
 
-/* Base/Laptop styles */
+// Mixin for reset
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// reset these so that styling is more accurate..
+.infoContainer, .title, .summary, .upcoming {
+  @include reset;
+}
+
+
 .mainContainer {
     font-family: 'Outfit', sans-serif;
     min-height: 70vh;
@@ -15,63 +26,33 @@ $header-content-gap: 20px;
     justify-items: center;
 }
 
-.infoContainer {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    align-content: left;
-}
 
 .title {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    font-size: $title-font-size;
-    font-weight: bold;
+  font-size: $title-font-size;
+  font-weight: bold;
 }
-
 .summary {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    margin-top: $header-content-gap;
-    font-size: $title-font-size / 3;
+  margin-top: $header-content-gap;
+  font-size: $title-font-size / 3;
 }
 
 
 .upcoming {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    font-size: $title-font-size * 0.75;
-    margin-top: $container-spacing;
+  font-size: $title-font-size * 0.75;
+  margin-top: $container-spacing;
 }
-
-.eventCards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid setup */
-    display: flex;
-    text-align: left;
+.eventCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  text-align: left;
 }
-
 .eventsContainer {
-    margin-top: $header-content-gap;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: $margins;
+  margin-top: $header-content-gap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: $margins;
 }
 
 
