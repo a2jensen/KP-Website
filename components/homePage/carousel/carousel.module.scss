@@ -1,0 +1,96 @@
+// globals
+$border: 2px solid #000;
+$background-image: url("homerect.jpg");
+
+/* 
+carousel
+    values
+        valueText
+keyframes
+*/
+
+.carousel {
+    background-image: $background-image;
+    background-size: cover;
+    min-height: 100px;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    border-top: $border; /* Adds a top border */
+    border-bottom: $border; /* Adds a bottom border */
+    box-sizing: border-box;
+    width: 100vw;
+
+    .values {
+        padding: 30px 0px;
+        white-space: nowrap;
+        display: inline-flex;
+        justify-content: space-around;
+        animation: 30s slide infinite linear;
+    }
+
+    .valueText {
+        font-size: 2em;
+        color: #000;
+        // text-shadow: 2px 2px 4px #000;
+        padding: 0px 20px;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+@media screen and (min-width: 431px) and (max-width: 600px) {
+    .carousel {
+        background-image: $background-image;
+        background-size: cover;
+        min-height: 32px;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+    }
+    .values {
+        padding: 3% 0px;
+        white-space: nowrap;
+        display: inline-flex;
+        justify-content: space-around;
+        justify-items: center;
+        animation: 30s slide infinite linear;
+    }
+    .valueText{
+        font-size: 21px;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .carousel {
+        background-image: $background-image;
+        background-size: cover;
+        min-height: 40px;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+    }
+    .values {
+        padding: 5% 0px;
+        white-space: nowrap;
+        display: inline-flex;
+        justify-content: space-around;
+        justify-items: center;
+        animation: 30s slide infinite linear;
+    }
+    .valueText{
+        font-size: 21px;
+        margin: 0 15px;
+    }
+    
+}
