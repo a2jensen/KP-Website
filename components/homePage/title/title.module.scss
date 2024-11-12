@@ -1,0 +1,98 @@
+// Variables
+$primary-color: #EFB758;
+$secondary-color: #C24229;
+$desktop-width: 768px;
+$tablet-width: 600px;
+
+// Mixin for media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (min-width: $desktop-width) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (min-width: $tablet-width) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == phone {
+    @media (max-width: 599px) {
+      @content;
+    }
+  }
+}
+
+// Styles
+.group {
+  min-height: 90vh;
+  max-height: 90vh;
+  background-image: url(../../../public/Texture.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0%;
+  margin-bottom: 10%;
+
+  @include respond-to(phone) {
+    margin-bottom: -120px;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-top: 2rem;
+
+  h1 {
+    font-size: 2.5em;
+    padding: 1rem;
+
+    @include respond-to(desktop) {
+      font-size: 3em;
+    }
+
+    @include respond-to(tablet) {
+      font-size: 6vw;
+    }
+  }
+
+  p {
+    font-size: 1em;
+
+    @include respond-to(desktop) {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.everyone, .clubAbbriviated {
+  color: $primary-color;
+}
+
+.clubName {
+  color: $secondary-color;
+}
+
+.picture {
+  text-align: center;
+  padding-top: 5%;
+  width: 100%;
+
+  @include respond-to(tablet) {
+    width: 100vw;
+  }
+
+  @include respond-to(phone) {
+    display: none;
+  }
+
+  .responsiveImage {
+    width: 100%;
+    max-width: none;
+
+    @include respond-to(desktop) {
+      width: 60%;
+    }
+  }
+}
