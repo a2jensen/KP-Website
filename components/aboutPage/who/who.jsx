@@ -1,7 +1,7 @@
 "use client"; // This directive marks the component as a client component
 
 import React, { useState }  from 'react'
-import styles from './who.module.css'
+import styles from './who.module.scss'
 import Image from 'next/image'
 import CardFlip1 from '../../whoCards/flip1.jsx';
 import CardFlip2 from '../../whoCards/flip2.jsx';

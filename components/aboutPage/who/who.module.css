@@ -1,259 +1,202 @@
-/* ref code from title.module.css */
 .group {
-    min-height: 90vh;
-    max-height: 500vh;
-    position: relative;
+  min-height: 90vh;
+  max-height: 500vh;
+  position: relative;
+  /* styling for title screen on desktops */
+  /* styling for tablet screen */
+  /* styling for small devices(phones,etc) screen */
 }
-
-.header {
-    padding-left: 30px;
-    text-align: left;
+.group .star4, .group .star3, .group .star2, .group .star1 {
+  position: absolute;
+  width: 80px; /* Or any other size */
+  height: 80px; /* Maintain aspect ratio */
 }
-
-.KPyellow {
-    color: #FBC300
+.group .star1 {
+  transform: rotate(20deg); /* Rotates the element 20 degrees clockwise */
+  top: 10px;
+  right: 50px; /* Top right corner */
 }
-
-.cardLayout {
-    display: flex;
-    justify-content: space-between; /* Distribute space between items */
-    align-items: center; /* Center items vertically */
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 30px;
-    margin-left: 80px;
-    margin-right: 80px;
+.group .star2 {
+  transform: rotate(60deg);
+  top: 400px;
+  right: 1400px; /* Top right corner */
 }
-
-/* stickers positioining */
-.star1 {
-    transform: rotate(20deg); /* Rotates the element 20 degrees clockwise */
-    position: absolute;
-    width: 80px; /* Or any other size */
-    height: 80px; /* Maintain aspect ratio */
-    top: 10px;
-    right: 50px; /* Top right corner */
+.group .star3 {
+  transform: rotate(32deg);
+  top: 200px;
+  right: 930px; /* Top right corner */
 }
-
-.star2 {
-    transform: rotate(60deg);
-    position: absolute;
-    width: 80px; /* Or any other size */
-    height: 80px; /* Maintain aspect ratio */
-    top: 400px;
-    right: 1400px; /* Top right corner */
+.group .star4 {
+  transform: rotate(65deg);
+  top: 550px;
+  right: 500px; /* Top right corner */
 }
-
-.star3 {
-    transform: rotate(32deg);
-    position: absolute;
-    width: 80px; /* Or any other size */
-    height: 80px; /* Maintain aspect ratio */
-    top: 200px;
-    right: 930px; /* Top right corner */
+.group .world1 {
+  transform: rotate(5deg);
+  position: absolute;
+  width: 120px; /* Or any other size */
+  height: 120px; /* Maintain aspect ratio */
+  top: 50px;
+  right: 428px; /* Top right corner */
 }
-
-.star4 {
-    transform: rotate(65deg);
-    position: absolute;
-    width: 80px; /* Or any other size */
-    height: 80px; /* Maintain aspect ratio */
-    top: 550px;
-    right: 500px; /* Top right corner */
+.group .jeep1 {
+  transform: rotate(-15deg);
+  position: absolute;
+  width: 120px; /* Or any other size */
+  height: 120px; /* Maintain aspect ratio */
+  top: 500px;
+  right: 900px; /* Top right corner */
 }
-
-.world1 {
-    transform: rotate(5deg);
-    position: absolute;
-    width: 120px; /* Or any other size */
-    height: 120px; /* Maintain aspect ratio */
-    top: 50px;
-    right: 428px; /* Top right corner */
+.group .header {
+  padding-left: 30px;
+  text-align: left;
 }
-
-.jeep1 {
-    transform: rotate(-15deg);
-    position: absolute;
-    width: 120px; /* Or any other size */
-    height: 120px; /* Maintain aspect ratio */
-    top: 500px;
-    right: 900px; /* Top right corner */
+.group .header .KPyellow {
+  color: #FBC300;
 }
-
-
-/* styling for title screen on desktops */
-@media (min-width: 1240px){
-   .picture {
-        width: 100%;
-   }
-
-   .responsiveImage {
-        width: 60%;
-   }
-
-    .header h1 {
-        font-size: 4em;
-    }
-
-    .header p {
-        font-size: 1.2em;
-    }
+.group .cardLayout {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center items vertically */
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
-
-/* styling for tablet screen */
-@media (min-width: 599px) and (max-width: 1240px){
-    .picture {
-        width: 75%;
-   }
-
-   .responsiveImage {
-        width: 50%;
-   }
-
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .header p {
-        font-size: 1em;
-    }
-
+@media (min-width: 1240px) {
+  .group .picture {
+    width: 100%;
+  }
+  .group .responsiveImage {
+    width: 60%;
+  }
+  .group .header h1 {
+    font-size: 4em;
+  }
+  .group .header p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 599px) and (max-width: 1240px) {
+  .group {
     /* Ensure the cardLayout is full-width and responsive */
-    .cardLayout {
-        flex-direction: row; /* Stack elements vertically */
-        align-items: stretch; /* Stretch items to take full width */
-        margin-left: 10px; /* Adjust margins for smaller screens */
-        margin-right: 10px;
-    }
-
     /* Select the cards individually if needed or use a common class if they share one */
-    .cardLayout > div {
-        width: 80%; /* Reduce the width of each card to 80% of its container */
-        margin: 40px auto; /* Adds vertical space and centers horizontally */
-        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-    }
-
-    .cardLayout > div img {
-        max-width: 80%; /* Optionally reduce the max-width to less than 100% if needed */
-        height: auto;  /* Maintain aspect ratio */
-        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-    }
-
-    .star1 {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .star2 {
-        top: 55%;
-        right: 95%;
-        width: 8%;  
-        height: 8%;
-    }
-
-    .star3 {
-        top: 20%;
-        right: 63%;
-        width: 8%;  
-        height: 8%;
-    }
-
-    .star4 {
-        top: 75%;
-        right: 45%;
-        width: 8%;  
-        height: 8%;
-    }
-
-    .world1 {
-        top: 5%;
-        right: 40%;
-        width: 15%;  
-        height: 15%;
-    }
-
-    .jeep1 {
-        top: 68%;
-        right: 75%;
-        width: 15%;  
-        height: 15%;
-    }
-
+  }
+  .group .picture {
+    width: 75%;
+  }
+  .group .responsiveImage {
+    width: 50%;
+  }
+  .group .header h1 {
+    font-size: 2em;
+  }
+  .group .header p {
+    font-size: 1em;
+  }
+  .group .cardLayout {
+    flex-direction: row; /* Stack elements vertically */
+    align-items: stretch; /* Stretch items to take full width */
+    margin-left: 10px; /* Adjust margins for smaller screens */
+    margin-right: 10px;
+  }
+  .group .cardLayout > div {
+    width: 80%; /* Reduce the width of each card to 80% of its container */
+    margin: 40px auto; /* Adds vertical space and centers horizontally */
+    transition: width 0.3s ease-in-out; /* Smooth transition for resizing */
+  }
+  .group .cardLayout > div img {
+    max-width: 80%; /* Optionally reduce the max-width to less than 100% if needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: width 0.3s ease-in-out; /* Smooth transition for resizing */
+  }
+  .group .star1 {
+    width: 50px;
+    height: 50px;
+  }
+  .group .star2 {
+    top: 55%;
+    right: 95%;
+    width: 50px;
+    height: 50px;
+  }
+  .group .star3 {
+    top: 20%;
+    right: 63%;
+    width: 50px;
+    height: 50px;
+  }
+  .group .star4 {
+    top: 75%;
+    right: 45%;
+    width: 50px;
+    height: 50px;
+  }
+  .group .world1 {
+    top: 5%;
+    right: 40%;
+    width: 50px;
+    height: 50px;
+  }
+  .group .jeep1 {
+    top: 68%;
+    right: 75%;
+    width: 15%;
+    height: 15%;
+  }
 }
-
-/* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
-    .group {
-        min-height: auto; /* Allow container to grow with content */
-    }
-
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .header p {
-        font-size: 0.8em;
-    }
-
-    .cardLayout {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: stretch; /* Stretch items to take full width */
-        margin-left: 10px; /* Adjust margins for smaller screens */
-        margin-right: 10px;
-    }
-
-    /* Select the cards individually if needed or use a common class if they share one */
-    .cardLayout > div {
-        width: 80%; /* Reduce the width of each card to 80% of its container */
-        margin: 40px auto; /* Adds vertical space and centers horizontally */
-        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-    }
-
-    .cardLayout > div img {
-        max-width: 80%; /* Optionally reduce the max-width to less than 100% if needed */
-        height: auto;  /* Maintain aspect ratio */
-        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-    }
-    .star1 {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .star2 {
-        top: 55%;
-        right: 95%;
-        width: 8%;  
-        height: 8%;
-    }
-
-    .star3 {
-        top: 20%;
-        right: 63%;
-        width: 8%;  
-        height: 8%;
-    }
-
-    .star4 {
-        top: 75%;
-        right: 45%;
-        width: 8%;  
-        height: 8%;
-    }
-
-    .world1 {
-        top: 5%;
-        right: 40%;
-        width: 15%;  
-        height: 15%;
-    }
-
-    .jeep1 {
-        top: 68%;
-        right: 75%;
-        width: 15%;  
-        height: 15%;
-    }
+  .group .group {
+    min-height: auto; /* Allow container to grow with content */
+  }
+  .group .group .header h1 {
+    font-size: 2em;
+  }
+  .group .group .header p {
+    font-size: 0.8em;
+  }
+  .group .group .cardLayout {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: stretch; /* Stretch items to take full width */
+    margin-left: 10px; /* Adjust margins for smaller screens */
+    margin-right: 10px;
+  }
+  .group .group .star1 {
+    width: 50px;
+    height: 50px;
+  }
+  .group .group .star2 {
+    top: 55%;
+    right: 95%;
+    width: 50px;
+    height: 50px;
+  }
+  .group .group .star3 {
+    top: 20%;
+    right: 63%;
+    width: 50px;
+    height: 50px;
+  }
+  .group .group .star4 {
+    top: 75%;
+    right: 45%;
+    width: 50px;
+    height: 50px;
+  }
+  .group .group .world1 {
+    top: 5%;
+    right: 40%;
+    width: 50px;
+    height: 50px;
+  }
+  .group .group .jeep1 {
+    top: 68%;
+    right: 75%;
+    width: 50px;
+    height: 50px;
+  }
 }
 
-
+/*# sourceMappingURL=who.module.css.map */

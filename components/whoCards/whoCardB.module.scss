@@ -1,0 +1,108 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    align-items: center;
+    background-color: #D8D8C9;
+    position: relative; /* for absolute positioning inside */
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 20px; 
+
+    .tape {
+        margin-bottom: 60px;
+        position: absolute; /* allows positioning outside the container */
+        top: -20px;         /* moves the image 20px above the top border */
+        left: 27%;        /* moves the image 20px to the left of the left border */
+
+        .overlaycard {
+            position: relative;
+            width: 285px;
+            height: 282px; 
+            border-radius: 8px;
+            overflow: hidden; /* Ensures content doesn't overflow */
+            background-color: #FCFBF7; /* Background color for the box */
+            /* tan color: #D8D8C9 */
+    
+            .box {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #FCFBF7; /* Background color for the box */
+            }
+    
+            .overlaytext {
+                position: absolute;
+                padding-top: 10%;
+                padding-bottom: 10%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); /* Center the text */
+                color: #333;
+                width: 85%; /* Adjust the width as needed */
+                text-align: left;
+                /* font-size: 1.5em; */
+                pointer-events: none; /* Ensures the overlay text doesn't interfere with box content interactions */
+            }
+        }
+    }
+
+    .flip {
+        padding-top: 8%;
+        width: 15%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        opacity: 0.5;
+    }
+
+}
+/* styling for title screen on desktops */
+@media (min-width: 1024px){
+  .picture {
+       width: 100%;
+  }
+
+  .responsiveImage {
+       width: 60%;
+  }
+
+}
+
+/* styling for tablet screen */
+@media (min-width: 599px) and (max-width: 1024px){
+   .tape {
+       max-width: 75%; /* Optionally reduce the max-width to less than 100% if needed */
+       height: auto;  /* Maintain aspect ratio */
+       transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+       left: 18%;        /* moves the image 20px to the left of the left border */
+       top: -14%;
+   }
+
+}
+
+/* styling for small devices(phones,etc) screen */
+@media (min-width: 0px) and (max-width: 599px) {
+   .tape {
+       max-width: 70%; /* Optionally reduce the max-width to less than 100% if needed */
+       height: auto;  /* Maintain aspect ratio */
+       transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+       left: 25%;
+       top: -5%;
+   }
+   
+   .overlaycard {
+      font-size: 13px;
+      width: 200px
+   }
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+}
