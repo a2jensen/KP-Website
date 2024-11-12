@@ -1,12 +1,16 @@
+$border: #ccc;
+$background: #D8D8C9;
+$text: #333;
+
 .card {
-    border: 1px solid #ccc;
+    border: 1px solid $border;
     border-radius: 8px;
     overflow: visible;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
     align-items: center;
     text-align: center;
-    background-color: #D8D8C9;
+    background-color: $background;
     position: relative; /* for absolute positioning inside */
     margin: 0 20px; 
 
@@ -93,7 +97,7 @@
   
   .cardText {
     font-size: 1em;
-    color: #333;
+    color: $text;
   }
 
   .listAdjust {

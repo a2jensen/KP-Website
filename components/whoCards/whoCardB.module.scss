@@ -1,11 +1,17 @@
+$border: #ccc;
+$background: #D8D8C9;
+$text: #333;
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$overlay:#FCFBF7;
+
 .card {
-    border: 1px solid #ccc;
+    border: 1px solid $border;
     border-radius: 8px;
     overflow: visible;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px $shadow;
     transition: transform 0.2s;
     align-items: center;
-    background-color: #D8D8C9;
+    background-color: $background;
     position: relative; /* for absolute positioning inside */
     padding-top: 60px;
     padding-bottom: 20px;
@@ -26,7 +32,7 @@
         height: 282px; 
         border-radius: 8px;
         overflow: hidden; /* Ensures content doesn't overflow */
-        background-color: #FCFBF7; /* Background color for the box */
+        background-color: $overlay; /* Background color for the box */
         /* tan color: #D8D8C9 */
 
         .box {
@@ -35,7 +41,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #FCFBF7; /* Background color for the box */
+            background-color: $overlay; /* Background color for the box */
         }
 
         .overlaytext {
@@ -45,7 +51,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); /* Center the text */
-            color: #333;
+            color: $text;
             width: 85%; /* Adjust the width as needed */
             text-align: left;
             /* font-size: 1.5em; */
