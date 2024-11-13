@@ -54,43 +54,7 @@ $text: #333;
             text-align: center;
             opacity: 0.5;
           }
-    }
-
-    /* styling for title screen on desktops */
-    @media (min-width: 1024px){
-        .responsiveImage {
-            width: 60%;
-        }
-    
-    }
-    
-    /* styling for tablet screen */
-    @media (min-width: 599px) and (max-width: 1240px){
-        .tape {
-            max-width: 50%; /* Optionally reduce the max-width to less than 100% if needed */
-            height: auto;  /* Maintain aspect ratio */
-            transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-            top: -5%;
-            left: 50%; /* Move the tape to the center horizontally */
-            transform: translateX(-50%); /* Shift the tape back by half its width to fully center it */
-        }
-    
-    }
-    
-    /* styling for small devices(phones,etc) screen */
-    @media (min-width: 0px) and (max-width: 599px) {
-        .tape {
-            width: 50%; /* Optionally reduce the max-width to less than 100% if needed */
-            height: auto;  /* Maintain aspect ratio */
-            transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-            left: 25%;
-        }   
-  
-        .card {
-        height: 400px;
-        }
-    } 
-  
+    }  
   .card:hover {
     transform: scale(1.05);
   }
@@ -104,3 +68,37 @@ $text: #333;
     margin-top: 5px;
   }
 }
+
+/* styling for title screen on desktops */
+@media (min-width: 1024px){
+    .responsiveImage {
+        width: 60%;
+    }
+
+}
+
+/* styling for tablet screen */
+@media (min-width: 599px) and (max-width: 1024px){
+    .tape {
+        max-width: 50%; /* Optionally reduce the max-width to less than 100% if needed */
+        height: auto;  /* Maintain aspect ratio */
+        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+        top: -5%;
+        left: 50%; /* Move the tape to the center horizontally */
+        transform: translateX(-15%);
+    }
+}
+
+/* styling for small devices(phones,etc) screen */
+@media (min-width: 0px) and (max-width: 599px) {
+    .tape {
+        width: 50%; /* Optionally reduce the max-width to less than 100% if needed */
+        height: auto;  /* Maintain aspect ratio */
+        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+        left: 25%;
+    }   
+
+    .card {
+    height: 400px;
+    }
+} 

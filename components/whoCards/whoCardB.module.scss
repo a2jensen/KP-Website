@@ -68,47 +68,51 @@ $overlay:#FCFBF7;
         opacity: 0.5;
     }
 
+    .card:hover {
+        transform: scale(1.05);
+    }
+
 }
 /* styling for title screen on desktops */
 @media (min-width: 1024px){
-  .picture {
-       width: 100%;
-  }
-
-  .responsiveImage {
-       width: 60%;
-  }
-
+    .card {
+        .picture {
+            width: 100%;
+       }
+     
+       .responsiveImage {
+            width: 60%;
+       }
+    }
 }
 
 /* styling for tablet screen */
 @media (min-width: 599px) and (max-width: 1024px){
-   .tape {
-       max-width: 75%; /* Optionally reduce the max-width to less than 100% if needed */
-       height: auto;  /* Maintain aspect ratio */
-       transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-       left: 18%;        /* moves the image 20px to the left of the left border */
-       top: -14%;
-   }
-
+    .card {
+        .tape {
+            max-width: 75%; /* Optionally reduce the max-width to less than 100% if needed */
+            height: auto;  /* Maintain aspect ratio */
+            transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+            left: 18%;        /* moves the image 20px to the left of the left border */
+            top: -14%;
+        }
+    }
 }
 
 /* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
-   .tape {
-       max-width: 70%; /* Optionally reduce the max-width to less than 100% if needed */
-       height: auto;  /* Maintain aspect ratio */
-       transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-       left: 25%;
-       top: -5%;
-   }
-   
-   .overlaycard {
-      font-size: 13px;
-      width: 200px
-   }
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
+    .card {
+        .tape {
+            max-width: 70%; /* Optionally reduce the max-width to less than 100% if needed */
+            height: auto;  /* Maintain aspect ratio */
+            transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+            left: 25%;
+            top: -5%;
+        }
+        
+        .overlaycard {
+           font-size: 13px;
+           width: 200px
+        }
+    }
 }

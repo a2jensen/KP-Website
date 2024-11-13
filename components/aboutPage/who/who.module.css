@@ -1,36 +1,3 @@
-.group {
-  min-height: 90vh;
-  max-height: 500vh;
-  position: relative;
-  /* styling for title screen on desktops */
-  /* styling for tablet screen */
-  /* styling for small devices(phones,etc) screen */
-}
-.group .star4, .group .star3, .group .star2, .group .star1 {
-  position: absolute;
-  width: 80px; /* Or any other size */
-  height: 80px; /* Maintain aspect ratio */
-}
-.group .star1 {
-  transform: rotate(20deg); /* Rotates the element 20 degrees clockwise */
-  top: 10px;
-  right: 50px; /* Top right corner */
-}
-.group .star2 {
-  transform: rotate(60deg);
-  top: 400px;
-  right: 1400px; /* Top right corner */
-}
-.group .star3 {
-  transform: rotate(32deg);
-  top: 200px;
-  right: 930px; /* Top right corner */
-}
-.group .star4 {
-  transform: rotate(65deg);
-  top: 550px;
-  right: 500px; /* Top right corner */
-}
 .group .world1 {
   transform: rotate(5deg);
   position: absolute;
@@ -65,7 +32,18 @@
   margin-left: 80px;
   margin-right: 80px;
 }
+
+/* styling for title screen on desktops */
 @media (min-width: 1240px) {
+  .group {
+    background-image: url("../../../public/AboutDesktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 90vh;
+    max-height: 500vh;
+    position: relative;
+  }
   .group .picture {
     width: 100%;
   }
@@ -79,8 +57,13 @@
     font-size: 1.2em;
   }
 }
+/* styling for tablet screen */
 @media (min-width: 599px) and (max-width: 1240px) {
   .group {
+    background-image: url("../../../public/AboutTablet.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     /* Ensure the cardLayout is full-width and responsive */
     /* Select the cards individually if needed or use a common class if they share one */
   }
@@ -112,28 +95,6 @@
     height: auto; /* Maintain aspect ratio */
     transition: width 0.3s ease-in-out; /* Smooth transition for resizing */
   }
-  .group .star1 {
-    width: 50px;
-    height: 50px;
-  }
-  .group .star2 {
-    top: 55%;
-    right: 95%;
-    width: 50px;
-    height: 50px;
-  }
-  .group .star3 {
-    top: 20%;
-    right: 63%;
-    width: 50px;
-    height: 50px;
-  }
-  .group .star4 {
-    top: 75%;
-    right: 45%;
-    width: 50px;
-    height: 50px;
-  }
   .group .world1 {
     top: 5%;
     right: 40%;
@@ -147,51 +108,44 @@
     height: 15%;
   }
 }
+/* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
-  .group .group {
+  .group {
+    background-image: url("../../../public/AboutMobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: auto; /* Allow container to grow with content */
   }
-  .group .group .header h1 {
+  .group .header h1 {
     font-size: 2em;
   }
-  .group .group .header p {
+  .group .header p {
     font-size: 0.8em;
   }
-  .group .group .cardLayout {
+  .group .cardLayout {
     flex-direction: column; /* Stack elements vertically */
     align-items: stretch; /* Stretch items to take full width */
     margin-left: 10px; /* Adjust margins for smaller screens */
     margin-right: 10px;
   }
-  .group .group .star1 {
-    width: 50px;
-    height: 50px;
+  .group .cardLayout > div {
+    width: 80%; /* Reduce the width of each card to 80% of its container */
+    margin: 40px auto; /* Adds vertical space and centers horizontally */
+    transition: width 0.3s ease-in-out; /* Smooth transition for resizing */
   }
-  .group .group .star2 {
-    top: 55%;
-    right: 95%;
-    width: 50px;
-    height: 50px;
+  .group .cardLayout > div img {
+    max-width: 80%; /* Optionally reduce the max-width to less than 100% if needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: width 0.3s ease-in-out; /* Smooth transition for resizing */
   }
-  .group .group .star3 {
-    top: 20%;
-    right: 63%;
-    width: 50px;
-    height: 50px;
-  }
-  .group .group .star4 {
-    top: 75%;
-    right: 45%;
-    width: 50px;
-    height: 50px;
-  }
-  .group .group .world1 {
+  .group .world1 {
     top: 5%;
     right: 40%;
     width: 50px;
     height: 50px;
   }
-  .group .group .jeep1 {
+  .group .jeep1 {
     top: 68%;
     right: 75%;
     width: 50px;
