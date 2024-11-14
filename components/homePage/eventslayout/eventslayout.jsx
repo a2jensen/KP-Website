@@ -53,7 +53,7 @@ export default function Welcome() {
 
     return (
         <div className={styles.mainContainer}>
-            <p className={styles.title}>UPCOMING EVENTS</p>
+            <p className={styles.title}>UPCOMING EVENTS:</p>
             <div className={styles.eventsContainer}>
                 {filteredEvents.length === 0 ? (
                     <div className={styles.loader}></div>

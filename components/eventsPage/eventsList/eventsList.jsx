@@ -47,6 +47,7 @@ export default function EventsList() {
         fetchData();
     }, []); // Empty dependency array ensures this effect runs only once when the component mounts
 
+    console.log(data);
 
     // Function that filters the events based on user preference/click
     const filteredEvents = data.filter(event => {

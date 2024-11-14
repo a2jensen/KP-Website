@@ -1,47 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* Base/Laptop styles */
+$title-font-size: 60px;
+$margins: 100px;
+$container-spacing: $margins / 2;
+$header-content-gap: 20px;
+
+// Mixin for reset
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// reset these so that styling is more accurate..
+.infoContainer, .title, .summary, .upcoming {
+  @include reset;
+}
+
+
 .mainContainer {
     font-family: 'Outfit', sans-serif;
     min-height: 70vh;
-    text-align: center;
-    margin-top: 90px;
-    justify-content: flex-start;
-    justify-items: flex-start;
-    margin-bottom: 100px;
+    text-align: left;
+    margin-top: 100px;
+    justify-content: center;
+    justify-items: center;
 }
 
-.infoContainer {
-    align-content: left;
-}
 
 .title {
-    font-size: 60px;
-    font-weight: bold;
+  font-size: $title-font-size;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
-
 .summary {
-    font-size: 20px;
+  margin-top: $header-content-gap;
+  font-size: $title-font-size / 2.5;
+  margin-bottom: 100px;
 }
 
 
 .upcoming {
-    font-size: 50px;
-    margin-top: 50px;
+  font-size: $title-font-size * 0.75;
+  margin-top: $container-spacing;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.eventCards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid setup */
-    display: flex;
-    text-align: left;
+.eventCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  text-align: left;
 }
-
 .eventsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
+  margin-top: $header-content-gap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: $margins;
 }
 
 
