@@ -9,6 +9,7 @@ export default function EventsList() {
     // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState('ALL')
+    const [isLoading, setIsLoading] = useState(true);
 
     const handleChange = (event) => {
         setFilter(event.target.value)
@@ -19,6 +20,7 @@ export default function EventsList() {
         // Define an asynchronous function to fetch data from the API
         const fetchData = async () => {
             try {
+                setIsLoading(true); // Set loading state to true
                 // Fetch data from the API with cache-busting parameter
                 const res = await fetch(`/api/eventsAPI?_=${new Date().getTime()}`, {
                     method: 'GET',
@@ -40,6 +42,8 @@ export default function EventsList() {
                 setData(result.data.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
+            } finally {
+                setIsLoading(false); // Set loading state to false
             }
         };
 
@@ -81,7 +85,7 @@ export default function EventsList() {
             </div>
             
             <div className={styles.eventsContainer}>
-                {filteredEvents.length === 0 ? (
+                {isLoading ? (
                     <div className={styles.loader}></div>
                 ) : (
                     <div className={styles.eventGrid}>

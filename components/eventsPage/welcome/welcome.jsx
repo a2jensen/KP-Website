@@ -8,12 +8,14 @@ export default function Welcome() {
     // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState('UPCOMING') // state variable to track current filter, upcoming is default
+    const [isLoading, setIsLoading] = useState(true); // state variable to track loading state
 
     // useEffect hook runs the fetchData function when the component mounts
     useEffect(() => {
         const fetchData = async () => {
             try {
                 // Fetch data from the API with cache-busting parameter
+                setIsLoading(true); // Set loading state to true
                 const res = await fetch(`/api/eventsAPI?_=${new Date().getTime()}`, {
                     method: 'GET',
                     headers: {
@@ -34,6 +36,8 @@ export default function Welcome() {
                 setData(result.data.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
+            } finally {
+                setIsLoading(false); // Set loading state to false
             }
         };
 
@@ -62,7 +66,7 @@ export default function Welcome() {
                 <p className={styles.upcoming}> <strong>upcoming...</strong></p>
             </div>
             <div className={styles.eventsContainer}>
-                {filteredEvents.length === 0 ? (
+                {isLoading ? (
                     <div className={styles.loader}></div>
                 ) : (
                     <div className={styles.eventCards}>
