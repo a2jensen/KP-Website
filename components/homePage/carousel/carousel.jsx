@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "./carousel.module.css"
+import styles from "./carousel.module.scss"
+// import './carousel.scss';
+
 
 export default function Carousel() {
     return (
