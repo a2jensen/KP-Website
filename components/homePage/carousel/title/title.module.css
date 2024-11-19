@@ -1,0 +1,60 @@
+
+
+.group {
+    min-height: 90vh;
+    max-height: 90vh;
+}
+
+.header {
+    text-align: center;
+}
+
+
+.picture {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* styling for title screen on desktops */
+@media (min-width: 768px){
+   .picture {
+        width: 100%;
+   }
+
+   .responsiveImage {
+        width: 60%;
+   }
+
+    .header h1 {
+        font-size: 4em;
+    }
+
+    .header p {
+        font-size: 1.2em;
+    }
+}
+
+/* styling for tablet screen */
+@media (min-width: 600px) and (max-width: 768px){
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+}
+
+/* styling for small devices(phones,etc) screen */
+@media (min-width: 0px) and (max-width: 599px) {
+    .header h1 {
+        font-size: 2em;
+        
+    }
+
+    .header p{
+        font-size: 0.8em;
+    }
+}
