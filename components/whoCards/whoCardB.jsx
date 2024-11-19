@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './whoCardB.module.css'
+import styles from './whoCardB.module.scss'
 
 const WhoCardB = ({ onSwitch, content }) => {
   return (
