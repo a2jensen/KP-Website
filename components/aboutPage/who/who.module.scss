@@ -1,24 +1,6 @@
 $kp-yellow: #FBC300;
 
 .group {
-    .world1 {
-        transform: rotate(5deg);
-        position: absolute;
-        width: 120px; /* Or any other size */
-        height: 120px; /* Maintain aspect ratio */
-        top: 50px;
-        right: 428px; /* Top right corner */
-    }
-    
-    .jeep1 {
-        transform: rotate(-15deg);
-        position: absolute;
-        width: 120px; /* Or any other size */
-        height: 120px; /* Maintain aspect ratio */
-        top: 500px;
-        right: 900px; /* Top right corner */
-    }
-
     .header {
         padding-left: 30px;
         text-align: left;
@@ -44,10 +26,10 @@ $kp-yellow: #FBC300;
 /* styling for title screen on desktops */
 @media (min-width: 1240px){
     .group {
-        background-image: url('../../../public/AboutDesktop.svg'); 
+        background-image: url('../../../public/AboutDesktop1.svg'); 
         background-size: cover;        
         background-repeat: no-repeat;   
-        background-position: center;
+        background-position: 50% 25%;
         min-height: 90vh;
         max-height: 500vh;
         position: relative;
@@ -71,13 +53,13 @@ $kp-yellow: #FBC300;
 }
 
 /* styling for tablet screen */
-@media (min-width: 599px) and (max-width: 1240px){
+@media (min-width: 599px) and (max-width: 1240px){ 
     .group {
-        background-image: url('../../../public/AboutTablet.svg'); 
+        background-image: url('../../../public/AboutTablet1.svg');
         background-size: cover;          
         background-repeat: no-repeat;   
-        background-position: center;
-
+        background-position: 50% 43%;
+        
         .picture {
             width: 75%;
         }
@@ -114,31 +96,17 @@ $kp-yellow: #FBC300;
             height: auto;  /* Maintain aspect ratio */
             transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
         }
-    
-        .world1 {
-            top: 5%;
-            right: 40%;
-            width: 50px;
-            height: 50px;
-        }
-    
-        .jeep1 {
-            top: 68%;
-            right: 75%;
-            width: 15%;  
-            height: 15%;
-        }
     }
 }
 
 /* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
     .group {
-        background-image: url('../../../public/AboutMobile.svg'); 
+        background-image: url('../../../public/AboutMobile1.svg'); 
         background-size: cover;          
         background-repeat: no-repeat;   
-        background-position: center;
-        
+        background-position: 50% 0%;
+        // or 93%
         min-height: auto; /* Allow container to grow with content */
 
         .header h1 {
@@ -166,20 +134,6 @@ $kp-yellow: #FBC300;
             max-width: 80%; /* Optionally reduce the max-width to less than 100% if needed */
             height: auto;  /* Maintain aspect ratio */
             transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
-        }
-    
-        .world1 {
-            top: 5%;
-            right: 40%;
-            width: 50px;
-            height: 50px;
-        }
-    
-        .jeep1 {
-            top: 68%;
-            right: 75%;
-            width: 50px;
-            height: 50px;
         }
     } 
 }
