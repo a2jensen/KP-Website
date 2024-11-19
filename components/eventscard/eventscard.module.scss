@@ -1,0 +1,101 @@
+// global variables
+$border-bottom: 1px solid black;
+
+.container {
+    outline: 2px solid rgb(201, 201, 201);
+    border-radius: 15px;
+    min-height: 390px;
+    width: 290px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(112, 112, 112, 0.2);
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    background-color: white;
+
+    .host {
+        border-bottom: $border-bottom;
+        font-size: 19.2px;
+        font-weight: bold;
+        color: grey;
+        padding-bottom: 10.56px;
+    }
+    .title {
+        height: 48px;
+        font-size: 38.4px;
+        font-weight: 400;
+        line-height: 48px;
+        font-weight: bold;
+        padding-top: 20px;
+        text-align: center;
+        min-height: 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .ellipse {
+        position: absolute;
+        top: 80px; /* Adjust the position as needed */
+        left: 0px;
+        z-index: 1; /* Ensure the SVG is behind the title */
+        opacity: 0.8; /* Optional: reduce opacity if needed */
+        pointer-events: none; /* Prevents the SVG from blocking interactions with other elements */
+    }
+
+    .date {
+        width: 231.36;
+        height: 47px;
+        font-size: 23.04px;
+        padding-bottom: 9.6px;
+        padding-top: 9.6px;
+        font-weight: 400px;
+    }
+
+    .location {
+        width: 231.36;
+        border-bottom: $border-bottom;
+        padding-top: -100px;
+        font-size: 14.4px;
+        padding-bottom: 7.68px;
+    }
+
+
+    .description {
+        border-bottom: $border-bottom;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1366px){ /* tablets */
+        .container {
+            margin-left: 0px;
+            width: 260px;
+            margin-bottom: 50px;
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1024px){ /* tablets */
+            .container {
+                margin-left: 0px;
+                width: 260px;
+                margin-bottom: 50px;
+            }
+        }
+        
+        @media screen and (min-width: 600px) and (max-width: 768px){ /* tablets */
+            .container {
+                margin-left: 0px;
+                width: 220px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) { /* mobile + phone */
+            .container {
+                width: 100%; /* Adjust the width */
+                width: 300px;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+

@@ -33,7 +33,7 @@ const CardFlip2 = () => {
                 <b><li>Friendship Games,</li></b>
                 <b><li>Pilipino Cultural Celebration (PCC),</li></b>
                 <b><li>Sayawan,</li></b>
-                <b><li>Pilipinio Awareness Week (PAW).</li></b>
+                <b><li>Pilipino Awareness Week (PAW).</li></b>
               </ul>
             </div>}
         />}

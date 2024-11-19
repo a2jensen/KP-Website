@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function membership() {
   return (
-    <div>
+    <div className={styles.group}>
       <div className={styles.container}>
         <h3 className={styles.member}>Membership</h3>
         <p className={styles.info}>
@@ -19,9 +19,9 @@ export default function membership() {
         
         <br />
         <br />Links:
-        <br />Video
-        <br />Quiz 1 (not active)
-        <br />Quiz 2
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/17ZYioEIyi52QRDDDOX6eryIzAPrPU96Q/view" target="_blank">Video</a>
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank">Quiz 1 (not active)</a>
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.google.com/forms/d/e/1FAIpQLSeecIfxc63lB5mEIwzzUpVhMsov0tumTU3BDvU8-ZCBY0uDCw/viewform" target="_blank">Quiz 2</a>
         <br />*Please note, the Quiz #1 is not active. You currently DO NOT need to submit this to achieve membership. Please fulfill the other steps.
         <br />
         <br />

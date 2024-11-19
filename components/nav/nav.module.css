@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     z-index: 100;
     width: 100vw;
+    
 }
 
 .container {
@@ -16,6 +17,8 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     outline: 1px solid #F6F6F6;
+    border-radius: 30px;
+    margin: 20px 50px 20px 50px;
 }
 
 
@@ -128,6 +131,10 @@
         
     }
 
+    .container{
+        margin: 0;
+    }
+
     .title {
         font-size: x-large;
         margin-right: 35%;
@@ -186,6 +193,7 @@
 @media screen and (max-width: 600px) {
     .container {
         border-radius: 0px;
+        margin: 0;
     }
 
     .title {
