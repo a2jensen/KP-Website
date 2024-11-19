@@ -58,7 +58,8 @@ export default function EventsList() {
         if(filter === 'ALL'){
             return new Date(event.date) > new Date();
         } else if(filter === 'GEN' || filter === 'STAR' || filter === 'CORE'){
-            return event.board === filter;
+            // return event.board === filter;
+            return (event.board === filter && new Date(event.date) > new Date());
         }
         return true;
     }).slice(0,9); // grabs the first three filtered events max

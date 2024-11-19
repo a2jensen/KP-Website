@@ -12,7 +12,7 @@
 
 .filterContainer {
   width: 100%; /* Make the filter container full width */
-  max-width: 1260px; /* Ensure it matches the event grid width */
+  max-width: 1340px; /* Ensure it matches the event grid width */
   display: flex;
   justify-content: flex-start; /* Align the filter to the left */
   margin-bottom: 20px; /* Add some spacing between filter and event grid */
@@ -49,7 +49,7 @@
 
   .filterContainer {
       width: 100%; /* Make the filter container full width */
-      max-width: 96px; /* Ensure it matches the event grid width */
+      max-width: 960px; /* Ensure it matches the event grid width */
       display: flex;
       justify-content: flex-start; /* Align the filter to the left */
       margin-bottom: 20px; /* Add some spacing between filter and event grid */
@@ -65,7 +65,7 @@
 
   .filterContainer {
       width: 100%; /* Make the filter container full width */
-      max-width: 650px; /* Ensure it matches the event grid width */
+      max-width: 645px; /* Ensure it matches the event grid width */
       display: flex;
       justify-content: flex-start; /* Align the filter to the left */
       margin-bottom: 50px; /* Add some spacing between filter and event grid */
@@ -89,8 +89,14 @@
 
 
   .filterContainer {
+      // width: 100%; /* Make the filter container full width */
+      // max-width: 100%; /* Ensure it matches the event grid width */
+      // display: flex;
+      // justify-content: flex-start; /* Align the filter to the left */
+      // margin-bottom: 20px; /* Add some spacing between filter and event grid */
+
       width: 100%; /* Make the filter container full width */
-      max-width: 700px; /* Ensure it matches the event grid width */
+      max-width: 310px; /* Ensure it matches the event grid width */
       display: flex;
       justify-content: flex-start; /* Align the filter to the left */
       margin-bottom: 20px; /* Add some spacing between filter and event grid */
