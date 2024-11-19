@@ -8,7 +8,7 @@ import EventsCard from '../../eventscard/eventscard.jsx';
 export default function EventsList() {
     // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it
     const [data, setData] = useState([]);
-    const [filter, setFilter] = useState('ALL')
+    const [filter, setFilter] = useState('UPCOMING')
     const [isLoading, setIsLoading] = useState(true);
 
     const handleChange = (event) => {
@@ -53,16 +53,24 @@ export default function EventsList() {
 
     console.log(data);
 
+    data.forEach((event) => {
+        if(event.board === ''){
+            event.board = 'EVENT';
+        }
+    }); // should i set this to "ANY"?
+
     // Function that filters the events based on user preference/click
     const filteredEvents = data.filter(event => {
-        if(filter === 'ALL'){
-            return new Date(event.date) > new Date();
+        if(filter === 'UPCOMING'){
+            return new Date(event.date) >= new Date();
+        }
+        else if(filter === 'PAST') {
+            return new Date(event.date) < new Date();
         } else if(filter === 'GEN' || filter === 'STAR' || filter === 'CORE'){
-            // return event.board === filter;
-            return (event.board === filter && new Date(event.date) > new Date());
+            return event.board === filter;
         }
         return true;
-    }).slice(0,9); // grabs the first three filtered events max
+    }); // grabs all
 
 
     return (
@@ -77,7 +85,8 @@ export default function EventsList() {
                         label="Filter"
                         onChange={handleChange}
                     >
-                        <MenuItem value="ALL">ALL</MenuItem>
+                        <MenuItem value="UPCOMING">UPCOMING</MenuItem>
+                        <MenuItem value="PAST">PAST</MenuItem>
                         <MenuItem value="GEN">GEN</MenuItem>
                         <MenuItem value="STAR">STAR</MenuItem>
                         <MenuItem value="CORE">CORE</MenuItem>

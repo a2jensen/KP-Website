@@ -46,7 +46,7 @@
 
 
 /* tablets */
-@media screen and (min-width: 600px) and (max-width: 1000px){ 
+@media screen and (min-width: 767px) and (max-width: 1000px){ 
     .eventCards {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 events per row */
@@ -54,7 +54,7 @@
 }
 
  /* mobile + phone */
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 767px) { 
     .eventCards {
         display: grid;
         grid-template-columns: repeat(1, 1fr); /* 2 events per row */
@@ -71,7 +71,6 @@
         font-size: 16px;
         padding: 12px;
     }
-
 }
 
 /* HTML: <div class="loader"></div> */
