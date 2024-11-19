@@ -116,6 +116,27 @@ $white-color:#F6F6F6;
     }
 }
 
+.showMenu{
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+        display: flex; 
+    }
+
+    @media screen and (max-width: 600px) {
+        max-height: 300px;
+        opacity: 1;
+    }
+}
+
+.noShadow {
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+        box-shadow: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        box-shadow: none;
+    }
+}
+
 .listElement {
     list-style-type: none;
     font-size: x-large;
