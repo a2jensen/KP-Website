@@ -1,0 +1,104 @@
+$border: #ccc;
+$background: #D8D8C9;
+$text: #333;
+
+.card {
+    border: 1px solid $border;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    align-items: center;
+    text-align: center;
+    background-color: $background;
+    position: relative; /* for absolute positioning inside */
+    margin: 0 20px; 
+
+    .tape {
+        margin-bottom: 60px;
+        position: absolute; /* allows positioning outside the container */
+        top: -20px;         /* moves the image 20px above the top border */
+        left: 27%;        /* moves the image 20px to the left of the left border */
+    }
+
+    .cardImage {
+        width: 308px;
+        height: 222px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        text-align: center;
+        align-items: center;
+        object-fit: cover; /* cover, contain, fill, scale-down, or none */
+    }
+
+    .cardContent {
+        padding: 16px;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically within the container */
+        align-items: center; /* Center items horizontally within the container */
+        text-align: center;
+
+        .cardTitle {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+        }
+
+        .flip {
+            padding-top: 8%;
+            width: 20%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            opacity: 0.5;
+          }
+    }  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardText {
+    font-size: 1em;
+    color: $text;
+  }
+
+  .listAdjust {
+    margin-top: 5px;
+  }
+}
+
+/* styling for title screen on desktops */
+@media (min-width: 1024px){
+    .responsiveImage {
+        width: 60%;
+    }
+
+}
+
+/* styling for tablet screen */
+@media (min-width: 599px) and (max-width: 1024px){
+    .tape {
+        max-width: 50%; /* Optionally reduce the max-width to less than 100% if needed */
+        height: auto;  /* Maintain aspect ratio */
+        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+        top: -5%;
+        left: 50%; /* Move the tape to the center horizontally */
+        transform: translateX(-15%);
+    }
+}
+
+/* styling for small devices(phones,etc) screen */
+@media (min-width: 0px) and (max-width: 599px) {
+    .tape {
+        width: 50%; /* Optionally reduce the max-width to less than 100% if needed */
+        height: auto;  /* Maintain aspect ratio */
+        transition: width 0.3s ease-in-out;  /* Smooth transition for resizing */
+        left: 25%;
+    }   
+
+    .card {
+    height: 400px;
+    }
+} 
