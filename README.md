@@ -4,6 +4,24 @@
 
 Hello! Welcome to the website for the Filipino Orginization here at UCSD. This project was a collaborative effort between a team of developers and designers that started early 2024, with the first iteration of the site releasing later that year in the fall. In this README you will find an overview of the project, steps to contribute, and setup.
 
+## Issues :
+You can find all the open issues under the "Issues" tab. Choose one of the issues and implement that feature following the steps described [here](#how-it-works). Whenever you open a pull request (step 4 in the steps described), make sure you add the corresponding issue to the PR.
+
+### How it Works
+
+Here's how you can get involved:
+
+1. **Fork this Repository:** Start by forking this repository to your GitHub account.
+
+2. **Create a New Branch:** Develop your feature or work on a task in a new branch. Be sure to name it appropriately, reflecting the task you're working on.
+
+3. **Commit & Push:** Make your changes, commit them, and push your branch to your forked repository.
+
+4. **Open a Pull Request:** Once you're ready to contribute, open a pull request from your branch to this main repository. Describe your changes, and our team will review it.
+
+5. **Collaboration:** Engage in discussions within the pull request and make any necessary revisions based on feedback from the devs.
+
+
 ## Getting Started
 
 Pre reqs:
