@@ -1,3 +1,9 @@
+# Kaibigang Pilipino @ UCSD
+
+#### Repository for Kaibigang Filipino's Website, developed by their WebDev team
+
+Hello! Welcome to the website for the Filipino Orginization here at UCSD. This project was a collaborative effort between a team of developers and designers that started early 2024, with the first iteration of the site releasing later that year in the fall. In this README you will find an overview of the project, steps to contribute, and setup.
+
 ## Getting Started
 
 Pre reqs:
