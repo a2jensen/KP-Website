@@ -1,10 +1,13 @@
 // Variables
-$primary-color: #EFB758;
-$secondary-color: #C24229;
-$desktop-width: 768px;
-$tablet-width: 600px;
+// Define primary and secondary colors used throughout the styles.
+$primary-color: #EFB758; // Primary color used for highlighting important text or sections.
+$secondary-color: #C24229; // Secondary color used for branding and important elements.
+$desktop-width: 768px; // Minimum width for desktop view.
+$tablet-width: 600px; // Minimum width for tablet view.
 
 // Mixin for media queries
+// This mixin helps define styles for different screen sizes (desktop, tablet, phone).
+// It accepts a breakpoint as input and applies styles accordingly.
 @mixin respond-to($breakpoint) {
   @if $breakpoint == desktop {
     @media (min-width: $desktop-width) {
@@ -22,77 +25,87 @@ $tablet-width: 600px;
 }
 
 // Styles
+// Styling for the main group section.
 .group {
-  min-height: 90vh;
-  max-height: 90vh;
-  background-image: url(../../../public/Texture.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0%;
-  margin-bottom: 10%;
+  min-height: 90vh; // Set minimum height to 90% of the viewport height.
+  max-height: 90vh; // Set maximum height to 90% of the viewport height.
+  background-image: url(../../../public/Texture.svg); // Set background image.
+  background-size: cover; // Ensure the background image covers the entire element.
+  background-repeat: no-repeat; // Prevent the background from repeating.
+  display: flex; // Use flexbox for layout.
+  flex-direction: column; // Arrange children elements in a column.
+  align-items: center; // Center children horizontally.
+  justify-content: center; // Center children vertically.
+  margin-top: 0%; // No top margin.
+  margin-bottom: 10%; // Add bottom margin.
 
   @include respond-to(phone) {
-    margin-bottom: -120px;
+    margin-bottom: -140px; // Adjust bottom margin for phone view to minimize space.
   }
 }
 
+// Styling for the header section.
 .header {
-  text-align: center;
-  margin-top: 2rem;
+  text-align: center; // Center the text inside the header.
+  margin-top: 2rem; // Add margin above the header.
 
   h1 {
-    font-size: 2.5em;
-    padding: 1rem;
+    font-size: 2.5em; // Set font size for main heading.
+    padding: 1rem; // Add padding around the heading.
 
     @include respond-to(desktop) {
-      font-size: 3em;
+      font-size: 3em; // Increase font size for desktop view.
     }
 
     @include respond-to(tablet) {
-      font-size: 6vw;
+      font-size: 6vw; // Set font size relative to viewport width for tablet view.
+    }
+
+    @include respond-to(phone) {
+      margin-top: -150px; // Move header further up for phone view to reduce gap // Adjust top margin for phone view to reduce space.
     }
   }
 
   p {
-    font-size: 1em;
+    font-size: 1em; // Set font size for paragraph text.
 
     @include respond-to(desktop) {
-      font-size: 1.2em;
+      font-size: 1.2em; // Increase font size for desktop view.
     }
   }
 }
 
+// Styling for highlighted text elements.
 .everyone, .clubAbbriviated {
-  color: $primary-color;
+  color: $primary-color; // Set primary color for these elements.
 }
 
+// Styling for the club name.
 .clubName {
-  color: $secondary-color;
+  color: $secondary-color; // Set secondary color for the club name.
 }
 
+// Styling for the picture container.
 .picture {
-  text-align: center;
-  padding-top: 5%;
-  width: 100%;
+  text-align: center; // Center the content inside the picture container.
+  padding-top: 5%; // Add padding to the top.
+  width: 100%; // Set width to 100% of the container.
 
   @include respond-to(tablet) {
-    width: 100vw;
+    width: 100vw; // Set width to full viewport width for tablet view.
   }
 
   @include respond-to(phone) {
     display: none;
+    position: absolute; // Completely remove the picture container from taking up space // Hide the picture for phone view.
   }
 
   .responsiveImage {
-    width: 100%;
-    max-width: none;
+    width: 100%; // Set width to 100% of the container.
+    max-width: none; // Remove any maximum width restrictions.
 
     @include respond-to(desktop) {
-      width: 60%;
+      width: 60%; // Set width to 60% of the container for desktop view.
     }
   }
 }
