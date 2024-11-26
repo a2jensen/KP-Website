@@ -1,3 +1,5 @@
+$black: rgb(0, 0, 0);
+
 .KPis {
     /* margin-top: 448px; */
     text-align: center;
@@ -11,10 +13,7 @@
     margin-top: 150px;
 }
 
-
-
 .typeWriter {
-    color: rgb(0, 0, 0);
     font-size: 105px; /* Adjust as needed */
     flex-wrap: wrap;
     overflow: hidden;
@@ -25,19 +24,27 @@
     I want it to be a step-end animation (jumps straight so it's not a weird transparent transition).
     I want it to repeat infinitely instead of a finite number, like 12 or 14.
   */
-    border-right: 5px solid black; 
-}
+    border-right: 5px solid $black; 
 
-@keyframes blinker {
-    from, to { border-color: transparent; }
-    76% { border-color: black; }
-    100% { border-color: transparent; }
-  }
+    @keyframes blinker {
+        from, to { border-color: transparent; }
+        76% { border-color: $black; }
+        100% { border-color: transparent; }
+    }
+}
 
 
 /* styling for tablet screen */
 @media (min-width: 600px) and (max-width: 768px){
-    
+    .KPis{
+        text-align: left;
+        font-size: 96px;
+        margin-top: 10.6%;
+    }
+
+    .typeWriter {
+        font-size: 90px;
+    }
 }
 
 /* styling for small devices(phones,etc) screen */
