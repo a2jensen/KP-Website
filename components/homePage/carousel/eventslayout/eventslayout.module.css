@@ -1,0 +1,156 @@
+.events {
+    min-height: 80vh;
+    background-image: url(/Texture.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.uEvents {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: Coolvetica;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+
+}
+
+.seeMoreArrowContainer {
+    display: inline-block;
+    justify-content: center; 
+    position: relative;
+    left: 300px;
+}
+
+.seeMoreArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    list-style-type: none;
+}
+
+.seeMoreArrow a{
+    text-decoration: none;
+    color: #000;
+}
+
+.seemore {
+    color: #000;
+    font-family: Outfit;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+.arrow{
+    display: inline-block;
+    position: relative;
+    top: 2.5px;
+}
+
+.eventsCard{
+    align-items: center;
+    width: 10%;
+}
+
+.star1{
+    display: inline-block;
+    color: #FBC300;
+    position: absolute;
+    font-size: 64px;
+    right: 375px;
+    transform: rotate(-5deg);
+}
+
+.star2{
+    display: inline-block;
+    color: #FBC300;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    font-size: 64px;
+    transform: rotate(-8deg);
+}
+
+.star3{
+    display: inline-block;
+    color: #FBC300;
+    position: absolute;
+    right: 150px;
+    top: 260px;
+    font-size: 64px;
+    transform: rotate(-10deg);
+}
+
+.star4{
+    display: inline-block;
+    color: #FBC300;
+    position: absolute;
+    bottom: 65px;
+    right: 110px;
+    font-size: 64px;
+    transform: rotate(21.35deg);
+}
+
+@media screen and (max-width: 430px){
+    .seeMoreArrowContainer{
+        padding-top: 70px;
+        padding-bottom: 80px;
+        right:0px;
+    }
+
+    .uEvents{
+        padding-top: 127px;
+        padding-bottom: 50px;
+    }
+
+    .star4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .seeMoreArrowContainer{
+        left: 150px;
+        padding-top: 70px;
+        padding-bottom: 161px ;
+    }
+
+    .uEvents{
+        padding-top: 161px;
+        padding-bottom: 50px;
+    }
+
+    .star1{
+        right: 58px;
+        top: 140px;
+    }
+
+    .star2{
+        left: 15px;
+        top: 550px;
+    }
+
+    .star3{
+        display: none;
+    }
+    .star4{
+        right: -50px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1512px){
+    
+}

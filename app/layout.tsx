@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 import  "./globals.css";
 import Nav from "@/components/nav/nav";
 import Footer from "@/components/footer/footer"
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <Analytics/>
         </body>
     </html>
   );
