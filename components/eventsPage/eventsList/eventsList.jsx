@@ -19,7 +19,7 @@ export default function EventsList() {
         const fetchData = async () => {
             try {
                 // Fetch data from the API with cache-busting parameter
-                const res = await fetch(`/api/eventsAPI?_=${new Date().getTime()}`, {
+                const res = await fetch(`/api/eventsAPI?_=${new Date().getTime()}`, { // we can either fetch directly from google spreadsheet API route and that may fix
                     method: 'GET',
                     headers: {
                         'Cache-Control': 'no-cache', // Prevent caching on the client side
@@ -77,7 +77,6 @@ export default function EventsList() {
                     </Select>
                 </FormControl>
             </div>
-            
             <div className={styles.eventsContainer}>
                 {filteredEvents.length === 0 ? (
                     <div className={styles.loader}></div>

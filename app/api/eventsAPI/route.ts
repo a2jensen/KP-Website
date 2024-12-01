@@ -1,5 +1,10 @@
 import { NextResponse } from "next/server";
 
+// DOCUMENTATION THAT MAY HELP FIXING THE CURRENT PROBLEM
+// https://nextjs.org/docs/app/building-your-application/data-fetching/fetching
+// https://nextjs.org/docs/app/building-your-application/routing/route-handlers
+// i think using route handlers might be more efficient
+
 
 // async function that handles GET requests
 export async function GET() {
