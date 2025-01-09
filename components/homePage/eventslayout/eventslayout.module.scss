@@ -58,6 +58,7 @@
     .eventCards {
         display: grid;
         grid-template-columns: repeat(1, 1fr); /* 2 events per row */
+        margin-bottom: 100px;
     }
 
 
