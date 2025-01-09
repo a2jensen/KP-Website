@@ -18,7 +18,8 @@ export default function EventsCard({event}) {
     'GEN + STAR': '/eventsCardBlue.svg',
     'GEN + CORE': '/eventsCardRed.svg',
     'STAR + CORE': '/eventsCardYellow.svg',
-    'ALL BOARD': '/eventsCardBlue.svg'
+    'ALL BOARD': '/eventsCardBlue.svg',
+    'EVENT': '/grey_circles.svg'
   };
 
   // setting the boardVariant
