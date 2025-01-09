@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react'
-import styles from './nav.module.scss'
+import styles from './nav.module.css'
 
 export default function Nav() {
     // state to manage menu visibility
