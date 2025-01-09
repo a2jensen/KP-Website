@@ -7,12 +7,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0%;
+    margin-bottom: 10%;
 }
 
 .header {
     text-align: center;
 }
 
+.everyone, .clubAbbriviated {
+    color: #EFB758;
+}
+
+.clubName {
+    color:#C24229
+}
 
 .picture {
     justify-content: center;
@@ -65,8 +73,18 @@
 
 /* styling for small devices(phones,etc) screen */
 @media (min-width: 0px) and (max-width: 599px) {
+    .group {
+        margin-bottom: -120px;
+    }
+    .header {
+        margin-top: 33%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
     .header h1 {
-        font-size: 2em;
+        font-size: 2.5em;
         padding: 15px;
     }
 
@@ -76,17 +94,13 @@
     }
 
     .picture {
-        width: 90vw;
+        display: none;
         /* height: 100vh; */
-    }
-
-    .responsiveImage {
-        width: 100%;
-        padding-left: 20px;
     }
 
     /* Fix extra padding */
     .header, .picture {
         padding: 0; /* Set padding to 0 or desired value */
     }
+
 }

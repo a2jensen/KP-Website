@@ -29,7 +29,7 @@ const CardFlip3 = () => {
                 students,</b> and <b>community college students.</b>
               <br></br><br></br>
               CORE notably hosts: <br></br>
-              <b>COREcon</b>, which focses on bringing the outer communities
+              <b>COREcon</b>, which focuses on bringing the outer communities
               together to engage in educational and engaging workshops.
              
             </div>}
