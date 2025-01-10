@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './summary.module.css'
+import styles from './summary.module.scss'
 
 export default function Summary() {
     return (
