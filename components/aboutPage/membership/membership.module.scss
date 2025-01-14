@@ -1,0 +1,156 @@
+/*
+  SCSS Documentation
+  ==================
+  Variables:
+    - $color_1: Primary color used for member elements.
+    - $color_2: Secondary color used for informational text.
+    - $color_3: Color used for bold text elements.
+    - $font-family_1: Font family used for h3 elements in member section.
+    - $font-family_2: Font family used for bold text elements.
+
+  Styles:
+    - .group: Adds bottom margin to the group element.
+    - .image: Centers the image and ensures it scales properly.
+    - .member: Styles member-related elements with color, font size, and alignment.
+      - h3: Nested styling for h3 within .member, applying font family, weight, and margin.
+    - .container: Sets up a flexbox container for centering and organizing content.
+    - .info: Styles informational text with specific font size, color, and alignment.
+    - .bold: Styles bold text with font weight, color, and alignment.
+    - .underline: Styles text with an underline, including font weight and alignment.
+
+  Media Queries:
+    - @media screen and (max-width: 430px): Adjusts styles for small screens.
+      - .container: Limits max-width for smaller viewports.
+      - .info: Reduces font size for better readability on small screens.
+      - .member: Adjusts margin and font size for smaller screens.
+      - .image: Ensures image remains at max-width for smaller screens.
+    - @media screen and (min-width: 430px) and (max-width: 600px): Adjusts styles for medium screens.
+      - .info: Adjusts font size and adds padding for better spacing.
+      - .container: Limits max-width for medium viewports.
+      - .member: Adjusts margin and font size for medium screens.
+      - .image: Sets max-width for images to maintain layout integrity.
+*/
+
+$color_1: #c14229;
+$color_2: #2b2b2b;
+$color_3: black;
+$font-family_1: 'Coolvetica';
+$font-family_2: outfit;
+
+// Group section styling
+.group {
+  margin-bottom: 200px; // Adds spacing below the group section
+}
+
+// Image styling for centering and scaling
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; // Ensures the image does not exceed the container width
+  height: auto; // Maintains the aspect ratio of the image
+}
+
+// Member section styling
+.member {
+  text-align: center; // Centers text within the member section
+  color: $color_1; // Uses primary color for member text
+  margin-bottom: 0;
+  line-height: 42px; // Sets line height for better readability
+  font-size: 64px; // Sets font size for member text
+
+  // Styling for h3 elements within member section
+  h3 {
+    font-family: $font-family_1; // Applies custom font
+    font-weight: 400; // Sets font weight
+    margin-bottom: 1000px; // Adds spacing below h3
+  }
+}
+
+// Container styling for flexbox layout
+.container {
+  display: flex; // Uses flexbox for layout
+  justify-content: center; // Centers content horizontally
+  align-items: center; // Centers content vertically
+  flex-direction: column; // Stacks items vertically
+  width: 100%;
+  max-width: 850px; // Limits the maximum width of the container
+  height: auto;
+  margin: 0 auto; // Centers the container within its parent
+}
+
+// Informational text styling
+.info {
+  font-size: 20px; // Sets default font size
+  color: $color_2; // Uses secondary color for text
+  font-weight: 400;
+  line-height: 22.5px; // Sets line height for readability
+  text-align: left; // Aligns text to the left
+  margin-top: 15px; // Adds space above info
+}
+
+// Bold text styling
+.bold {
+  font-weight: bold;
+  color: $color_3; // Uses black color for bold text
+  font-family: $font-family_2; // Applies custom font
+  font-weight: 700; // Sets font weight to bold
+  line-height: 22.5px;
+  text-align: left; // Aligns text to the left
+  font-family: inherit; // Inherit the font-family from parent element
+
+}
+
+// Underline text styling
+.underline {
+  text-decoration: underline; // Underlines the text
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: left; // Aligns text to the left
+}
+
+// Media query for small screens (max-width: 430px)
+@media screen and (max-width: 430px) {
+  .container {
+    max-width: 366px; // Limits container width for smaller screens
+  }
+
+  .info {
+    font-size: 15px; // Reduces font size for better readability on small screens
+    padding-left: 10px; // Adds padding to the left side
+    padding-right: 10px; // Adds padding to the right side 
+  }
+
+  .member {
+    margin-bottom: -10px; // Adjusts margin for better spacing
+    font-size: 35px; // Reduces font size for smaller screens
+  }
+
+  .image {
+    max-width: 100%; // Ensures image does not exceed container width
+    margin-bottom: -80px; // Decreases blank space below image
+  }
+}
+
+// Media query for medium screens (min-width: 430px and max-width: 600px)
+@media screen and (min-width: 430px) and (max-width: 600px) {
+  .info {
+    font-size: 15px; // Adjusts font size for medium screens
+    padding-left: 10px; // Adds padding to the left side
+    padding-right: 10px; // Adds padding to the right side 
+
+  }
+
+  .container {
+    max-width: 450px; // Limits container width for medium screens
+  }
+
+  .member {
+    margin-bottom: -15px; // Adjusts margin for better spacing
+    font-size: 35px; // Reduces font size for medium screens
+  }
+
+  .image {
+    max-width: 90%; // Sets image max-width to maintain layout integrity
+  }
+}
