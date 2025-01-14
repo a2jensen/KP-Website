@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Base/Laptop styles */
+.mainContainer {
+    min-height: 70vh;
+    text-align: center;
+    margin-top: 90px;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.infoContainer {
+    align-content: left;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+}
+
+.summary {
+    font-size: 20px;
+}
+
+
+.upcoming {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.eventCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid setup */
+    display: flex;
+    text-align: left;
+}
+
+.eventsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+/* tablets */
+@media screen and (min-width: 767px) and (max-width: 1000px){ 
+    .eventCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 events per row */
+    }
+}
+
+ /* mobile + phone */
+@media screen and (max-width: 767px) { 
+    .eventCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 events per row */
+        margin-bottom: 100px;
+    }
+
+
+    .title {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .summary {
+        text-align: start;
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    clip-path: inset(0 100% 0 0);
+    animation: l5 2s steps(11) infinite;
+    padding: 100px;
+  }
+  .loader:before {
+    content:"Loading Events..."
+  }
+  @keyframes l5 {to{clip-path: inset(0 -1ch 0 0)}}
