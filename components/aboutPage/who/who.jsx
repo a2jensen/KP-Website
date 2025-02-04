@@ -9,21 +9,17 @@ import CardFlip3 from '../../whoCards/flip3.jsx';
 
 export default function who() {
   return (
-    <div className={styles.group}>  
-      {/* include stickers within .group nest */}
-      <Image src={"/world1.svg"} alt={"world sticker"} width={0} height={0} className={styles.world1}/>
-      <Image src={"/jeepney1.svg"} alt={"jeep sticker"} width={0} height={0} className={styles.jeep1}/>
-
-      
-
-      <div className={styles.header}>
-          <h1> <strong> <span className={styles.KPyellow}> who </span> are we? </strong> </h1>
+    
+      <div className={styles.group}>  
+        {/* include stickers within .group nest */}
+        <div className={styles.header}>
+            <h1> <strong> <span className={styles.KPyellow}> who </span> are we? </strong> </h1>
+        </div>
+        <div className={styles.cardLayout}>
+          <CardFlip2 />
+          <CardFlip1 />
+          <CardFlip3 />      
+        </div>
       </div>
-      <div className={styles.cardLayout}>
-        <CardFlip2 />
-        <CardFlip1 />
-        <CardFlip3 />      
-      </div>
-  </div>
   );
 }
