@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+$title-font-size: 60px;
+$margins: 100px;
+$container-spacing: $margins / 2;
+$header-content-gap: 20px;
+
+// Mixin for reset
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// reset these so that styling is more accurate..
+.infoContainer, .title, .summary, .upcoming {
+  @include reset;
+}
+
+
+.mainContainer {
+    font-family: 'Outfit', sans-serif;
+    min-height: 70vh;
+    text-align: flex-start;
+    margin-top: 100px;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.title {
+  font-size: $title-font-size;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  justify-items: center;
+}
+.summary {
+  margin-top: $header-content-gap;
+  font-size: $title-font-size / 2.5;
+  margin-bottom: 100px;
+  max-width: 902px;
+  margin-left: 20px;
+  margin-right: 20px;
+  hyphens: auto;
+
+  color: var(--KP-Black, #2B2B2B);
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+
+.upcoming {
+  font-size: $title-font-size * 0.75;
+  margin-top: $container-spacing;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.eventCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  text-align: left;
+}
+.eventsContainer {
+  margin-top: $header-content-gap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: $margins;
+}
+
+
+/* tablets */
+@media screen and (min-width: 600px) and (max-width: 1000px){ 
+    .eventCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 events per row */
+    }
+    .title {
+      font-size: 40px;
+      font-weight: bold;
+      padding: 12px;
+      margin: 5px;
+  }
+
+  .summary {
+      text-align: left;
+      justify-content: center;
+      hyphens: auto;
+      max-width: 600px;
+      font-size: 16px;
+      padding: 12px;
+      margin: 5px;
+  }
+
+  .upcoming {
+      font-size: 40px;
+  }
+}
+
+ /* mobile + phone */
+@media screen and (max-width: 600px) { 
+    .eventCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 events per row */
+    }
+
+
+    .title {
+        font-size: 40px;
+        font-weight: bold;
+        padding: 12px;
+        margin: 5px;
+    }
+
+    .summary {
+        text-align: left;
+        hyphens: auto;
+        max-width: 500px;
+        font-size: 16px;
+        padding: 12px;
+        margin: 5px;
+    }
+
+    .upcoming {
+        font-size: 40px;
+    }
+
+    
+
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    clip-path: inset(0 100% 0 0);
+    animation: l5 2s steps(11) infinite;
+    padding: 100px;
+  }
+  .loader:before {
+    content:"Loading Events..."
+  }
+  @keyframes l5 {to{clip-path: inset(0 -1ch 0 0)}}

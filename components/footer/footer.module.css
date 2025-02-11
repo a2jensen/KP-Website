@@ -2,7 +2,7 @@
 
 .footer {
     background-color: #C14229;
-    min-height: 250x;
+    min-height: 250px;
 }
 
 .toplist {
@@ -11,7 +11,8 @@
    justify-content: center;
    text-align: center;
    padding-top: 25px;
-   gap: 200px;
+   padding-bottom: 10px;
+   gap: 4px;
    position: relative;
 }
 
@@ -40,13 +41,13 @@
 
 
 .bottomlist{
-    list-style-type: none;
+   list-style-type: none;
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
    text-align: center;
-   padding-top: 25px;
-   gap: 200px;
+   padding-top: 20px;
    position: relative;
+   right: 20px;
 }
 
 .bottomlist a {

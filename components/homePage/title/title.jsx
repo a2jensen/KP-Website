@@ -7,17 +7,11 @@ export default function Title() {
     return (
         <div className={styles.group}>            
             <div className={styles.picture}>
-                <Image
-                    src="/homePhoto.svg"
-                    width={400}
-                    height={340}
-                    className={styles.responsiveImage}
-                    alt=''
-                />
+                <Image width={200} height={400} src="/homePhoto.svg" className={styles.responsiveImage} alt="Home Photo" />
             </div>
             <div className={styles.header}>
-                <h1> <strong>we believe everyone has a place<br>
-                        </br>in Kaibigang Pilipino (KP) !</strong>
+                <h1> <strong>we believe <span className={styles.everyone}>everyone</span> has a place<br>
+                        </br>in <span className={styles.clubName}>Kaibigang Pilipino</span> (<span className={styles.clubAbbriviated}>KP</span>) !</strong>
                 </h1>
                 <p>KP promotes access to <strong>culture, connection, </strong>
                      and <strong>academic retention.</strong></p>

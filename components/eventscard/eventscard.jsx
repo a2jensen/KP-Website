@@ -1,7 +1,7 @@
 "use client"; // This directive marks the component as a client component
 
 import React from 'react';
-import styles from './eventscard.module.css'; // Import styles
+import styles from './eventscard.module.scss'; // Import styles
 import Image from 'next/image';
 import Popup from '../popup/popup'
 
@@ -18,7 +18,8 @@ export default function EventsCard({event}) {
     'GEN + STAR': '/eventsCardBlue.svg',
     'GEN + CORE': '/eventsCardRed.svg',
     'STAR + CORE': '/eventsCardYellow.svg',
-    'ALL BOARD': '/eventsCardBlue.svg'
+    'ALL BOARD': '/eventsCardBlue.svg',
+    'EVENT': '/grey_circles.svg'
   };
 
   // setting the boardVariant
@@ -40,7 +41,6 @@ export default function EventsCard({event}) {
           <Popup
             description={event.description}
             googleForm={event.google_form}
-            
           />
         </div>
     </div>

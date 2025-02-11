@@ -26,11 +26,11 @@ const CardFlip1 = () => {
             content= 
             {<div>
               STAR focuses on <b>students teaching students</b>! STAR focuses
-              on students building themseves up both academcially and personally!
+              on students building themseves up both academically and personally!
               <br></br><br></br>
               STAR notably hosts:
               <ul className={styles.listAdjust}>
-                <b><li>Peer Counserlors (PCs)</li></b>
+                <b><li>Peer Counselors (PCs)</li></b>
                 <b><li>Kuya/Ate/Ading (KAA)</li></b>
               </ul>
             </div>}
