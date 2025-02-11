@@ -11,8 +11,8 @@ export default function who() {
   return (
     <div className={styles.group}>  
       {/* include stickers within .group nest */}
-      <Image src={"/world1.svg"} alt={"world sticker"} width={0} height={0} className={styles.world1}/>
-      <Image src={"/jeepney1.svg"} alt={"jeep sticker"} width={0} height={0} className={styles.jeep1}/>
+      {/* <Image src={"/world1.svg"} alt={"world sticker"} width={0} height={0} className={styles.world1}/> */}
+      {/* <Image src={"/jeepney1.svg"} alt={"jeep sticker"} width={0} height={0} className={styles.jeep1}/> */}
 
       
 
