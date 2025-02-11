@@ -19,10 +19,9 @@ export default function membership() {
         
         <br />
         <br />Links:
-        <br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/17ZYioEIyi52QRDDDOX6eryIzAPrPU96Q/view" target="_blank">Video</a>
-        <br />&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank">Quiz 1 (not active)</a>
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1PP2XXKVIs1sqAz1HARKY3keDzCqZOSVX/view" target="_blank">Video</a>
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.google.com/forms/d/e/1FAIpQLSc1GqQ7it7ACOf_hZ9gwOQ9knzFe86d_6qbGPmQ5x6U2VP0Tw/viewform" target="_blank">Quiz 1</a>
         <br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.google.com/forms/d/e/1FAIpQLSeecIfxc63lB5mEIwzzUpVhMsov0tumTU3BDvU8-ZCBY0uDCw/viewform" target="_blank">Quiz 2</a>
-        <br />*Please note, the Quiz #1 is not active. You currently DO NOT need to submit this to achieve membership. Please fulfill the other steps.
         <br />
         <br />
         </p>

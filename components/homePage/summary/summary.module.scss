@@ -1,0 +1,145 @@
+// globals
+$gbm-image: url("gbm.jpg");
+$star-side: url("starSide.png");
+$star-top: url("starTop.png");
+
+
+/*
+summary
+    summaryImage
+    summaryContainer
+        summaryText
+            summaryText strong
+        summaryStar
+*/
+
+@font-face {
+    font-family: "Outfit";
+    src: local("Outfit"), url("/public/fonts/Outfit/static/Outfit-Regular.ttf") format("opentype");
+}
+
+.quotePage {
+    display: grid;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), $gbm-image;
+    background-size: cover;
+    background-position: center;
+
+    .quoteImage {
+        display: flex;
+
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 1;
+        position: relative;
+    }
+
+    .quoteContainer {
+        display: grid;
+
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 2;
+        position: absolute;
+    }
+
+    .quoteText {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        /* font-family: "Outfit"; */
+        position: absolute;
+        margin: auto; /* Center the text block */
+
+        align-self: center;
+        
+        font-size: calc(1vw + 3.5vh);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #FFEBB6;
+        overflow: hidden;
+
+        white-space: normal; /* Ensure text wraps */
+        min-width: 0; /* Allows the text to shrink in flex/grid layouts */
+        max-width: 100%; /* Ensures text container does not exceed its parent */
+        
+        /* Scalable padding */
+        padding: 14vw 9vw; 
+    }
+   
+    .quoteText strong {
+        font-weight: 700;
+    }
+
+    .quoteStar {
+        grid-column: 3/3;
+        grid-row: 1;
+        position: static;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: $star-side;
+        background-size: contain;
+        background-position: right;
+    }
+
+    
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) and (max-width: 768px){ /* tablets */
+    .quotePage { /* for quote and star */
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+    }
+    .quoteText{
+        grid-column: 1 / 1;
+        grid-row: 1/5;
+        font-size: calc(0.5vw + 3.5vh);
+        padding: 35% 10% 0% ;
+        text-align: center;
+        align-self: center;
+    }
+    .quoteStar{
+        grid-column: 1/1;
+        grid-row: 1/3;
+        position: static;
+        height: 40%;
+        
+        align-items: center;
+        background-repeat: no-repeat;
+        background-image: url("starTop.png");
+        background-size: contain;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 600px) { /* mobile + phone */
+    .quoteText{
+        grid-column: 1 / 1;
+        grid-row: 1 / 5;
+        font-size: calc(1vw + 3vh);
+        padding: 30% 15% 0% ;
+        text-align: center;
+    }
+    .quoteStar{
+        grid-column: 1/1;
+        grid-row: 1/3;
+        position: static;
+        height: 50%;
+        background-repeat: no-repeat;
+        background-image: url("starTop.png");
+        background-size: contain;
+        background-position: top;
+    }
+    
+}
+
+
