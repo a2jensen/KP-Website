@@ -33,7 +33,10 @@ First, run the following command to install node_modules:
 npm install
 ```
 
-Second, run the development server:
+Second, create a .env file in the root directory of the project and paste the environment variables.
+IMPORTANT: Do not push any of the information from .env to GitHub. These keys could give unauthorized access to the database. Ensure that ".env" is added to .gitignore.
+
+Third, run the development server:
 
 ```bash
 npm run dev
