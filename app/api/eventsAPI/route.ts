@@ -6,11 +6,15 @@ import { revalidatePath } from "next/cache";
 // https://nextjs.org/docs/app/building-your-application/routing/route-handlers // make a custom endpoint, and then fetch from here instead of fetching from actual API
 // POSSIBLE FIX : 1. disable fetch caching or implement timestamp based cache busting here....
 
+const spreadsheetsURL = process.env.SPREADSHEET_URL as string;
+
 export const revalidate = 60; // current fix i have but not tested if it works yet,
 
 export async function GET() {
     try {
-        const spreadsheetsURL = 'https://script.google.com/macros/s/AKfycbwHY7xRHzPhTGydAb2ibAhdUQmCrodedc7Rnme4wy3rY21W6d5haxPC-lxGkLugnrsCJw/exec'
+        if (!spreadsheetsURL) {
+            throw new Error("SPREADSHEET_URL missing.");
+        }
 
         const response = await fetch(spreadsheetsURL, {
             method: 'GET',

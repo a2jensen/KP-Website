@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react'
-import styles from './membership.module.css'
+import styles from './membership.module.scss'
 import Image from 'next/image'
 
 export default function membership() {
