@@ -1,4 +1,4 @@
-interface Event {
+export default interface Event {
     board : string,
     title : string,
     date : string,
