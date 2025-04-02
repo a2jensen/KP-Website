@@ -5,53 +5,26 @@ import styles from "./eventsList.module.scss";
 import {Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import EventsCard from '../../eventscard/eventscard.jsx';
 
-export default function EventsList() {
+export default function EventsList({ eventsData }) {
     // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it
-    const [data, setData] = useState([]);
-    const [filter, setFilter] = useState('UPCOMING')
-    const [isLoading, setIsLoading] = useState(true);
+    // Initialize with the passed data, not wrapped in an array
+        const [data, setData] = useState(eventsData || []);
+        const [filter, setFilter] = useState('UPCOMING') 
+        const [isLoading, setIsLoading] = useState(!eventsData || eventsData.length === 0);
+        
+        // Update loading state when eventsData changes
+        useEffect(() => {
+            if (eventsData && eventsData.length > 0) {
+                setData(eventsData);
+                setIsLoading(false);
+            }
+        }, [eventsData]);
+    
+    console.log(data);
 
     const handleChange = (event) => {
         setFilter(event.target.value)
     }
-
-        // useEffect hook runs the fetchData function when the component mounts
-    useEffect(() => {
-        // Define an asynchronous function to fetch data from the API
-        const fetchData = async () => {
-            try {
-                setIsLoading(true); // Set loading state to true
-                // Fetch data from the API with cache-busting parameter
-                const res = await fetch(`/api/eventsAPI?_=${new Date().getTime()}`, { // we can either fetch directly from google spreadsheet API route and that may fix
-                    method: 'GET',
-                    headers: {
-                        'Cache-Control': 'no-cache', // Prevent caching on the client side
-                        'Pragma': 'no-cache'
-                    },
-                    cache: 'no-store' // Ensures the fetch request bypasses the cache
-                });
-
-                if (!res.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-
-                // Parse the JSON response
-                const result = await res.json();
-                
-                // Update the 'data' state with the fetched data
-                setData(result.data.data);
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            } finally {
-                setIsLoading(false); // Set loading state to false
-            }
-        };
-
-        // Call the fetchData function
-        fetchData();
-    }, []); // Empty dependency array ensures this effect runs only once when the component mounts
-
-    console.log(data);
 
     data.forEach((event) => {
         if(event.board === ''){
