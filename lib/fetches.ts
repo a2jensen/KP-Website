@@ -8,7 +8,8 @@ export async function fetchSpreadsheetsData() {
     
             const response = await fetch(spreadsheetsURL, {
                 method: 'GET',
-                cache: 'no-store'
+                next: { revalidate : 3600 }
+                //cache: 'no-store'
             });
     
             if(!response.ok) {
