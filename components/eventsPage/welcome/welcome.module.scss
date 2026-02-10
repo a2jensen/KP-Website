@@ -56,9 +56,15 @@ $header-content-gap: 20px;
 
 .upcoming {
   font-size: $title-font-size * 0.75;
-  margin-top: $container-spacing;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.notFound {
+  margin-top: 40px;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
 }
 
 .eventCards {

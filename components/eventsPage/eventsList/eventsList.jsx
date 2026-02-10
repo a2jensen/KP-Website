@@ -1,39 +1,23 @@
 'use client'
-import React, {useState, useEffect} from 'react';
+import React, {useState } from 'react';
 // import styles from "./eventsList.module.css";
 import styles from "./eventsList.module.scss";
 import {Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import EventsCard from '../../eventscard/eventscard.jsx';
 
 export default function EventsList({ eventsData }) {
-    // Declare a state variable 'data' with an initial empty array and a function 'setData' to update it
-    // Initialize with the passed data, not wrapped in an array
-        const [data, setData] = useState(eventsData || []);
-        const [filter, setFilter] = useState('UPCOMING') 
-        const [isLoading, setIsLoading] = useState(!eventsData || eventsData.length === 0);
-        
-        // Update loading state when eventsData changes
-        useEffect(() => {
-            if (eventsData && eventsData.length > 0) {
-                setData(eventsData);
-                setIsLoading(false);
-            }
-        }, [eventsData]);
-    
-    console.log(data);
-
+    const [filter, setFilter] = useState("UPCOMING");
     const handleChange = (event) => {
         setFilter(event.target.value)
     }
 
-    data.forEach((event) => {
+    eventsData.forEach((event) => {
         if(event.board === ''){
             event.board = 'EVENT';
         }
-    }); // should i set this to "ANY"?
+    }); 
 
-    // Function that filters the events based on user preference/click
-    const filteredEvents = data.filter(event => {
+    const filteredEvents = eventsData.filter(event => {
         if(filter === 'UPCOMING'){
             return new Date(event.date) >= new Date();
         }
@@ -43,13 +27,13 @@ export default function EventsList({ eventsData }) {
             return event.board === filter;
         }
         return true;
-    }); // grabs all
+    });
 
 
     return (
         <div className={styles.pageContainer}>
             <div className={styles.filterContainer}>
-                <FormControl fullWidth className={styles.filterDropdown}>
+                <FormControl className={styles.filterDropdown}>
                     <InputLabel id="filter-label">Filter</InputLabel>
                     <Select
                         labelId="filter-label"
@@ -67,8 +51,8 @@ export default function EventsList({ eventsData }) {
                 </FormControl>
             </div>
             <div className={styles.eventsContainer}>
-                {isLoading ? (
-                    <div className={styles.loader}></div>
+                {filteredEvents.length === 0 ? (
+                    <p className={styles.upcoming}>no {filter.toLowerCase()} events.</p>
                 ) : (
                     <div className={styles.eventGrid}>
                         {filteredEvents.map((event, index) => (

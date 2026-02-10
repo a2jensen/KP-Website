@@ -15,9 +15,7 @@ export async function fetchSpreadsheetsData() {
             if(!response.ok) {
                 throw new Error('Error: response is invalid')
             }
-    
             const data = await response.json()
-    
             return data.data
         } catch(error) {
             console.error('Error fetching data', error)
