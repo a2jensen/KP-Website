@@ -11,6 +11,7 @@ export default function Title() {
             <div className={styles.picture}>
                 <Image
                     src="/homePhoto.svg"
+                    alt="KP Home"
                     width={400}
                     height={340}
                     className={styles.responsiveImage}

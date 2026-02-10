@@ -28,6 +28,7 @@ export default function membership() {
       </div>
       <Image className={styles.image}
         src='/membership.svg'
+        alt="Membership"
         width={1000}
         height={1200}
         style={styles.responsiveImage}

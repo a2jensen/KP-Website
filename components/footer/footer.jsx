@@ -19,6 +19,7 @@ export default function Footer() {
                     <a href="https://www.instagram.com/ucsdkp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                         <Image
                             src="/instagram 2.png"
+                            alt="Instagram"
                             width={35}
                             height={35}
                         />
@@ -27,6 +28,7 @@ export default function Footer() {
                 </li>
                 <li className={styles.sun}><a><Image
                     src="/Layer_1.svg"
+                    alt="KP Sun Logo"
                     width={50}
                     height={50}
                 /></a></li>

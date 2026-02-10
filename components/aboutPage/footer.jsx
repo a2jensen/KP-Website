@@ -18,6 +18,7 @@ export default function Footer() {
                 <li className={styles.iglogo}> <a href="https://www.instagram.com/ucsdkp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 <Image
                     src="/iglogo.png"
+                    alt="Instagram"
                     width={50}
                     height={50}
                 />
@@ -25,11 +26,13 @@ export default function Footer() {
                 <li className={styles.tiktoklogo}> <a href="">
                 <Image
                     src="/tiktoklogo.png"
+                    alt="TikTok"
                     width={50}
                     height={50}
                 /></a></li>
                 <li className={styles.outerlogo}><a><Image
                     src="/Layer_1.svg"
+                    alt="KP Sun Logo"
                     width={50}
                     height={50}
                 /></a></li>

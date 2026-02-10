@@ -17,6 +17,7 @@ export default function Events() {
             <li className={styles.seemore}><a href="/events">see more events</a></li>
             <li className={styles.arrow}><a href="/events"><Image
                     src="/Vector.svg"
+                    alt="See more events"
                     width={20.7}
                     height={29.53}
                 /></a></li>
