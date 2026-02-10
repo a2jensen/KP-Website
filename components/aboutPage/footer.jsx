@@ -1,14 +1,15 @@
 import React from 'react';
 import styles from './footer.module.css';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return (
         <div className={styles.footer}>
             <ul className={styles.toplist}>    
-                <li className={styles.titles}><a href="/">Home</a></li>
-                <li className={styles.titles}><a href="/about">About</a></li>
-                <li className={styles.titles}><a href="/events">Events</a></li>
+                <li className={styles.titles}><Link href="/">Home</Link></li>
+                <li className={styles.titles}><Link href="/about">About</Link></li>
+                <li className={styles.titles}><Link href="/events">Events</Link></li>
                 <li className={styles.titles}><a href="">Contact</a></li>
             </ul>
             <h2 className={styles.kp}>kaibigang pilipino</h2>

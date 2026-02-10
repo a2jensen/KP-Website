@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react'
+import Link from 'next/link'
 import styles from './nav.module.css'
 
 export default function Nav() {
@@ -19,9 +20,9 @@ export default function Nav() {
                 
                 
                 <ul className={`${styles.list} ${isMenuOpen ? styles.showMenu : ''}`}>
-                    <li className = {styles.listElement}><a href="/">home</a></li>
-                    <li className = {styles.listElement}><a href="/about">about</a></li>
-                    <li className = {styles.listElement}><a href="/events">events</a></li>
+                    <li className = {styles.listElement}><Link href="/">home</Link></li>
+                    <li className = {styles.listElement}><Link href="/about">about</Link></li>
+                    <li className = {styles.listElement}><Link href="/events">events</Link></li>
                     <div className={`${styles.listElement} ${styles.joinButtonDesktop}`}>
                     <a href="/about">join</a>
                 </div>
